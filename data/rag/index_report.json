@@ -1,0 +1,64 @@
+{
+  "documents": [
+    {
+      "source_id": "AI2025",
+      "title": "All India Blockwise GWRA 2025 (categorization of assessment units)",
+      "file": "1767356717630008751file.pdf",
+      "year": "2025",
+      "sha256": "16d371df2e425bca0680b87d3b8a3aca693332b4081f6babfff654c21704eee7",
+      "sha256_matches_db": true,
+      "reader": "pypdfium2",
+      "pages": 97,
+      "pages_indexed": 0,
+      "pages_skipped": {
+        "list of units / table rows": 97
+      },
+      "chunks": 0
+    },
+    {
+      "source_id": "NC2025",
+      "title": "National Compilation on Dynamic Ground Water Resources of India, 2025",
+      "file": "711d8d476bbf498cd90f8038e7371227.pdf",
+      "year": "2025",
+      "sha256": "f2453ccf635761707926610e5d96300ae0ab1abf748a860bc3b3a998a32f7b8a",
+      "sha256_matches_db": true,
+      "reader": "pdfplumber",
+      "pages": 482,
+      "pages_indexed": 107,
+      "pages_skipped": {
+        "too little text": 114,
+        "numeric table": 234,
+        "table of contents": 1,
+        "list of units / table rows": 26
+      },
+      "chunks": 141
+    },
+    {
+      "source_id": "RJ2025",
+      "title": "Dynamic Ground Water Resources of Rajasthan - 2025",
+      "file": "bulk_17781482431554file.pdf",
+      "year": "2025",
+      "sha256": "538cd36701f71ad9c311c7d781b466644494b4726ffd06b69e0b7d541c82a120",
+      "sha256_matches_db": true,
+      "reader": "pdfplumber",
+      "pages": 143,
+      "pages_indexed": 73,
+      "pages_skipped": {
+        "too little text": 28,
+        "numeric table": 39,
+        "Devanagari text layer (garbled font mapping)": 2,
+        "list of units / table rows": 1
+      },
+      "chunks": 85
+    }
+  ],
+  "chunks": 226,
+  "built": "2026-11-23 16:21:41",
+  "chunk_words": 380,
+  "overlap_words": 60,
+  "embed_model": "bge-m3",
+  "embed_dim": 1024,
+  "embed_seconds": 45.8,
+  "collection_count": 226,
+  "seconds": 102.1
+}

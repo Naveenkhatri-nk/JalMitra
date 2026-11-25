@@ -33,7 +33,6 @@ data/groundwater_monitoring.db
 data/monitoring/*
 !data/monitoring/gwra_blocks_2025.db
 data/raw/
-data/rag/
 
 # Databases: ignore all ... except the small ones the app needs to run
 *.db
@@ -42,6 +41,7 @@ data/rag/
 !data/knowledge.db
 !data/observations.db
 !data/monitoring/gwra_blocks_2025.db
+!data/rag/chroma/chroma.sqlite3
 
 # Member note drafts: each member uploads their own copy into docs/members/
 docs/member_drafts/

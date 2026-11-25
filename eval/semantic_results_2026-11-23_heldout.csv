@@ -1,0 +1,25 @@
+id,lang,ctx,topic,label,text,rule_hits,L1,min_best_sim,min_overlap,support_fail,L12,self_check,L123,ms
+101,en,general,depth_direction,bad,Groundwater levels go down sharply when the monsoon rains arrive.,,False,0.751,0.17,False,False,NOT_SUPPORTED,True,5352.3
+102,en,general,depth_direction,good,"The monsoon recharges aquifers, so wells usually have water closer to the surface afterwards.",,False,0.704,0.5,False,False,SUPPORTED,False,4596.0
+103,en,general,pre_post_monsoon,good,"Before the monsoon, the groundwater table is generally at its deepest.",,False,0.86,0.6,False,False,SUPPORTED,False,4647.2
+104,en,general,seasonal,bad,"The water table is shallowest in May, just before the monsoon.",,False,0.797,0.6,False,False,NOT_SUPPORTED,True,5075.8
+105,en,general,depletion,bad,Taking out more water than is recharged makes groundwater more plentiful.,,False,0.737,0.4,False,False,NOT_SUPPORTED,True,5096.4
+106,en,general,category,bad,A block is Critical when its stage of extraction is below 50%.,category_threshold,True,0.713,0.75,False,True,,True,2803.2
+107,en,general,category,good,A block is Over-exploited when extraction is more than the annual extractable resource.,,False,0.726,1.0,False,False,SUPPORTED,False,4999.0
+108,en,general,stage_formula,good,Stage of extraction compares total extraction with the annual extractable resource.,,False,0.819,0.86,False,False,SUPPORTED,False,5265.8
+109,en,general,stage_formula,bad,Stage of extraction is the extractable resource divided by the extraction.,stage_formula,True,0.823,1.0,False,True,,True,3021.0
+110,en,general,unsupported_cause,bad,Over-exploitation in Rajasthan is caused mainly by urbanisation.,,False,0.554,0.2,True,True,,True,2894.1
+111,en,conserve,depletion,good,Rainwater harvesting can help to recharge groundwater in stressed areas.,,False,0.735,0.67,False,False,SUPPORTED,False,4699.9
+112,en,conserve,unsupported_claim,bad,Groundwater depletion can only be solved by importing water from other states.,,False,0.642,0.0,False,False,NOT_SUPPORTED,True,4554.5
+113,en,phagi_en,contradiction,bad,Phagi is replenished faster than it is used.,,False,0.58,0.25,True,True,,True,2194.5
+114,en,phagi_en,depletion,good,"In Phagi, use of groundwater is greater than what is replaced each year.",,False,0.644,0.5,False,False,SUPPORTED,False,4648.9
+115,en,todar_en,contradiction,bad,In Todaraisingh more water is pumped out than is recharged.,,False,0.543,0.5,True,True,,True,2181.3
+116,hi,general,depth_direction,bad,मानसून आने पर कुओं का पानी और नीचे चला जाता है।,,False,0.635,0.0,False,False,SUPPORTED,False,4654.4
+117,hi,general,depth_direction,good,मानसून की बारिश से कुओं में पानी का स्तर ऊपर आ जाता है।,,False,0.662,0.0,False,False,SUPPORTED,False,4616.0
+118,hi,general,category,bad,गंभीर श्रेणी का मतलब है दोहन का स्तर 50% से कम।,category_threshold,True,0.563,0.0,True,True,,True,2508.9
+119,hi,general,unsupported_cause,bad,भूजल में गिरावट की वजह शहरीकरण है।,,False,0.604,0.0,False,False,NOT_SUPPORTED,True,4617.3
+120,hi,phagi_hi,contradiction,bad,फागी में जितना पानी निकलता है उससे ज़्यादा भर जाता है।,,False,0.646,0.57,False,False,NOT_SUPPORTED,True,4455.5
+121,hinglish,general,depth_direction,bad,Barsaat mein kuon ka paani aur gehra chala jata hai.,,False,0.513,0.0,True,True,,True,2501.4
+122,hinglish,general,depth_direction,good,Monsoon ki barish se kuon mein paani upar aata hai.,,False,0.631,0.2,False,False,SUPPORTED,False,4715.3
+123,hinglish,general,category,bad,Critical ka matlab hai stage 50% se kam.,category_threshold,True,0.679,0.5,False,True,,True,2486.9
+124,hinglish,phagi_hing,contradiction,bad,Phagi mein paani nikalne se zyada recharge hota hai.,,False,0.594,0.75,False,False,NOT_SUPPORTED,True,4400.0

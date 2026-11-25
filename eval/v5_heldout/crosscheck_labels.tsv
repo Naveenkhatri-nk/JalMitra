@@ -1,0 +1,151 @@
+id	my_label	confidence	note
+H001	bad	high	Critical threshold is >90% not 75%
+H003	good	high	matches chunk: evaporation zero below 1 mbgl
+H004	good	high	chunk: canal water and high rains
+H007	bad	high	OE is >100% not >70%
+H008	good	medium	chunk: NW states generally 20 to >40 mbgl
+H009	good	high	DB Safe
+H010	bad	high	chunk: all other sources together 40%
+H011	good	high	DB Safe 54%
+H013	bad	high	Saline is quality not stage >90%
+H014	good	high	matches chunk
+H015	bad	high	January = irrigation period; August = peak monsoon
+H016	bad	high	50 wells per village not in chunk
+H017	bad	high	drip irrigation reason unsupported
+H018	good	high	matches DB
+H019	good	high	matches DB
+H020	bad	high	chunk names Churu/Hanumangarh/Bikaner
+H022	good	high	matches DB
+H023	bad	high	trend claim unsupported
+H025	bad	high	>100% is Over-exploited
+H026	bad	high	borewell ban not in chunk; reason is canal water and rain
+H027	bad	high	chunk says these are Over-exploited
+H029	good	high	matches DB
+H030	bad	high	Ganganagar not Aravalli south; unsupported
+H032	good	high	definition matches chunk
+H033	good	high	DB Saline
+H036	bad	high	chunk: rainfall and irrigated area
+H037	bad	high	Gokak is Karnataka, DB Semi-critical
+H038	bad	high	stage uses extractable resource not recharge
+H039	bad	high	annual extraction, unsupported seasonal claim
+H040	bad	high	levels decline, not shallower; trend unsupported
+H041	good	high	matches DB
+H042	bad	high	depth increases (levels decline)
+H045	good	high	matches chunk
+H046	good	high	matches DB
+H048	bad	high	reversed; pre-monsoon deeper
+H049	good	high	matches chunk
+H050	bad	high	fall means deeper water
+H051	bad	high	levels decline
+H052	good	medium	6480/6795=95%, DB Critical
+H053	good	high	matches chunk
+H054	bad	high	>100% means no surplus
+H055	good	high	matches chunk
+H056	good	high	matches chunk
+H057	good	high	DB Over-exploited
+H058	good	high	matches chunk
+H059	bad	high	tube well count unsupported
+H061	good	high	matches chunk
+H062	bad	high	return flow is recharge
+H063	good	high	matches chunks
+H064	bad	high	extraction marginally increased
+H065	bad	high	stage and tubewell count not in DB
+H066	good	high	matches chunk
+H069	bad	high	deepest in Jodhpur
+H071	bad	high	>75% rain June-Sept
+H072	bad	high	stage is extraction/extractable
+H073	good	high	239% matches DB
+H074	bad	high	wrong definition
+H076	bad	high	chunk: over-extraction, hard rock is peninsular
+H078	good	high	DB Saline
+H079	bad	high	contradicts chunk (extraction)
+H080	bad	high	trend unsupported
+H081	good	high	chunk 74% rainfall
+H082	good	high	matches chunk
+H085	bad	high	Semi-critical is 70-90%
+H086	bad	high	DB category Over-exploited
+H087	bad	high	stage uses all uses
+H088	bad	high	WLF used for monsoon recharge
+H089	good	high	DB Safe
+H090	bad	high	seepage is recharge
+H091	good	high	matches chunk
+H092	bad	high	DB Safe
+H093	bad	high	annual only since 2022
+H094	bad	high	extraction increased
+H095	good	high	matches chunk
+H096	bad	high	recharge marginally increased
+H097	bad	high	reversed definition
+H098	good	high	matches chunk
+H099	good	high	matches DB
+H100	bad	high	Saline is quality
+H101	good	high	matches chunk
+H103	good	high	matches DB 40.37%
+H104	good	high	matches chunk
+H109	good	high	DB Semi-critical
+H110	bad	high	stage is not irrigated area
+H111	bad	high	wrong definition
+H112	bad	high	239% is ratio not ham difference
+H114	bad	high	DB Safe 54%
+H115	bad	high	DB Safe; 70% is Safe
+H116	good	high	matches chunk
+H118	bad	high	no stage for Saline unit in DB
+H119	good	high	matches chunk
+H121	bad	high	Critical starts >90%; DB Semi-critical
+H122	good	high	matches DB
+H126	bad	high	domestic 11%
+H128	good	high	matches chunk
+H129	bad	high	Kerala and Goa <70%
+H131	good	high	matches chunk
+H132	bad	high	figures not in DB
+H135	bad	high	reason is poor quality and canal water
+H136	bad	high	extraction increased slightly
+H137	bad	high	extraction 14554 below 20902
+H138	good	high	matches chunk
+H139	good	high	matches DB
+H142	good	high	matches chunk
+H143	bad	high	chunk: hard rock aquifers
+H144	good	high	matches chunk
+H145	good	high	matches DB
+H146	good	high	matches chunk
+H147	good	high	matches DB
+H149	good	high	DB Over-exploited
+H150	bad	high	solar plants reason unsupported
+H151	good	high	DB Critical
+H152	bad	high	levels would fall; trend unsupported
+H153	good	high	matches DB
+H155	good	high	chunk 85% agriculture
+H156	good	high	matches DB
+H157	bad	high	DB stage 328%
+H158	bad	high	May pre-monsoon, Nov post-monsoon
+H159	bad	high	monsoon June-Sept
+H160	bad	high	quality tag independent of quantity
+H161	bad	high	8218 is extraction; recharge 5424; OE
+H162	bad	high	recharge and extraction swapped
+H163	bad	high	DB Critical 95%
+H164	good	high	65.2% rise
+H166	good	high	matches chunk
+H167	bad	high	contradicts chunk
+H168	good	high	matches DB
+H169	good	high	matches DB
+H170	bad	high	monsoon rise used
+H172	bad	high	divides by extractable resource not rainfall
+H173	bad	high	return flow is recharge
+H174	good	high	matches chunk
+H176	good	high	matches chunk
+H178	good	high	matches DB and limits
+H179	bad	high	612 mm in 2024
+H181	bad	high	all uses included
+H185	good	high	60.47 to 60.63
+H186	bad	high	chunk: Churu/Hanumangarh/Bikaner
+H187	bad	high	Semi-critical 70-90%
+H189	good	high	matches chunk
+H190	bad	high	Safe up to 70%
+H191	bad	high	reason rainfall and irrigation area
+H192	good	high	matches chunk
+H194	bad	high	rainfall claim unsupported
+H195	bad	high	20177 is extraction; OE
+H196	bad	high	reversed
+H197	bad	high	wrong definition
+H198	good	high	DB Over-exploited
+H199	bad	high	DB Semi-critical
+H200	bad	high	trend unsupported

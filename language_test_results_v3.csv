@@ -1,0 +1,9 @@
+id,group,status,detail,ms
+O_knowledge_answer_en,O languages,PASSED,en: section labels present,0.7
+O_knowledge_answer_hi,O languages,PASSED,hi: section labels present,0.8
+O_knowledge_answer_hinglish,O languages,PASSED,hinglish: section labels present,1.2
+O_knowledge_answer_mr,O languages,PASSED,mr: section labels present,0.8
+O_knowledge_answer_pa,O languages,PASSED,pa: section labels present,1.2
+O_knowledge_answer_raj,O languages,PASSED,raj: section labels present,0.9
+O_all_kn_templates_6_languages,O languages,PASSED,49 knowledge templates x 6 languages,0.1
+O_ui_v3_hindi,O languages,PASSED,249 interface texts in English and Hindi,0.7

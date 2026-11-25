@@ -1,0 +1,7 @@
+﻿language,name,cases,intent_accuracy_pct,location_accuracy_pct,db_correct_pct,language_correct_pct,passed_pct,avg_ms,failed_ids
+en,English,107,100.0,100.0,100.0,100.0,100.0,2.54,
+hi,Hindi,17,100.0,100.0,100.0,100.0,100.0,1.76,
+hinglish,Hinglish,17,100.0,100.0,100.0,100.0,100.0,1.44,
+mr,Marathi,10,100.0,100.0,100.0,100.0,100.0,1.81,
+pa,Punjabi,10,100.0,100.0,100.0,100.0,100.0,1.97,
+raj,Rajasthani,11,100.0,100.0,100.0,100.0,100.0,1.74,

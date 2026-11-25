@@ -1,0 +1,194 @@
+alias,language,canonical_name,target_type,target_state,note
+Jalore,en,JALOR,district,Rajasthan,common English spelling
+Chittorgarh,en,CHITTAURGARH,district,Rajasthan,common English spelling
+Chittor,en,CHITTAURGARH,district,Rajasthan,short form
+Dholpur,en,DHAULPUR,district,Rajasthan,common English spelling
+Sri Ganganagar,en,GANGANAGAR,district,Rajasthan,official city name
+Shri Ganganagar,en,GANGANAGAR,district,Rajasthan,spelling variant
+Jhunjhunun,en,JHUNJHUNU,district,Rajasthan,spelling variant
+Gurugram,en,GURGAON,district,Haryana,renamed district
+Poona,en,Pune,district,Maharashtra,old name
+Bombay,en,Mumbai,district,Maharashtra,old name
+Ahmadnagar,en,Ahmednagar,district,Maharashtra,spelling variant
+Ahilyanagar,en,Ahmednagar,district,Maharashtra,renamed district
+Chhatrapati Sambhajinagar,en,Aurangabad,district,Maharashtra,renamed district
+Sambhajinagar,en,Aurangabad,district,Maharashtra,renamed district
+Dharashiv,en,Osmanabad,district,Maharashtra,renamed district
+Yavatmal,en,Yawatmal,district,Maharashtra,spelling variant
+Gondiya,en,Gondia,district,Maharashtra,spelling variant
+Baroda,en,VADODARA,district,Gujarat,old name
+Kutch,en,KACHCHH,district,Gujarat,common spelling
+Kachchh,en,KACHCHH,district,Gujarat,spelling
+Mehsana,en,MAHESANA,district,Gujarat,common spelling
+Mohali,en,SAS Nagar,district,Punjab,common name
+Nawanshahr,en,SBS Nagar,district,Punjab,common name
+Ropar,en,Rupnagar,district,Punjab,old name
+Ferozepur,en,Firozpur,district,Punjab,spelling variant
+Sri Muktsar Sahib,en,Muktsar,district,Punjab,official name
+Orissa,en,Odisha,state,,old name
+Pondicherry,en,Puducherry,state,,old name
+J&K,en,Jammu And Kashmir,state,,abbreviation
+Jammu Kashmir,en,Jammu And Kashmir,state,,spelling variant
+Jammu and Kashmir,en,Jammu And Kashmir,state,,spelling variant
+Andaman and Nicobar Islands,en,Andaman And Nicobar,state,,official name
+Ajmer City,en,AJMER_URBAN,unit,Rajasthan,English variant
+Jaipur City,en,JAIPUR_URBAN,unit,Rajasthan,English variant
+Jodhpur City,en,JODHPUR_URBAN,unit,Rajasthan,English variant
+Golaghat W,en,GOLAGHAT WEST,unit,Assam,short form
+अजमेर,hi,AJMER,district,Rajasthan,Devanagari name
+अलवर,hi,ALWAR,district,Rajasthan,Devanagari name
+बांसवाड़ा,hi,BANSWARA,,Rajasthan,Devanagari name (district and block share the name)
+बांसवाडा,hi,BANSWARA,,Rajasthan,spelling without nukta
+बारां,hi,BARAN,district,Rajasthan,Devanagari name
+बाड़मेर,hi,BARMER,district,Rajasthan,Devanagari name
+बाडमेर,hi,BARMER,district,Rajasthan,spelling without nukta
+भरतपुर,hi,BHARATPUR,,Rajasthan,Devanagari name
+भीलवाड़ा,hi,BHILWARA,district,Rajasthan,Devanagari name
+भीलवाडा,hi,BHILWARA,district,Rajasthan,spelling without nukta
+बीकानेर,hi,BIKANER,district,Rajasthan,Devanagari name
+बूंदी,hi,BUNDI,,Rajasthan,Devanagari name
+चित्तौड़गढ़,hi,CHITTAURGARH,district,Rajasthan,Devanagari name
+चित्तौडगढ,hi,CHITTAURGARH,district,Rajasthan,spelling without nukta
+चूरू,hi,CHURU,,Rajasthan,Devanagari name
+दौसा,hi,DAUSA,,Rajasthan,Devanagari name
+धौलपुर,hi,DHAULPUR,,Rajasthan,Devanagari name
+डूंगरपुर,hi,DUNGARPUR,,Rajasthan,Devanagari name
+श्रीगंगानगर,hi,GANGANAGAR,district,Rajasthan,Devanagari name
+गंगानगर,hi,GANGANAGAR,district,Rajasthan,Devanagari name
+हनुमानगढ़,hi,HANUMANGARH,,Rajasthan,Devanagari name
+जयपुर,hi,JAIPUR,,,Devanagari name (same ambiguity as the English name)
+जैसलमेर,hi,JAISALMER,district,Rajasthan,Devanagari name
+जालोर,hi,JALOR,,Rajasthan,Devanagari name
+जालौर,hi,JALOR,,Rajasthan,spelling variant
+झालावाड़,hi,JHALAWAR,district,Rajasthan,Devanagari name
+झुंझुनूं,hi,JHUNJHUNU,,Rajasthan,Devanagari name
+झुंझुनू,hi,JHUNJHUNU,,Rajasthan,spelling variant
+जोधपुर,hi,JODHPUR,district,Rajasthan,Devanagari name
+करौली,hi,KARAULI,,Rajasthan,Devanagari name
+कोटा,hi,KOTA,,Rajasthan,Devanagari name
+नागौर,hi,NAGAUR,,Rajasthan,Devanagari name
+पाली,hi,PALI,,Rajasthan,Devanagari name
+प्रतापगढ़,hi,PRATAPGARH,,,Devanagari name (district in Rajasthan and Uttar Pradesh)
+राजसमंद,hi,RAJSAMAND,,Rajasthan,Devanagari name
+सवाई माधोपुर,hi,SAWAI MADHOPUR,,Rajasthan,Devanagari name
+सीकर,hi,SIKAR,,Rajasthan,Devanagari name
+सिरोही,hi,SIROHI,,Rajasthan,Devanagari name
+टोंक,hi,TONK,,Rajasthan,Devanagari name
+उदयपुर,hi,UDAIPUR,,,Devanagari name
+अजमेर अर्बन,hi,AJMER_URBAN,unit,Rajasthan,Devanagari name
+अजमेर शहरी,hi,AJMER_URBAN,unit,Rajasthan,Devanagari name
+जयपुर अर्बन,hi,JAIPUR_URBAN,unit,Rajasthan,Devanagari name
+जयपुर शहरी,hi,JAIPUR_URBAN,unit,Rajasthan,Devanagari name
+जोधपुर अर्बन,hi,JODHPUR_URBAN,unit,Rajasthan,Devanagari name
+जोधपुर शहरी,hi,JODHPUR_URBAN,unit,Rajasthan,Devanagari name
+खाजूवाला,hi,KHAJUWALA,unit,Rajasthan,Devanagari name
+चौहटन,hi,CHOHTAN,unit,Rajasthan,Devanagari name
+ओसियां,hi,OSIAN,unit,Rajasthan,Devanagari name
+तिवरी,hi,TIWARI,unit,Rajasthan,Devanagari name
+गोलाघाट वेस्ट,hi,GOLAGHAT WEST,unit,Assam,Devanagari name
+गोलाघाट पश्चिम,hi,GOLAGHAT WEST,unit,Assam,Devanagari name
+लुधियाना,hi,Ludhiana,district,Punjab,Devanagari name
+पुणे,mr,Pune,district,Maharashtra,Marathi name
+पुण्यात,mr,Pune,district,Maharashtra,Marathi locative form
+पुण्यातील,mr,Pune,district,Maharashtra,Marathi form
+पुण्याची,mr,Pune,district,Maharashtra,Marathi form
+पुण्याचा,mr,Pune,district,Maharashtra,Marathi form
+पुणे शहर,mr,Pune City,unit,Maharashtra,Marathi name
+नाशिक,mr,Nashik,district,Maharashtra,Marathi name
+नासिक,hi,Nashik,district,Maharashtra,Hindi spelling
+नागपूर,mr,Nagpur,,Maharashtra,Marathi name
+नागपुर,hi,Nagpur,,Maharashtra,Hindi spelling
+मुंबई,mr,Mumbai,district,Maharashtra,Marathi name
+औरंगाबाद,mr,Aurangabad,,,Devanagari name (district in Maharashtra and Bihar)
+छत्रपती संभाजीनगर,mr,Aurangabad,district,Maharashtra,renamed district
+अहमदनगर,mr,Ahmednagar,district,Maharashtra,Marathi name
+अहिल्यानगर,mr,Ahmednagar,district,Maharashtra,renamed district
+सातारा,mr,Satara,,Maharashtra,Marathi name
+सांगली,mr,Sangli,district,Maharashtra,Marathi name
+कोल्हापूर,mr,Kolhapur,district,Maharashtra,Marathi name
+सोलापूर,mr,Solapur,district,Maharashtra,Marathi name
+लातूर,mr,Latur,,Maharashtra,Marathi name
+जळगाव,mr,Jalgaon,,Maharashtra,Marathi name
+अमरावती,mr,Amravati,,Maharashtra,Marathi name
+अकोला,mr,Akola,,Maharashtra,Marathi name
+ठाणे,mr,Thane,district,Maharashtra,Marathi name
+रत्नागिरी,mr,Ratnagiri,,Maharashtra,Marathi name
+बीड,mr,Beed,,Maharashtra,Marathi name
+नांदेड,mr,Nanded,,Maharashtra,Marathi name
+धुळे,mr,Dhule,,Maharashtra,Marathi name
+यवतमाळ,mr,Yawatmal,district,Maharashtra,Marathi name
+वर्धा,mr,Wardha,,Maharashtra,Marathi name
+चंद्रपूर,mr,Chandrapur,,Maharashtra,Marathi name
+उस्मानाबाद,mr,Osmanabad,,Maharashtra,Marathi name
+धाराशिव,mr,Osmanabad,district,Maharashtra,renamed district
+परभणी,mr,Parbhani,,Maharashtra,Marathi name
+जालना,mr,Jalna,,Maharashtra,Marathi name
+बुलढाणा,mr,Buldhana,,Maharashtra,Marathi name
+रायगड,mr,Raigad,district,Maharashtra,Marathi name
+पालघर,mr,Palghar,,Maharashtra,Marathi name
+शिरूर,mr,Shirur,unit,Maharashtra,Marathi name
+बारामती,mr,Baramati,unit,Maharashtra,Marathi name
+ਲੁਧਿਆਣਾ,pa,Ludhiana,district,Punjab,Gurmukhi name
+ਲੁਧਿਆਣੇ,pa,Ludhiana,district,Punjab,Gurmukhi oblique form
+ਅੰਮ੍ਰਿਤਸਰ,pa,Amritsar,district,Punjab,Gurmukhi name
+ਜਲੰਧਰ,pa,Jalandhar,district,Punjab,Gurmukhi name
+ਪਟਿਆਲਾ,pa,Patiala,district,Punjab,Gurmukhi name
+ਪਟਿਆਲੇ,pa,Patiala,district,Punjab,Gurmukhi oblique form
+ਬਠਿੰਡਾ,pa,Bathinda,district,Punjab,Gurmukhi name
+ਸੰਗਰੂਰ,pa,Sangrur,district,Punjab,Gurmukhi name
+ਮੋਗਾ,pa,Moga,district,Punjab,Gurmukhi name
+ਫ਼ਿਰੋਜ਼ਪੁਰ,pa,Firozpur,district,Punjab,Gurmukhi name
+ਫਿਰੋਜ਼ਪੁਰ,pa,Firozpur,district,Punjab,Gurmukhi name
+ਗੁਰਦਾਸਪੁਰ,pa,Gurdaspur,district,Punjab,Gurmukhi name
+ਹੁਸ਼ਿਆਰਪੁਰ,pa,Hoshiarpur,district,Punjab,Gurmukhi name
+ਕਪੂਰਥਲਾ,pa,Kapurthala,district,Punjab,Gurmukhi name
+ਮਾਨਸਾ,pa,Mansa,district,Punjab,Gurmukhi name
+ਬਰਨਾਲਾ,pa,Barnala,district,Punjab,Gurmukhi name
+ਫ਼ਰੀਦਕੋਟ,pa,Faridkot,district,Punjab,Gurmukhi name
+ਫਰੀਦਕੋਟ,pa,Faridkot,district,Punjab,Gurmukhi name
+ਫ਼ਾਜ਼ਿਲਕਾ,pa,Fazilka,district,Punjab,Gurmukhi name
+ਪਠਾਨਕੋਟ,pa,Pathankot,district,Punjab,Gurmukhi name
+ਰੂਪਨਗਰ,pa,Rupnagar,district,Punjab,Gurmukhi name
+ਮੁਕਤਸਰ,pa,Muktsar,district,Punjab,Gurmukhi name
+ਤਰਨ ਤਾਰਨ,pa,Tarn Taran,district,Punjab,Gurmukhi name
+ਮਾਲੇਰਕੋਟਲਾ,pa,Malerkotla,district,Punjab,Gurmukhi name
+ਫ਼ਤਹਿਗੜ੍ਹ ਸਾਹਿਬ,pa,Fatehgarh Sahib,district,Punjab,Gurmukhi name
+ਮੋਹਾਲੀ,pa,SAS Nagar,district,Punjab,Gurmukhi name
+ਨਵਾਂਸ਼ਹਿਰ,pa,SBS Nagar,district,Punjab,Gurmukhi name
+ਲੁਧਿਆਣਾ-1,pa,Ludhiana-1,unit,Punjab,Gurmukhi name
+ਲੁਧਿਆਣਾ-2,pa,Ludhiana-2,unit,Punjab,Gurmukhi name
+ਜੈਪੁਰ,pa,JAIPUR,,,Gurmukhi name
+ਜੋਧਪੁਰ,pa,JODHPUR,district,Rajasthan,Gurmukhi name
+राजस्थान,hi,Rajasthan,state,,Devanagari name
+पंजाब,hi,Punjab,state,,Devanagari name
+महाराष्ट्र,hi,Maharashtra,state,,Devanagari name
+गुजरात,hi,Gujarat,state,,Devanagari name
+हरियाणा,hi,Haryana,state,,Devanagari name
+उत्तर प्रदेश,hi,Uttar Pradesh,state,,Devanagari name
+मध्य प्रदेश,hi,Madhya Pradesh,state,,Devanagari name
+बिहार,hi,Bihar,,,Devanagari name (state and a block in Uttar Pradesh)
+दिल्ली,hi,Delhi,state,,Devanagari name
+तमिलनाडु,hi,Tamil Nadu,state,,Devanagari name
+कर्नाटक,hi,Karnataka,state,,Devanagari name
+केरल,hi,Kerala,state,,Devanagari name
+आंध्र प्रदेश,hi,Andhra Pradesh,state,,Devanagari name
+तेलंगाना,hi,Telangana,state,,Devanagari name
+तेलंगणा,mr,Telangana,state,,Marathi spelling
+पश्चिम बंगाल,hi,West Bengal,state,,Devanagari name
+ओडिशा,hi,Odisha,state,,Devanagari name
+असम,hi,Assam,state,,Devanagari name
+आसाम,mr,Assam,state,,Marathi spelling
+झारखंड,hi,Jharkhand,state,,Devanagari name
+छत्तीसगढ़,hi,Chhattisgarh,state,,Devanagari name
+उत्तराखंड,hi,Uttarakhand,state,,Devanagari name
+हिमाचल प्रदेश,hi,Himachal Pradesh,state,,Devanagari name
+जम्मू और कश्मीर,hi,Jammu And Kashmir,state,,Devanagari name
+जम्मू कश्मीर,hi,Jammu And Kashmir,state,,Devanagari name
+गोवा,hi,Goa,state,,Devanagari name
+ਪੰਜਾਬ,pa,Punjab,state,,Gurmukhi name
+ਰਾਜਸਥਾਨ,pa,Rajasthan,state,,Gurmukhi name
+ਹਰਿਆਣਾ,pa,Haryana,state,,Gurmukhi name
+ਹਿਮਾਚਲ ਪ੍ਰਦੇਸ਼,pa,Himachal Pradesh,state,,Gurmukhi name
+ਦਿੱਲੀ,pa,Delhi,state,,Gurmukhi name
+ਮਹਾਰਾਸ਼ਟਰ,pa,Maharashtra,state,,Gurmukhi name
+ਅਜਮੇਰ ਅਰਬਨ,pa,AJMER_URBAN,unit,Rajasthan,Punjabi spelling (added in 3.0)

@@ -1,0 +1,7 @@
+limit_id,soil_group,clay_min_pct,clay_max_pct,drainage,crop_tolerance,ec_upper_safe_limit_uS_cm,source_id,table_ref,page,note
+E01,Deep black and alluvial soils,30,,moderately to well drained,semi-tolerant,1500,IS11624_1986,CGWB_GWQ_2024 Table 2,5,Clay above 30%; EC at 25 C
+E02,Deep black and alluvial soils,30,,moderately to well drained,tolerant,2000,IS11624_1986,CGWB_GWQ_2024 Table 2,5,
+E03,Textured soils,20,30,well drained internally with good surface drainage,semi-tolerant,2000,IS11624_1986,CGWB_GWQ_2024 Table 2,5,
+E04,Textured soils,20,30,well drained internally with good surface drainage,tolerant,4000,IS11624_1986,CGWB_GWQ_2024 Table 2,5,
+E05,Medium-textured soils,10,20,very well drained internally with good surface drainage,semi-tolerant,4000,IS11624_1986,CGWB_GWQ_2024 Table 2,5,
+E06,Medium-textured soils,10,20,very well drained internally with good surface drainage,tolerant,6000,IS11624_1986,CGWB_GWQ_2024 Table 2,5,Soils below 10% clay are not covered by this table

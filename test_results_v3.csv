@@ -1,0 +1,24 @@
+id,group,status,detail,ms
+MEM01_example_dialogue,memory,PASSED,"6 turns: status, meaning, new place, soil, crops, compare both districts",99.4
+MEM02_hindi_dialogue,memory,PASSED,4 turns in Hindi,6.3
+MEM03_new_chat_resets,memory,PASSED,context cleared,5.5
+MEM04_explanation_keeps_last_question,memory,PASSED,numeric question kept across an explanation,2.8
+MEM05_domain_followup_new_place,memory,PASSED,"domain kept for a new place, switched back for groundwater",7.2
+MEM06_ambiguous_its_asks,memory,PASSED,"asked which place, then answered for the chosen one",2.4
+MEM07_my_area_uses_chosen_location_only,memory,PASSED,need_home without a location; chosen location used when set,5.6
+MEM08_memory_summary_fields,memory,PASSED,"{""place"": ""..."", ""places"": ""..."", ""domain"": ""groundwater"", ""language"": ""hinglish"", ""style"": ""student"", ""detail"": ""short"", ""last_intent"": ""status"", ""home"": null, ""sources"": 3}",1.2
+DOM01_home_examples_no_location,domain,PASSED,"12 example questions: knowledge, need_home",10.5
+DOM02_domain_words_are_not_places,domain,PASSED,soil/crop/land/irrigation words never read as place names (2.0 read 'soil' as SOHELA),0.6
+DOM03_domain_answers_all_languages,domain,PASSED,6 languages,14.2
+MODE01_all_styles_lengths_languages,modes,PASSED,54 answers (6 languages x 3 styles x 3 lengths),57.6
+MODE02_lengths_ordered,modes,PASSED,short < standard < detailed for every style,8.6
+MODE03_reasoning_only_when_consistent,modes,PASSED,"5 units with a category/stage mismatch get the warning, not a reasoning line",8.3
+MODE04_standard_equals_v2,modes,PASSED,24 Standard answers identical to JalMitra 2.0,356.4
+TPL01_templates_six_languages,templates,PASSED,"27 new templates, all 178 keys in 6 languages",0.1
+TPL02_ui_english_hindi,templates,PASSED,249 interface texts in English and Hindi,0.0
+OFF01_no_llm_or_api_key,offline,PASSED,"15 runtime files: no LLM client, no API key, no HTTP client",16.3
+OFF02_works_without_any_api_key,offline,PASSED,"fresh process, no *KEY*/*TOKEN* variables, sockets blocked: domain data_unavailable",248.1
+UI01_website_loads,ui,PASSED,chat start page runs without exceptions in Streamlit AppTest,5351.3
+UI02_assets_present,ui,PASSED,"logo, favicon, light and dark theme",0.3
+DB01_database_unchanged,database,PASSED,sha256 9eeaee1533b478c1,0
+NET01_no_network,offline,PASSED,0 non-loopback attempts (7 loopback connections allowed),0

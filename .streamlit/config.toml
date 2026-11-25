@@ -1,0 +1,52 @@
+# JalMitra theme (UI redesign, 24 Nov 2026): water-blue accent, soft neutrals; Day (light) and Night (dark).
+# The same palettes are in ui_theme.py (CSS variables). Day (light) is the default; Night / System in Settings.
+
+[server]
+headless = true
+# Phase 6: JalMitra is a local app. Listen on this computer only (never on the network or the internet).
+address = "localhost"
+port = 8501
+
+[browser]
+gatherUsageStats = false
+
+[client]
+# Phase 6: hide Streamlit's developer "Deploy" button (JalMitra is never deployed from here).
+toolbarMode = "minimal"
+
+[theme]
+baseFontSize = 16
+baseRadius = "0.75rem"
+buttonRadius = "0.75rem"
+showSidebarBorder = true
+chartCategoricalColors = ["#1D6FB8", "#2F7D32", "#8B6B47", "#E0A100", "#6B7C8F"]
+
+[theme.light]
+primaryColor = "#1D6FB8"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F7F9FC"
+textColor = "#1C2733"
+linkColor = "#1D6FB8"
+borderColor = "#E3E8EF"
+greenColor = "#1F7A3A"
+blueColor = "#1D6FB8"
+
+[theme.light.sidebar]
+backgroundColor = "#F7F9FC"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#1C2733"
+
+[theme.dark]
+primaryColor = "#5AB0F0"
+backgroundColor = "#0F1419"
+secondaryBackgroundColor = "#161E27"
+textColor = "#E6EDF3"
+linkColor = "#7CC0F0"
+borderColor = "#26323F"
+greenColor = "#5CC97F"
+blueColor = "#5AB0F0"
+
+[theme.dark.sidebar]
+backgroundColor = "#0A0E12"
+secondaryBackgroundColor = "#161E27"
+textColor = "#E6EDF3"

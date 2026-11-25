@@ -1,0 +1,22 @@
+id,group,status,detail,ms
+J_wheat_facts,J crop facts,PASSED,"wheat: MT 6.0 (450, 650)",0.0
+J_barley_facts,J crop facts,PASSED,"barley: T 8.0 (450, 650)",0.0
+J_cotton_facts,J crop facts,PASSED,"cotton: T 7.7 (700, 1300)",0.0
+J_guar_facts,J crop facts,PASSED,guar: T 8.8 None,0.0
+J_maize_facts,J crop facts,PASSED,"maize: MS 1.7 (500, 800)",0.0
+J_groundnut_facts,J crop facts,PASSED,"groundnut: MS 3.2 (500, 700)",0.0
+J_sorghum_facts,J crop facts,PASSED,"sorghum: MT 6.8 (450, 650)",0.0
+J_chickpea_facts,J crop facts,PASSED,chickpea: MS None None,0.0
+J_mustard_no_substitute,J crop facts,PASSED,mustard (B. juncea) never given rapeseed values,1.0
+J_pearl_millet_salt_not_substituted,J crop facts,PASSED,"pearl millet: water need from FAO 'Sorghum/Millet' row (named), no salt value",0.0
+K_insufficient_data_0,K crop suitability,PASSED,"Insufficient data, no class or yield claim",0.9
+K_insufficient_data_1,K crop suitability,PASSED,"Insufficient data, no class or yield claim",2.2
+K_insufficient_data_2,K crop suitability,PASSED,"Insufficient data, no class or yield claim",1.1
+K_insufficient_data_3,K crop suitability,PASSED,"Insufficient data, no class or yield claim",2.4
+K_insufficient_data_4,K crop suitability,PASSED,"Insufficient data, no class or yield claim",0.8
+K_insufficient_data_5,K crop suitability,PASSED,"Insufficient data, no class or yield claim",0.8
+K_zone_listing_sikar,K crop suitability,PASSED,SKNAU zone list shown as regional listing,2.3
+K_churu_partial,K crop suitability,PASSED,eastern part only (partial),0.0
+K_no_zone_elsewhere,K crop suitability,PASSED,"Jodhpur: no zone data held, said plainly",2.4
+K_crop_table_in_db_not_code,K crop suitability,PASSED,"crop requirements read from knowledge.db, no if/else per crop",1.1
+K_less_water_sorted_and_cited,K crop suitability,PASSED,sorted FAO table with rice caveat,0.8

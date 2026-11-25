@@ -1,0 +1,9 @@
+zone_id,season,crop_id,listed_as,source_id,note
+RJ_IIA,Kharif,pearl_millet,pearl millet,SKNAU_FATEHPUR,Crop named in the zone profile; not a suitability rating for a field
+RJ_IIA,Kharif,moong,moong bean,SKNAU_FATEHPUR,
+RJ_IIA,Kharif,moth,moth bean,SKNAU_FATEHPUR,
+RJ_IIA,Kharif,guar,cluster bean,SKNAU_FATEHPUR,
+RJ_IIA,Kharif,sesame,sesame,SKNAU_FATEHPUR,
+RJ_IIA,Rabi,wheat,wheat,SKNAU_FATEHPUR,Research mandate of the station
+RJ_IIA,Rabi,mustard,mustard,SKNAU_FATEHPUR,Research mandate of the station
+RJ_IIA,Rabi,barley,barley,SKNAU_FATEHPUR,Research mandate of the station

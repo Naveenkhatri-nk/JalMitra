@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: "Source Sans Pro", sans-serif; margin: 0; padding: 4px 2px; font-size: 15px; }
+  button { padding: 6px 14px; margin-right: 6px; border-radius: 8px; border: 1px solid #bbb; background: #fff; cursor: pointer; font-size: 15px; }
+  button:disabled { opacity: .45; cursor: default; }
+  #start.on { background: #ffe5e5; border-color: #e66; }
+  #status { color: #555; margin-left: 4px; }
+  #interim { color: #777; font-style: italic; margin-top: 6px; min-height: 1.2em; }
+</style>
+</head>
+<body>
+<div>
+  <button id="start">🎤 <span id="l_start">Start</span></button>
+  <button id="stop" disabled>⏹ <span id="l_stop">Stop</span></button>
+  <span id="status"></span>
+</div>
+<div id="interim"></div>
+<script>
+// Minimal Streamlit component protocol (no build step, no external library).
+function send(type, extra) { window.parent.postMessage(Object.assign({isStreamlitMessage: true, type: type}, extra || {}), "*"); }
+function setValue(v) { send("streamlit:setComponentValue", {value: v, dataType: "json"}); }
+function setHeight() { send("streamlit:setFrameHeight", {height: document.body.scrollHeight + 6}); }
+
+let args = {locale: "en-IN", labels: {}};
+const $ = (id) => document.getElementById(id);
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null, finalText = "";
+
+function label(k, d) { return (args.labels && args.labels[k]) || d; }
+function status(t) { $("status").textContent = t; setHeight(); }
+function render() {
+  $("l_start").textContent = label("start", "Start");
+  $("l_stop").textContent = label("stop", "Stop");
+  if (!SR) { $("start").disabled = true; status(label("unsupported", "Speech recognition is not available in this browser. Please type your question.")); }
+  setHeight();
+}
+
+window.addEventListener("message", (e) => {
+  if (e.data && e.data.type === "streamlit:render") { args = e.data.args || args; render(); }
+});
+
+$("start").onclick = () => {
+  if (!SR) return;
+  finalText = "";
+  rec = new SR();
+  rec.lang = args.locale || "en-IN";
+  rec.interimResults = true;
+  rec.continuous = false;
+  rec.maxAlternatives = 1;
+  rec.onstart = () => { $("start").disabled = true; $("start").classList.add("on"); $("stop").disabled = false; status(label("listening", "Listening...") + " (" + rec.lang + ")"); };
+  rec.onresult = (ev) => {
+    let interim = "";
+    for (let i = ev.resultIndex; i < ev.results.length; i++) {
+      if (ev.results[i].isFinal) finalText += ev.results[i][0].transcript; else interim += ev.results[i][0].transcript;
+    }
+    $("interim").textContent = (finalText + " " + interim).trim();
+    setHeight();
+  };
+  rec.onerror = (ev) => {
+    const msg = ev.error === "not-allowed" || ev.error === "service-not-allowed" ? label("denied", "Microphone permission was denied.")
+              : ev.error === "no-speech" ? label("nospeech", "No speech was heard.")
+              : ev.error === "network" ? label("network", "The browser speech service could not be reached.")
+              : ev.error === "language-not-supported" ? label("nolang", "This browser does not support this speech language.")
+              : ev.error === "audio-capture" ? label("nomic", "No microphone was found.")
+              : "Error: " + ev.error;
+    status(msg);
+  };
+  rec.onend = () => {
+    $("start").disabled = false; $("start").classList.remove("on"); $("stop").disabled = true;
+    if (finalText.trim()) { status(label("done", "Done. Check the text below, edit it if needed, then press Ask.")); setValue({text: finalText.trim(), id: Date.now(), locale: rec.lang}); }
+    else if (!$("status").textContent.startsWith("Error") && $("status").textContent.indexOf("...") > -1) { status(label("nospeech", "No speech was heard.")); }
+  };
+  try { rec.start(); } catch (err) { status("Error: " + err.message); }
+};
+$("stop").onclick = () => { if (rec) rec.stop(); };
+
+send("streamlit:componentReady", {apiVersion: 1});
+render();
+</script>
+</body>
+</html>

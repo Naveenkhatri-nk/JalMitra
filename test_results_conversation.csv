@@ -1,0 +1,436 @@
+id,group,status,detail,ms
+A1_001_ST_thnks,A batch 1,PASSED,ST (smalltalk),0.1
+A1_002_ST_thank uuu,A batch 1,PASSED,ST (smalltalk),0.12
+A1_003_ST_ok thanks,A batch 1,PASSED,ST (smalltalk),0.06
+A1_004_ST_okk got it,A batch 1,PASSED,ST (smalltalk),0.08
+A1_005_ST_nice one,A batch 1,PASSED,ST (smalltalk),0.06
+A1_006_ST_very nice yaar,A batch 1,PASSED,ST (smalltalk),0.07
+A1_007_ST_gr8,A batch 1,PASSED,ST (smalltalk),0.04
+A1_008_ST_awsome,A batch 1,PASSED,ST (smalltalk),0.09
+A1_009_ST_superb bro,A batch 1,PASSED,ST (smalltalk),0.06
+A1_010_ST_wah bhai wah,A batch 1,PASSED,ST (smalltalk),0.07
+A1_011_ST_kya baat hai,A batch 1,PASSED,ST (smalltalk),0.04
+A1_012_ST_thik h,A batch 1,PASSED,ST (smalltalk),0.06
+A1_013_ST_hmm ok,A batch 1,PASSED,ST (smalltalk),0.05
+A1_014_ST_ok bye,A batch 1,PASSED,ST (smalltalk),0.05
+A1_015_ST_bye bye jalmitra,A batch 1,PASSED,ST (smalltalk),0.07
+A1_016_ST_see u,A batch 1,PASSED,ST (smalltalk),0.05
+A1_017_ST_gud night,A batch 1,PASSED,ST (smalltalk),0.1
+A1_018_ST_good evening sir,A batch 1,PASSED,ST (smalltalk),0.11
+A1_019_ST_namaste ji,A batch 1,PASSED,ST (help),0.06
+A1_020_ST_hello bhai,A batch 1,PASSED,ST (help),0.06
+A1_021_ST_hii,A batch 1,PASSED,ST (help),0.04
+A1_022_ST_hey there,A batch 1,PASSED,ST (help),0.05
+A1_023_ST_how r you doing,A batch 1,PASSED,ST (smalltalk),0.11
+A1_024_ST_aap kaise ho,A batch 1,PASSED,ST (smalltalk),0.06
+A1_025_ST_kya haal chaal,A batch 1,PASSED,ST (smalltalk),0.06
+A1_026_ST_who built this,A batch 1,PASSED,ST (smalltalk),0.09
+A1_027_ST_r u a bot?,A batch 1,PASSED,ST (smalltalk),0.06
+A1_028_ST_are you chatgpt,A batch 1,PASSED,ST (smalltalk),0.1
+A1_029_ST_tumhara naam kya hai,A batch 1,PASSED,ST (smalltalk),0.05
+A1_030_ST_this is wrong,A batch 1,PASSED,ST (smalltalk),0.06
+A1_031_ST_galat jawab,A batch 1,PASSED,ST (smalltalk),0.05
+A1_032_ST_wrong info,A batch 1,PASSED,ST (smalltalk),0.05
+A1_033_ST_not satisfied,A batch 1,PASSED,ST (smalltalk),0.09
+A1_034_ST_i didnt get it,A batch 1,PASSED,ST (smalltalk),0.07
+A1_035_ST_samajh nhi aaya,A batch 1,PASSED,ST (smalltalk),0.11
+A1_036_ST_haha nice,A batch 1,PASSED,ST (smalltalk),0.06
+A1_037_ST_😂😂,A batch 1,PASSED,ST (smalltalk),0.06
+A1_038_ST_👍,A batch 1,PASSED,ST (smalltalk),0.04
+A1_039_ST_🙏,A batch 1,PASSED,ST (smalltalk),0.04
+A1_040_ST_ठीक है जी,A batch 1,PASSED,ST (smalltalk),0.08
+A1_041_ST_बहुत अच्छा,A batch 1,PASSED,ST (smalltalk),0.06
+A1_042_ST_शुक्रिया जी,A batch 1,PASSED,ST (smalltalk),0.06
+A1_043_ST_ਬਹੁਤ ਵਧੀਆ ਜੀ,A batch 1,PASSED,ST (smalltalk),0.04
+A1_044_ST_ਠੀਕ ਹੈ,A batch 1,PASSED,ST (smalltalk),0.03
+A1_045_ST_खूप छान,A batch 1,PASSED,ST (smalltalk),0.06
+A1_046_ST_धन्यवाद सा,A batch 1,PASSED,ST (smalltalk),0.06
+A1_047_ST_घणो चोखो,A batch 1,PASSED,ST (smalltalk),0.04
+A1_048_ST_yes please,A batch 1,PASSED,ST (smalltalk),0.06
+A1_049_ST_no thanks,A batch 1,PASSED,ST (smalltalk),0.05
+A1_050_ST_cool cool,A batch 1,PASSED,ST (smalltalk),0.05
+A1_051_SCY_is this for farmers?,A batch 1,PASSED,SCY (scope),0.95
+A1_052_SCY_is this website for kisan,A batch 1,PASSED,SCY (scope),0.94
+A1_053_SCY_does this app tell about g,A batch 1,PASSED,SCY (scope),0.88
+A1_054_SCY_can i upload my soil healt,A batch 1,PASSED,SCY (scope),1.25
+A1_055_SCY_can you check my water rep,A batch 1,PASSED,SCY (scope),0.83
+A1_056_SCY_do you cover irrigation?,A batch 1,PASSED,SCY (scope),0.61
+A1_057_SCY_does it have crop info,A batch 1,PASSED,SCY (scope),0.55
+A1_058_SCY_is this about soil?,A batch 1,PASSED,SCY (scope),0.55
+A1_059_SCY_is it related to agricultu,A batch 1,PASSED,SCY (scope),0.68
+A1_060_SCY_do you support hindi,A batch 1,PASSED,SCY (scope),0.65
+A1_061_SCY_can i download reports,A batch 1,PASSED,SCY (scope),0.66
+A1_062_SCY_does jalmitra give fertili,A batch 1,PASSED,SCY (scope),0.73
+A1_063_SCY_can you help with drip irr,A batch 1,PASSED,DATA (domain),1.48
+A1_064_SCY_is this for water saving,A batch 1,PASSED,SCY (scope),0.69
+A1_065_SCY_kya ye website kisano ke l,A batch 1,PASSED,SCY (scope),0.7
+A1_066_SCY_kya isme mitti ki jaankari,A batch 1,PASSED,SCY (scope),0.68
+A1_067_SCY_kya aap paani ki quality b,A batch 1,PASSED,SCY (scope),0.51
+A1_068_SCY_क्या यह वेबसाइट किसानों के,A batch 1,PASSED,SCY (scope),0.82
+A1_069_SCY_क्या इसमें मिट्टी की जानका,A batch 1,PASSED,SCY (scope),0.8
+A1_070_SCN_is this site for making mo,A batch 1,PASSED,SCN (scope),0.23
+A1_071_SCN_is this app for loans,A batch 1,PASSED,SCN (scope),0.16
+A1_072_SCN_does it tell mandi bhav,A batch 1,PASSED,SCN (scope),0.16
+A1_073_SCN_can you tell weather forec,A batch 1,PASSED,SCN (scope),0.26
+A1_074_SCN_do you give loan info,A batch 1,PASSED,SCN (scope),0.11
+A1_075_SCN_is this about share market,A batch 1,PASSED,SCN (scope),0.24
+A1_076_SCN_does this app predict rain,A batch 1,PASSED,SCN (scope),0.19
+A1_077_SCN_can you tell me tomorrow's,A batch 1,PASSED,SCN (scope),0.23
+A1_078_SCN_is this for cattle farming,A batch 1,PASSED,SCN (scope),0.22
+A1_079_SCN_do you help with pests,A batch 1,PASSED,SCN (scope),0.15
+A1_080_SCN_kya ye app loan deta hai,A batch 1,PASSED,SCN (scope),0.09
+A1_081_SCN_kya isme mausam ki jaankar,A batch 1,PASSED,SCN (scope),0.15
+A1_082_SCN_क्या यह वेबसाइट मौसम बताती,A batch 1,PASSED,SCN (scope),0.13
+A1_083_SCN_is this a dating site,A batch 1,PASSED,SCN (scope),1.23
+A1_084_SCN_is this site about cooking,A batch 1,PASSED,SCN (scope),0.23
+A1_085_OOS_loan kaise milega,A batch 1,PASSED,OOS (off_topic),0.14
+A1_086_OOS_how to apply for kcc,A batch 1,PASSED,OOS (off_topic),0.18
+A1_087_OOS_pm kisan ka paisa kab aaye,A batch 1,PASSED,OOS (off_topic),0.35
+A1_088_OOS_wheat ka bhav kya hai,A batch 1,PASSED,OOS (off_topic),0.13
+A1_089_OOS_mustard rate today,A batch 1,PASSED,OOS (off_topic),0.15
+A1_090_OOS_onion price in jaipur mand,A batch 1,PASSED,OOS (off_topic),0.28
+A1_091_OOS_aaj mausam kaisa rahega,A batch 1,PASSED,OOS (off_topic),0.18
+A1_092_OOS_will there be rain this we,A batch 1,PASSED,OOS (off_topic),0.15
+A1_093_OOS_barish kab hogi,A batch 1,PASSED,OOS (off_topic),0.14
+A1_094_OOS_monsoon kab aayega,A batch 1,PASSED,OOS (off_topic),0.19
+A1_095_OOS_how to earn money from far,A batch 1,PASSED,OOS (off_topic),0.23
+A1_096_OOS_best stocks to buy,A batch 1,PASSED,OOS (off_topic),0.15
+A1_097_OOS_keede lag gaye fasal mein ,A batch 1,PASSED,OOS (off_topic),0.19
+A1_098_OOS_my cow is not giving milk,A batch 1,PASSED,OOS (off_topic),0.15
+A1_099_OOS_who is the prime minister,A batch 1,PASSED,OOS (off_topic),0.23
+A1_100_OOS_tell me a funny joke,A batch 1,PASSED,OOS (off_topic),0.17
+A1_101_OOS_ipl score,A batch 1,PASSED,OOS (off_topic),0.12
+A1_102_OOS_recipe for dal,A batch 1,PASSED,OOS (off_topic),0.14
+A1_103_OOS_how to get crop insurance,A batch 1,PASSED,OOS (off_topic),0.16
+A1_104_OOS_subsidy for tractor,A batch 1,PASSED,OOS (off_topic),0.18
+A1_105_OOS_मंडी भाव बताओ,A batch 1,PASSED,OOS (off_topic),0.1
+A1_106_OOS_कल बारिश होगी क्या,A batch 1,PASSED,OOS (off_topic),0.11
+A1_107_OOS_गाय के लिए चारा,A batch 1,PASSED,OOS (off_topic),0.1
+A1_108_OOS_ਕਣਕ ਦਾ ਭਾਅ ਕੀ ਹੈ,A batch 1,PASSED,OOS (off_topic),0.08
+A1_109_OOS_ਮੌਸਮ ਕਿਹੋ ਜਿਹਾ ਰਹੇਗਾ,A batch 1,PASSED,OOS (off_topic),0.09
+A1_110_OOS_आज हवामान कसे आहे,A batch 1,PASSED,OOS (off_topic),0.09
+A1_111_APP_what can this site do,A batch 1,PASSED,APP (WHAT_CAN_YOU_DO),0.13
+A1_112_APP_features plz,A batch 1,PASSED,APP (FEATURE_LIST),0.26
+A1_113_APP_ye kya hai,A batch 1,PASSED,APP (ABOUT_JALMITRA),0.09
+A1_114_APP_what is jal mitra,A batch 1,PASSED,APP (ABOUT_JALMITRA),0.12
+A1_115_APP_how do i use this thing,A batch 1,PASSED,APP (HOW_TO_USE),0.17
+A1_116_APP_tell me about this app,A batch 1,PASSED,APP (ABOUT_JALMITRA),0.18
+A1_117_APP_options?,A batch 1,PASSED,APP (FEATURE_LIST),0.12
+A1_118_APP_what services you provide,A batch 1,PASSED,APP (WHAT_CAN_YOU_DO),0.21
+A1_119_APP_jalmitra kis kaam aata hai,A batch 1,PASSED,APP (WHAT_CAN_YOU_DO),0.11
+A1_120_APP_ye app kis liye hai,A batch 1,PASSED,APP (ABOUT_JALMITRA),0.09
+A1_121_DATA_is jaipur safe,A batch 1,PASSED,DATA (status),0.59
+A1_122_DATA_ajmer ka pani kaisa hai,A batch 1,PASSED,DATA (status),6.77
+A1_123_DATA_jodhpur groundwater status,A batch 1,PASSED,DATA (status),2.32
+A1_124_DATA_top 10 overexploited block,A batch 1,PASSED,DATA (top_n),4.81
+A1_125_DATA_compare ajmer and bhilwara,A batch 1,PASSED,DATA (compare),3.43
+A1_126_DATA_what is stage of extractio,A batch 1,PASSED,DATA (numeric),0.85
+A1_127_DATA_what does critical mean,A batch 1,PASSED,DATA (explain_category),1.01
+A1_128_DATA_which districts are safe i,A batch 1,PASSED,DATA (list_category),4.01
+A1_129_DATA_how many blocks are over e,A batch 1,PASSED,DATA (list_category),3.35
+A1_130_DATA_recharge of bikaner,A batch 1,PASSED,DATA (numeric),2.26
+A1_131_DATA_kota district,A batch 1,PASSED,DATA (status),2.18
+A1_132_DATA_sikar,A batch 1,PASSED,DATA (status),1.9
+A1_133_DATA_what is safe category,A batch 1,PASSED,DATA (explain_category),0.81
+A1_134_DATA_semi critical ka matlab,A batch 1,PASSED,DATA (explain_category),0.76
+A1_135_DATA_how much water does mustar,A batch 1,PASSED,DATA (domain),0.86
+A1_136_DATA_which crop needs less wate,A batch 1,PASSED,DATA (domain),0.79
+A1_137_DATA_ph 8.5 is good or bad,A batch 1,PASSED,DATA (domain),1.0
+A1_138_DATA_what is ec in soil,A batch 1,PASSED,DATA (domain),0.76
+A1_139_DATA_fluoride limit in drinking,A batch 1,PASSED,DATA (domain),0.86
+A1_140_DATA_is nitrate dangerous,A batch 1,PASSED,DATA (domain),0.61
+A1_141_DATA_drip irrigation benefits,A batch 1,PASSED,DATA (domain),0.81
+A1_142_DATA_how to do rainwater harves,A batch 1,PASSED,DATA (domain),1.06
+A1_143_DATA_what is soil erosion,A batch 1,PASSED,DATA (domain),0.81
+A1_144_DATA_sandy soil me kya ugaye,A batch 1,PASSED,DATA (domain),1.08
+A1_145_DATA_bajra ko kitna pani chahiy,A batch 1,PASSED,DATA (domain),0.85
+A1_146_DATA_जयपुर में पानी की स्थिति,A batch 1,PASSED,DATA (status),0.89
+A1_147_DATA_अजमेर का भूजल,A batch 1,PASSED,DATA (status),2.0
+A1_148_DATA_मिट्टी का pH क्या होता है,A batch 1,PASSED,DATA (domain),0.77
+A1_149_DATA_ਲੁਧਿਆਣਾ ਦਾ ਪਾਣੀ,A batch 1,PASSED,DATA (status),1.96
+A1_150_DATA_पुणे भूजल,A batch 1,PASSED,DATA (status),1.89
+A1_151_DATA_what about jaisalmer,A batch 1,PASSED,DATA (status),2.08
+A1_152_DATA_show sources,A batch 1,PASSED,DATA (sources),1.08
+A1_153_DATA_data for gujarat,A batch 1,PASSED,DATA (status),1.53
+A1_154_DATA_is my water safe to drink,A batch 1,PASSED,DATA (domain),0.77
+A1_155_DATA_which irrigation is best f,A batch 1,PASSED,DATA (domain),1.13
+A1_156_FB_asdfgh,A batch 1,PASSED,FB (unclear),2.1
+A1_157_FB_the thing about stuff,A batch 1,PASSED,FB (unclear),0.84
+A1_158_FB_blah blah,A batch 1,PASSED,FB (unclear),0.81
+A1_159_FB_xyz 123,A batch 1,PASSED,FB (unclear),0.54
+A2_001_ST_thanku,A batch 2,PASSED,ST (smalltalk),0.07
+A2_002_ST_thank you jalmitra,A batch 2,PASSED,ST (smalltalk),0.13
+A2_003_ST_thanks a ton,A batch 2,PASSED,ST (smalltalk),0.07
+A2_004_ST_ok cool,A batch 2,PASSED,ST (smalltalk),0.06
+A2_005_ST_alright,A batch 2,PASSED,ST (smalltalk),0.05
+A2_006_ST_fine thanks,A batch 2,PASSED,ST (smalltalk),0.06
+A2_007_ST_sure thing,A batch 2,PASSED,ST (smalltalk),0.06
+A2_008_ST_lovely,A batch 2,PASSED,ST (smalltalk),0.04
+A2_009_ST_fantastic job,A batch 2,PASSED,ST (smalltalk),0.06
+A2_010_ST_good work bhai,A batch 2,PASSED,ST (smalltalk),0.07
+A2_011_ST_bahut badiya jankari,A batch 2,PASSED,ST (smalltalk),0.08
+A2_012_ST_mast hai,A batch 2,PASSED,ST (smalltalk),0.04
+A2_013_ST_shandaar,A batch 2,PASSED,ST (smalltalk),0.05
+A2_014_ST_great help,A batch 2,PASSED,ST (smalltalk),0.06
+A2_015_ST_bye for now,A batch 2,PASSED,ST (smalltalk),0.06
+A2_016_ST_catch you later,A batch 2,PASSED,ST (smalltalk),0.1
+A2_017_ST_good bye sir,A batch 2,PASSED,ST (smalltalk),0.06
+A2_018_ST_shubh ratri,A batch 2,PASSED,ST (smalltalk),0.12
+A2_019_ST_good afternoon,A batch 2,PASSED,ST (smalltalk),0.09
+A2_020_ST_hlo,A batch 2,PASSED,ST (help),0.04
+A2_021_ST_helo,A batch 2,PASSED,ST (help),0.04
+A2_022_ST_hey jalmitra,A batch 2,PASSED,ST (help),0.06
+A2_023_ST_how are things,A batch 2,PASSED,ST (smalltalk),0.11
+A2_024_ST_what's up jalmitra,A batch 2,PASSED,ST (smalltalk),0.08
+A2_025_ST_who are your developers,A batch 2,PASSED,ST (smalltalk),0.11
+A2_026_ST_are u human,A batch 2,PASSED,ST (smalltalk),0.09
+A2_027_ST_are you real person,A batch 2,PASSED,ST (smalltalk),0.1
+A2_028_ST_your name please,A batch 2,PASSED,ST (smalltalk),0.06
+A2_029_ST_aapka naam kya hai,A batch 2,PASSED,ST (smalltalk),0.05
+A2_030_ST_tum kaun ho,A batch 2,PASSED,APP (ABOUT_JALMITRA),0.11
+A2_031_ST_not correct,A batch 2,PASSED,ST (smalltalk),0.06
+A2_032_ST_this answer is useless,A batch 2,PASSED,ST (smalltalk),0.08
+A2_033_ST_bekar jawab,A batch 2,PASSED,ST (smalltalk),0.05
+A2_034_ST_confusing answer,A batch 2,PASSED,ST (smalltalk),0.05
+A2_035_ST_kuch samajh nahi aaya,A batch 2,PASSED,ST (smalltalk),0.12
+A2_036_ST_can't understand,A batch 2,PASSED,ST (smalltalk),0.13
+A2_037_ST_hahaha,A batch 2,PASSED,ST (smalltalk),0.04
+A2_038_ST_😊,A batch 2,PASSED,ST (smalltalk),0.04
+A2_039_ST_👍👍,A batch 2,PASSED,ST (smalltalk),0.05
+A2_040_ST_ohk,A batch 2,PASSED,ST (smalltalk),0.04
+A2_041_ST_haan ji,A batch 2,PASSED,ST (smalltalk),0.05
+A2_042_ST_nahi,A batch 2,PASSED,ST (smalltalk),0.04
+A2_043_ST_ठीक है धन्यवाद,A batch 2,PASSED,ST (smalltalk),0.08
+A2_044_ST_अच्छा जी,A batch 2,PASSED,ST (smalltalk),0.06
+A2_045_ST_बढ़िया जानकारी,A batch 2,PASSED,ST (smalltalk),0.07
+A2_046_ST_ਧੰਨਵਾਦ ਜੀ,A batch 2,PASSED,ST (smalltalk),0.04
+A2_047_ST_ਵਧੀਆ ਜੀ,A batch 2,PASSED,ST (smalltalk),0.03
+A2_048_ST_बरं,A batch 2,PASSED,ST (smalltalk),0.05
+A2_049_ST_आभार,A batch 2,PASSED,ST (smalltalk),0.04
+A2_050_ST_राम राम सा,A batch 2,PASSED,ST (smalltalk),0.06
+A2_051_SCY_is this for students too,A batch 2,PASSED,SCY (scope),0.82
+A2_052_SCY_is this website useful for,A batch 2,PASSED,SCY (scope),0.78
+A2_053_SCY_can i check groundwater of,A batch 2,PASSED,SCY (scope),0.81
+A2_054_SCY_does this app have soil in,A batch 2,PASSED,SCY (scope),0.61
+A2_055_SCY_do you cover water quality,A batch 2,PASSED,SCY (scope),0.55
+A2_056_SCY_is it about land,A batch 2,PASSED,SCY (scope),0.53
+A2_057_SCY_can this help me save wate,A batch 2,PASSED,SCY (scope),0.64
+A2_058_SCY_does it support punjabi,A batch 2,PASSED,SCY (scope),0.65
+A2_059_SCY_can i get pdf report,A batch 2,PASSED,SCY (scope),0.65
+A2_060_SCY_do you explain soil health,A batch 2,PASSED,SCY (scope),0.72
+A2_061_SCY_is this related to crops,A batch 2,PASSED,SCY (scope),0.68
+A2_062_SCY_kya isme fasal ki jankari ,A batch 2,PASSED,SCY (scope),0.62
+A2_063_SCY_kya ye app kheti ke liye h,A batch 2,PASSED,SCY (scope),0.62
+A2_064_SCY_kya aap sinchai ke bare me,A batch 2,PASSED,SCY (scope),0.74
+A2_065_SCY_क्या यह ऐप पानी के बारे मे,A batch 2,PASSED,SCY (scope),0.76
+A2_066_SCN_is this site for jobs,A batch 2,PASSED,SCN (scope),0.13
+A2_067_SCN_is this app for buying see,A batch 2,PASSED,SCN (scope),0.3
+A2_068_SCN_do you sell fertilizer,A batch 2,PASSED,OOS (off_topic),0.16
+A2_069_SCN_can you tell me gold rate,A batch 2,PASSED,SCN (scope),0.13
+A2_070_SCN_does it show rainfall fore,A batch 2,PASSED,SCN (scope),0.26
+A2_071_SCN_is this a shopping site,A batch 2,PASSED,SCN (scope),0.16
+A2_072_SCN_do you give loans,A batch 2,PASSED,SCN (scope),0.14
+A2_073_SCN_can you book a tractor,A batch 2,PASSED,OOS (off_topic),0.17
+A2_074_SCN_is it for animal husbandry,A batch 2,PASSED,SCN (scope),0.75
+A2_075_SCN_kya isme mandi rate milega,A batch 2,PASSED,SCN (scope),0.15
+A2_076_SCN_kya ye app paise kamane ke,A batch 2,PASSED,SCN (scope),0.16
+A2_077_SCN_क्या यह ऐप लोन देता है,A batch 2,PASSED,SCN (scope),0.12
+A2_078_OOS_how to get loan for borewe,A batch 2,PASSED,OOS (off_topic),0.19
+A2_079_OOS_tractor loan interest,A batch 2,PASSED,OOS (off_topic),0.18
+A2_080_OOS_gehu ka rate kya chal raha,A batch 2,PASSED,OOS (off_topic),0.12
+A2_081_OOS_cotton price today,A batch 2,PASSED,OOS (off_topic),0.18
+A2_082_OOS_aaj barish hogi kya,A batch 2,PASSED,OOS (off_topic),0.12
+A2_083_OOS_is it going to rain in jai,A batch 2,PASSED,SCN (scope),0.22
+A2_084_OOS_weather update,A batch 2,PASSED,OOS (off_topic),0.17
+A2_085_OOS_heatwave alert,A batch 2,PASSED,OOS (off_topic),0.17
+A2_086_OOS_my buffalo is sick,A batch 2,PASSED,OOS (off_topic),0.16
+A2_087_OOS_how to stop termites,A batch 2,PASSED,OOS (off_topic),0.16
+A2_088_OOS_which pesticide for cotton,A batch 2,PASSED,OOS (off_topic),0.25
+A2_089_OOS_who won the election,A batch 2,PASSED,OOS (off_topic),0.16
+A2_090_OOS_latest news,A batch 2,PASSED,OOS (off_topic),0.13
+A2_091_OOS_sing a song,A batch 2,PASSED,OOS (off_topic),0.09
+A2_092_OOS_how to make money fast,A batch 2,PASSED,OOS (off_topic),0.16
+A2_093_OOS_kisan samman nidhi status,A batch 2,PASSED,OOS (off_topic),0.28
+A2_094_OOS_fasal bima kaise kare,A batch 2,PASSED,OOS (off_topic),0.13
+A2_095_OOS_PM kisan registration,A batch 2,PASSED,OOS (off_topic),0.17
+A2_096_OOS_सब्सिडी कैसे मिलेगी,A batch 2,PASSED,OOS (off_topic),0.11
+A2_097_OOS_आज का मौसम,A batch 2,PASSED,OOS (off_topic),0.09
+A2_098_OOS_ਕਰਜ਼ਾ ਕਿਵੇਂ ਮਿਲੇਗਾ,A batch 2,PASSED,OOS (off_topic),0.08
+A2_099_OOS_कापसाचा भाव काय आहे,A batch 2,PASSED,OOS (off_topic),0.09
+A2_100_APP_what is this app,A batch 2,PASSED,APP (ABOUT_JALMITRA),0.11
+A2_101_APP_what does jalmitra do,A batch 2,PASSED,APP (WHAT_CAN_YOU_DO),0.12
+A2_102_APP_tell me what u can do,A batch 2,PASSED,APP (WHAT_CAN_YOU_DO),0.16
+A2_103_APP_how to use jalmitra,A batch 2,PASSED,APP (HOW_TO_USE),0.12
+A2_104_APP_is website ka kya use hai,A batch 2,PASSED,APP (WHAT_CAN_YOU_DO),0.12
+A2_105_APP_jalmitra ke features,A batch 2,PASSED,APP (FEATURE_LIST),0.15
+A2_106_APP_what are your features,A batch 2,PASSED,APP (FEATURE_LIST),0.25
+A2_107_APP_about this website,A batch 2,PASSED,APP (ABOUT_JALMITRA),0.18
+A2_108_DATA_jaipur groundwater,A batch 2,PASSED,DATA (status),0.62
+A2_109_DATA_is barmer over exploited,A batch 2,PASSED,DATA (status),0.72
+A2_110_DATA_show me ajmer block detail,A batch 2,PASSED,DATA (status),2.51
+A2_111_DATA_compare jodhpur and nagaur,A batch 2,PASSED,DATA (compare),0.76
+A2_112_DATA_top 3 critical districts,A batch 2,PASSED,DATA (top_areas),1.15
+A2_113_DATA_how many safe blocks in ra,A batch 2,PASSED,DATA (list_category),2.98
+A2_114_DATA_extraction stage in sikar,A batch 2,PASSED,DATA (numeric),2.2
+A2_115_DATA_what is meaning of saline,A batch 2,PASSED,DATA (explain_category),0.86
+A2_116_DATA_tonk ka bhujal,A batch 2,PASSED,DATA (status),0.6
+A2_117_DATA_alwar,A batch 2,PASSED,DATA (status),1.91
+A2_118_DATA_udaipur pani ki stithi,A batch 2,PASSED,DATA (status),0.66
+A2_119_DATA_what is drip irrigation,A batch 2,PASSED,DATA (domain),0.77
+A2_120_DATA_how much water for cotton,A batch 2,PASSED,DATA (domain),1.04
+A2_121_DATA_is high tds bad,A batch 2,PASSED,DATA (domain),0.6
+A2_122_DATA_nitrogen in soil low means,A batch 2,PASSED,DATA (domain),1.0
+A2_123_DATA_what is soil ph,A batch 2,PASSED,DATA (domain),0.7
+A2_124_DATA_which crops for saline soi,A batch 2,PASSED,DATA (domain),0.87
+A2_125_DATA_farm pond kaise banaye,A batch 2,PASSED,DATA (domain),0.86
+A2_126_DATA_what about churu,A batch 2,PASSED,DATA (status),0.64
+A2_127_DATA_bhilwara vs chittorgarh,A batch 2,PASSED,DATA (compare),3.62
+A2_128_DATA_मेरे ब्लॉक का भूजल,A batch 2,PASSED,DATA (status),1.6
+A2_129_DATA_पाली जिले में पानी,A batch 2,PASSED,DATA (status),2.12
+A2_130_DATA_राजस्थान में कितने ब्लॉक अ,A batch 2,PASSED,DATA (list_category),3.42
+A2_131_FB_qwerty,A batch 2,PASSED,FB (unclear),0.67
+A2_132_FB_lorem ipsum,A batch 2,PASSED,FB (unclear),0.62
+A3_001_ST_tq,A batch 3,PASSED,ST (smalltalk),0.07
+A3_002_ST_thank youuu so much,A batch 3,PASSED,ST (smalltalk),0.14
+A3_003_ST_thanks buddy,A batch 3,PASSED,ST (smalltalk),0.07
+A3_004_ST_appreciate it,A batch 3,PASSED,ST (smalltalk),0.09
+A3_005_ST_okay got it thanks,A batch 3,PASSED,ST (smalltalk),0.09
+A3_006_ST_k,A batch 3,PASSED,ST (smalltalk),0.04
+A3_007_ST_right,A batch 3,PASSED,ST (smalltalk),0.04
+A3_008_ST_perfect thanks,A batch 3,PASSED,ST (smalltalk),0.06
+A3_009_ST_excellent work,A batch 3,PASSED,ST (smalltalk),0.06
+A3_010_ST_too good,A batch 3,PASSED,ST (smalltalk),0.05
+A3_011_ST_very useful app,A batch 3,PASSED,ST (smalltalk),0.07
+A3_012_ST_great stuff,A batch 3,PASSED,ST (smalltalk),0.06
+A3_013_ST_nice app,A batch 3,PASSED,ST (smalltalk),0.06
+A3_014_ST_wah kya baat,A batch 3,PASSED,ST (smalltalk),0.04
+A3_015_ST_ekdum badhiya,A batch 3,PASSED,ST (smalltalk),0.06
+A3_016_ST_bohot accha,A batch 3,PASSED,ST (smalltalk),0.05
+A3_017_ST_see you tomorrow,A batch 3,PASSED,ST (smalltalk),0.07
+A3_018_ST_bye take care,A batch 3,PASSED,ST (smalltalk),0.06
+A3_019_ST_good nite,A batch 3,PASSED,ST (smalltalk),0.1
+A3_020_ST_hello there,A batch 3,PASSED,ST (help),0.06
+A3_021_ST_hi jalmitra,A batch 3,PASSED,ST (help),0.06
+A3_022_ST_hey buddy,A batch 3,PASSED,ST (help),0.06
+A3_023_ST_how's it going,A batch 3,PASSED,ST (smalltalk),0.1
+A3_024_ST_how are you today,A batch 3,PASSED,ST (smalltalk),0.07
+A3_025_ST_who created this app,A batch 3,PASSED,ST (smalltalk),0.11
+A3_026_ST_are you an ai,A batch 3,PASSED,ST (smalltalk),0.06
+A3_027_ST_what should i call you,A batch 3,PASSED,ST (smalltalk),0.12
+A3_028_ST_this is not right,A batch 3,PASSED,ST (smalltalk),0.07
+A3_029_ST_you gave wrong answer,A batch 3,PASSED,ST (smalltalk),0.08
+A3_030_ST_answer galat hai,A batch 3,PASSED,ST (smalltalk),0.04
+A3_031_ST_i am not understanding,A batch 3,PASSED,ST (smalltalk),0.1
+A3_032_ST_what?,A batch 3,PASSED,ST (smalltalk),0.04
+A3_033_ST_lmao,A batch 3,PASSED,ST (smalltalk),0.04
+A3_034_ST_ok ok,A batch 3,PASSED,ST (smalltalk),0.05
+A3_035_ST_hmm okay,A batch 3,PASSED,ST (smalltalk),0.06
+A3_036_ST_ji haan,A batch 3,PASSED,ST (smalltalk),0.05
+A3_037_ST_shukriya ji,A batch 3,PASSED,ST (smalltalk),0.06
+A3_038_ST_धन्यवाद जी बहुत,A batch 3,PASSED,ST (smalltalk),0.09
+A3_039_ST_बहुत बढ़िया काम,A batch 3,PASSED,ST (smalltalk),0.08
+A3_040_ST_ਸ਼ੁਕਰੀਆ,A batch 3,PASSED,ST (smalltalk),0.03
+A3_041_ST_ठीक आहे धन्यवाद,A batch 3,PASSED,ST (smalltalk),0.05
+A3_042_SCY_is this useful for officia,A batch 3,PASSED,SCY (scope),0.68
+A3_043_SCY_can i see groundwater data,A batch 3,PASSED,SCY (scope),0.7
+A3_044_SCY_do you provide crop inform,A batch 3,PASSED,SCY (scope),0.71
+A3_045_SCY_does this cover soil,A batch 3,PASSED,SCY (scope),0.59
+A3_046_SCY_is it about water,A batch 3,PASSED,SCY (scope),0.61
+A3_047_SCY_can i test my water here,A batch 3,PASSED,SCY (scope),0.68
+A3_048_SCY_do you have irrigation adv,A batch 3,PASSED,SCY (scope),0.67
+A3_049_SCY_can it explain my soil rep,A batch 3,PASSED,SCY (scope),0.72
+A3_050_SCY_is marathi available,A batch 3,PASSED,SCY (scope),0.59
+A3_051_SCY_does this site give report,A batch 3,PASSED,SCY (scope),0.65
+A3_052_SCY_kya isme pani ki jankari h,A batch 3,PASSED,SCY (scope),0.61
+A3_053_SCY_kya ye kisan ke liye hai,A batch 3,PASSED,SCY (scope),0.65
+A3_054_SCY_क्या आप सिंचाई के बारे में,A batch 3,PASSED,SCY (scope),0.78
+A3_055_SCN_is this for selling crops,A batch 3,PASSED,SCN (scope),0.23
+A3_056_SCN_do you give weather update,A batch 3,PASSED,SCN (scope),0.22
+A3_057_SCN_can you tell gold price,A batch 3,PASSED,SCN (scope),0.16
+A3_058_SCN_is this a news site,A batch 3,PASSED,SCN (scope),0.12
+A3_059_SCN_do you provide loans to fa,A batch 3,PASSED,SCN (scope),0.26
+A3_060_SCN_can i buy seeds here,A batch 3,PASSED,OOS (off_topic),0.18
+A3_061_SCN_does it cover poultry,A batch 3,PASSED,SCN (scope),0.19
+A3_062_SCN_is this about pests,A batch 3,PASSED,SCN (scope),0.18
+A3_063_SCN_kya ye app mausam batata h,A batch 3,PASSED,SCN (scope),0.15
+A3_064_SCN_क्या इसमें मंडी भाव मिलेगा,A batch 3,PASSED,SCN (scope),0.13
+A3_065_OOS_interest rate on kcc loan,A batch 3,PASSED,OOS (off_topic),0.18
+A3_066_OOS_where to sell my wheat,A batch 3,PASSED,OOS (off_topic),0.22
+A3_067_OOS_soybean bhav,A batch 3,PASSED,OOS (off_topic),0.13
+A3_068_OOS_rain forecast for next wee,A batch 3,PASSED,OOS (off_topic),0.22
+A3_069_OOS_is there a storm coming,A batch 3,PASSED,OOS (off_topic),0.22
+A3_070_OOS_temperature today in jodhp,A batch 3,PASSED,OOS (off_topic),0.2
+A3_071_OOS_my goat is ill,A batch 3,PASSED,OOS (off_topic),0.11
+A3_072_OOS_how to control locust,A batch 3,PASSED,OOS (off_topic),0.23
+A3_073_OOS_insects on my cotton crop,A batch 3,PASSED,OOS (off_topic),0.23
+A3_074_OOS_best movie this week,A batch 3,PASSED,OOS (off_topic),0.16
+A3_075_OOS_who is the chief minister ,A batch 3,PASSED,OOS (off_topic),0.31
+A3_076_OOS_how to become rich,A batch 3,PASSED,OOS (off_topic),0.16
+A3_077_OOS_government scheme for farm,A batch 3,PASSED,OOS (off_topic),0.25
+A3_078_OOS_fasal ka daam kitna milega,A batch 3,PASSED,OOS (off_topic),0.17
+A3_079_OOS_बीमा कैसे कराएं,A batch 3,PASSED,OOS (off_topic),0.1
+A3_080_OOS_ਮੰਡੀ ਭਾਅ,A batch 3,PASSED,OOS (off_topic),0.06
+A3_081_APP_what's this,A batch 3,PASSED,APP (ABOUT_JALMITRA),0.12
+A3_082_APP_what is jalmitra exactly,A batch 3,PASSED,APP (ABOUT_JALMITRA),0.14
+A3_083_APP_what can i do with this ap,A batch 3,PASSED,APP (WHAT_CAN_YOU_DO),0.15
+A3_084_APP_how to start using this,A batch 3,PASSED,APP (HOW_TO_USE),0.21
+A3_085_APP_list all features,A batch 3,PASSED,APP (FEATURE_LIST),0.17
+A3_086_APP_ye website kya karti hai,A batch 3,PASSED,APP (WHAT_CAN_YOU_DO),0.14
+A3_087_APP_jalmitra ka kaam kya hai,A batch 3,PASSED,APP (ABOUT_JALMITRA),0.12
+A3_088_DATA_ajmer status,A batch 3,PASSED,DATA (status),2.67
+A3_089_DATA_jaipur district groundwate,A batch 3,PASSED,DATA (status),2.52
+A3_090_DATA_is dausa critical,A batch 3,PASSED,DATA (status),0.71
+A3_091_DATA_bikaner recharge value,A batch 3,PASSED,DATA (numeric),2.25
+A3_092_DATA_top over exploited distric,A batch 3,PASSED,DATA (top_areas),1.41
+A3_093_DATA_compare tonk and bundi,A batch 3,PASSED,DATA (compare),0.7
+A3_094_DATA_explain over exploited,A batch 3,PASSED,DATA (explain_category),0.84
+A3_095_DATA_what is saline category,A batch 3,PASSED,DATA (explain_category),0.88
+A3_096_DATA_how much water does ground,A batch 3,PASSED,DATA (domain),0.89
+A3_097_DATA_can i grow wheat in salty ,A batch 3,PASSED,DATA (domain),0.95
+A3_098_DATA_what is organic carbon,A batch 3,PASSED,DATA (domain),0.91
+A3_099_DATA_is ec 4 high for irrigatio,A batch 3,PASSED,DATA (domain),0.9
+A3_100_DATA_fluoride kitna hona chahiy,A batch 3,PASSED,DATA (domain),0.72
+A3_101_DATA_how to reduce soil salinit,A batch 3,PASSED,DATA (domain),0.92
+A3_102_DATA_what is sprinkler irrigati,A batch 3,PASSED,DATA (domain),0.85
+A3_103_DATA_jhunjhunu,A batch 3,PASSED,DATA (status),2.33
+A3_104_DATA_nagaur ka paani,A batch 3,PASSED,DATA (status),0.63
+A3_105_DATA_what about dholpur,A batch 3,PASSED,DATA (status),2.23
+A3_106_DATA_सीकर का भूजल,A batch 3,PASSED,DATA (status),2.13
+A3_107_DATA_ਪੰਜਾਬ ਵਿੱਚ ਪਾਣੀ ਦੀ ਹਾਲਤ,A batch 3,PASSED,DATA (status),1.39
+A3_109_FB_something something,A batch 3,PASSED,FB (unclear),0.69
+B01_nice,B screenshots,PASSED,Thank you! What would you like to look at next?,0.06
+B02_grow_money,B screenshots,PASSED,"No. JalMitra has no information on money, income, loans, subsidies or government schemes, and it does not predict yield ",0.24
+C01_hi_धन्यवाद,C languages,PASSED,"आपका स्वागत है! पानी, मिट्टी, फसल या ज़मीन के बारे में और कु",0.06
+C02_hi_बहुत बढ़िया,C languages,PASSED,धन्यवाद! अब आप क्या देखना चाहेंगे?,0.07
+C03_hinglish_shukriya bhai,C languages,PASSED,"Aapka swagat hai! Paani, mitti, fasal ya zameen ke baare mei",0.07
+C04_hinglish_badhiya,C languages,PASSED,Dhanyavaad! Ab aap kya dekhna chahenge?,0.05
+C05_pa_ਧੰਨਵਾਦ,C languages,PASSED,"ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ! ਪਾਣੀ, ਮਿੱਟੀ, ਫ਼ਸਲ ਜਾਂ ਜ਼ਮੀਨ ਬਾਰੇ ਹੋਰ ਕੁਝ ਪੁ",0.03
+C06_pa_ਵਧੀਆ,C languages,PASSED,ਧੰਨਵਾਦ! ਹੁਣ ਤੁਸੀਂ ਕੀ ਵੇਖਣਾ ਚਾਹੋਗੇ?,0.03
+C07_mr_छान,C languages,PASSED,धन्यवाद! पुढे काय पाहायचे आहे?,0.05
+C08_raj_घणो आभार,C languages,PASSED,"पधारो सा! पाणी, माटी, फसल या जमीन रै बारै में और कीं पूछो।",0.04
+C09_hi_क्या यह वेबसाइट मौसम,C languages,PASSED,नहीं। JalMitra के पास मौसम का डेटा या पूर्वानुमान नहीं है। प,0.13
+C10_hinglish_kya ye app loan deta,C languages,PASSED,"Nahi. JalMitra ke paas paise, aamdani, loan, subsidy ya sark",0.1
+C11_pa_ਕਣਕ ਦਾ ਭਾਅ ਕੀ ਹੈ,C languages,PASSED,ਇਹ JalMitra ਦੇ ਦਾਇਰੇ ਤੋਂ ਬਾਹਰ ਹੈ। JalMitra ਕੋਲ ਮੰਡੀ ਦੇ ਭਾਅ ਨ,0.08
+C12_mr_आज हवामान कसे आहे,C languages,PASSED,हे JalMitra च्या कक्षेबाहेर आहे. JalMitra कडे हवामानाचा डेटा,0.09
+C13_hi_कल बारिश होगी क्या,C languages,PASSED,यह JalMitra के दायरे से बाहर है। JalMitra के पास मौसम का डेट,0.11
+C20_every_text_in_six_languages,C languages,PASSED,34 texts,0.04
+D01_repeated_thanks_varies,D variety,PASSED,You're welcome! Ask me an | Glad I could help. Is the | Happy to help! You can as,0.13
+D02_repeated_fallback_varies,D variety,PASSED,varied,1.96
+D03_first_reply_matches_2.0,D variety,PASSED,2.0 texts kept for the first reply,0.89
+E01_every_suggestion_is_answerable,E fallback,PASSED,49 suggested questions all answered,44.94
+E02_cue_words_pick_suggestions,E fallback,PASSED,topic-based suggestions,0.01
+F01_Is Ajmer Urban safe?,F data unchanged,PASSED,status,1.05
+F02_Top 5 over-exploited blocks in,F data unchanged,PASSED,top_n,1.64
+F03_Compare Jaipur district and Jo,F data unchanged,PASSED,compare,3.72
+F04_What does semi-critical mean?,F data unchanged,PASSED,explain_category,0.84
+F05_How much water does wheat need,F data unchanged,PASSED,domain,0.86
+F06_do you have data for kerala?,F data unchanged,PASSED,data_availability,1.21
+F07_does it cover punjab?,F data unchanged,PASSED,status,1.42
+F08_can you tell me about Ajmer,F data unchanged,PASSED,status,2.43
+F09_is this a safe block,F data unchanged,PASSED,explain_category,0.89
+F10_rainwater harvesting kaise kar,F data unchanged,PASSED,domain,0.86
+F11_does fluoride cause disease,F data unchanged,PASSED,domain,0.78
+F20_safety_first,F data unchanged,PASSED,blocked,0.76
+F21_never_safe_to_drink,F data unchanged,PASSED,no drinking-water safety claims,0.15
+Z01_groundwater_db_unchanged,Z integrity,PASSED,9eeaee1533b478c1,0
+Z02_no_network,Z integrity,PASSED,0 attempts,0

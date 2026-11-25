@@ -1,0 +1,18 @@
+﻿kind,question,runs,mean_ms,median_ms,p95_ms,max_ms,under_1000ms,machine
+cold_start,import + first answer (new Python process),1,198.1,198.1,198.1,198.1,True,Windows AMD64 Python 3.14.7
+warm,Is Ajmer Urban safe?,30,1.17,1.13,1.21,1.95,True,Windows AMD64 Python 3.14.7
+warm,Jaipur district status,30,2.55,2.56,2.67,2.83,True,Windows AMD64 Python 3.14.7
+warm,Top 5 over-exploited blocks in Rajasthan,30,1.82,1.8,1.91,2.04,True,Windows AMD64 Python 3.14.7
+warm,Compare Jaipur district and Jodhpur district,30,4.36,4.35,4.48,4.54,True,Windows AMD64 Python 3.14.7
+warm,Which district has the most over-exploited units?,30,1.81,1.81,1.93,1.95,True,Windows AMD64 Python 3.14.7
+warm,Ajmer Urban ka paani kaisa hai?,30,1.25,1.24,1.3,1.41,True,Windows AMD64 Python 3.14.7
+warm,अजमेर अर्बन की भूजल स्थिति क्या है?,30,1.28,1.27,1.33,1.55,True,Windows AMD64 Python 3.14.7
+warm,पुण्यात भूजल स्थिती काय आहे?,30,2.46,2.44,2.55,2.68,True,Windows AMD64 Python 3.14.7
+warm,ਲੁਧਿਆਣਾ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਪਾਣੀ ਦੀ ਸਥਿਤੀ ਕੀ ਹੈ?,30,2.33,2.19,2.82,2.96,True,Windows AMD64 Python 3.14.7
+warm,म्हारो अजमेर जिलो रो पाणी कियां है?,30,2.3,2.16,2.59,3.98,True,Windows AMD64 Python 3.14.7
+warm,Is Jaipur safe?,30,0.56,0.55,0.6,0.65,True,Windows AMD64 Python 3.14.7
+warm,What does semi-critical mean?,30,0.92,0.79,1.42,1.69,True,Windows AMD64 Python 3.14.7
+warm,Stage of extraction of Pune City,30,1.06,1.02,1.18,1.33,True,Windows AMD64 Python 3.14.7
+warm,Is Xyzpur safe?,30,10.65,10.6,10.99,11.15,True,Windows AMD64 Python 3.14.7
+warm,List safe blocks in Pune district,30,3.14,3.03,3.59,4.98,True,Windows AMD64 Python 3.14.7
+all_test_cases,last turn of 172 test cases,172,2.23,1.15,3.76,87.8,True,Windows AMD64 Python 3.14.7

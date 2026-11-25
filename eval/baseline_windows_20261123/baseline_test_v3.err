@@ -1,0 +1,18 @@
+﻿python.exe : 2026-11-23 14:25:00.969 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 
+'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+At line:1 char:657
++ ... StartNew(); & .venv\Scripts\python.exe "$t.py" > "$o\baseline_$t.log" ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-11-23 14:2...g in bare mode.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Exception ignored while calling deallocator <function BaseEventLoop.__del__ at 0x000001B1AFC44BF0>:
+Traceback (most recent call last):
+  File "C:\Users\navin\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\base_events.py", line 761, in __del__
+    self.close()
+  File "C:\Users\navin\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\proactor_events.py", line 692, in close
+    self._close_self_pipe()
+  File "C:\Users\navin\AppData\Local\Python\pythoncore-3.14-64\Lib\asyncio\proactor_events.py", line 773, in 
+_close_self_pipe
+    self._ssock.close()
+AttributeError: 'ProactorEventLoop' object has no attribute '_ssock'

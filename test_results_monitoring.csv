@@ -1,0 +1,46 @@
+test,passed,detail
+BUILD01_integrity_checks_pass,True,[]
+RULE02_sentinel_not_usable,True,
+RULE03_negative_manual_flagged,True,
+RULE03_manual_depth_kept_as_published,True,
+RULE05_deeper_than_well_flagged,True,
+RULE06_dry_well_flagged,True,
+RULE08_future_date_flagged,True,
+RULE12_identical_duplicate_kept_once,True,
+RULE13_conflicting_duplicate_both_kept_unusable,True,
+RULE12_duplicates_logged,True,
+RULE09_outside_india,True,
+RULE09_outside_rajasthan,True,
+RULE10_coarse_coordinates,True,
+RULE04_telemetry_sign_inferred,True,
+RULE04_ambiguous_sign,True,
+RULE04_sign_outlier_removed,True,"(5, 4, 20.3, 'sign_outliers_removed')"
+RULE04_ambiguous_gets_no_depth,True,
+RAW01_every_obs_has_file,True,
+RAW02_value_raw_unchanged,True,
+MAP01_district_matched_to_gwra,True,
+Q01_history_years,True,
+Q02_paired_compare,True,"{'state': 'Rajasthan', 'district': 'AJMER', 'season': 'pre_monsoon', 'season_label': 'Pre-monsoon (Mar-May)', 'year_a': 2015, 'year_b': 2020, 'stations_year_a': 5, 'stations_year_b': 5, 'paired_stations': 5, 'min_pairs': 3, 'source': 'India-WRIS Ground Water Level data (NWIC, Ministry of Jal Shakti); measurements by CGWB and the Ground Water Department, Rajasthan. Reproduced with acknowledgement under the India-WRIS copyright policy.', 'status': 'ok', 'median_depth_a': 9.5, 'median_depth_b': 12.0, 'median_change_m': 2.5, 'stations_deeper': 5, 'stations_shallower': 0, 'stations_unchanged': 0, 'largest_fall_m': 2.5, 'largest_rise_m': 2.5, 'caveat': 'Depth below ground level; positive change = water level fell (deeper).'}"
+Q03_compare_excludes_unpaired_and_unusable,True,"{'state': 'Rajasthan', 'district': 'AJMER', 'season': 'pre_monsoon', 'season_label': 'Pre-monsoon (Mar-May)', 'year_a': 2015, 'year_b': 2016, 'stations_year_a': 5, 'stations_year_b': 8, 'paired_stations': 5, 'min_pairs': 3, 'source': 'India-WRIS Ground Water Level data (NWIC, Ministry of Jal Shakti); measurements by CGWB and the Ground Water Department, Rajasthan. Reproduced with acknowledgement under the India-WRIS copyright policy.', 'status': 'ok', 'median_depth_a': 9.5, 'median_depth_b': 10.0, 'median_change_m': 0.5, 'stations_deeper': 5, 'stations_shallower': 0, 'stations_unchanged': 0, 'largest_fall_m': 0.5, 'largest_rise_m': 0.5, 'caveat': 'Depth below ground level; positive change = water level fell (deeper).'}"
+Q04_insufficient_data_no_number,True,
+Q05_decadal_change,True,"{'state': 'Rajasthan', 'district': 'AJMER', 'season': 'pre_monsoon', 'year': 2020, 'baseline': '2010-2019', 'stations': 5, 'min_pairs': 3, 'source': 'India-WRIS Ground Water Level data (NWIC, Ministry of Jal Shakti); measurements by CGWB and the Ground Water Department, Rajasthan. Reproduced with acknowledgement under the India-WRIS copyright policy.', 'status': 'ok', 'median_change_m': 2.75, 'stations_deeper': 5, 'stations_shallower': 0, 'caveat': ""Positive = deeper than the station's own ten-year mean.""}"
+Q06_unknown_district_no_data,True,
+Q07_execute_compare,True,
+Q08_execute_needs_district,True,
+Q09_telemetry_separate,True,
+Q10_read_only,True,
+Q11_no_multi_statement,True,
+Q12_missing_db,True,
+Q13_unit_rename_key,True,
+Q14_renamed_block_followed,True,"{'status': 'ok', 'rows': [{'state': 'Testland', 'district': 'TESTDIST', 'assessment_unit': 'SANGANER', 'assessment_year': '2020', 'category': 'Over-exploited', 'stage_of_extraction_pct': None, 'source_id': 'T', 'source_page': 1, 'quality_flag': 'ok'}, {'state': 'Testland', 'district': 'TESTDIST', 'assessment_unit': 'Sanganer_Rural', 'assessment_year': '2022', 'category': 'Over-exploited', 'stage_of_extraction_pct': None, 'source_id': 'T', 'source_page': 1, 'quality_flag': 'ok'}], 'renamed_years': ['2022: Sanganer_Rural'], 'caveat': 'The block appears under a different published name in some years (Rural/Urban suffix); those rows are followed only where exactly one block in the district fits.'}"
+Q15_rural_urban_never_merged,True,"{'status': 'ok', 'rows': [{'state': 'Testland', 'district': 'TESTDIST', 'assessment_unit': 'KOTA', 'assessment_year': '2020', 'category': 'Safe', 'stage_of_extraction_pct': None, 'source_id': 'T', 'source_page': 1, 'quality_flag': 'ok'}]}"
+NET01_queries_offline,True,
+GWRA01_district_words_moved_back,True,
+GWRA02_state_untouched,True,
+GWRA03_category_split,True,
+GWRA04_category_names,True,
+GWRA05_2025_extract_matches_groundwater_db_rajasthan,True,302/302
+SAFE01_write_new_never_overwrites,True,
+REAL01_monitoring_db_integrity,True,[]
+REAL02_monitoring_db_has_sources,True,
+SAFE02_groundwater_db_unchanged,True,9eeaee1533b478c1e649b86a56b56f4415e5255e0a3311e37a466f20bdeaa46a 9eeaee1533b478c1e649b86a56b56f4415e5255e0a3311e37a466f20bdeaa46a

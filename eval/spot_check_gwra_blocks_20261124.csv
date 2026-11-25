@@ -1,0 +1,11 @@
+﻿state,district,unit,pdf,pages,stage_pct,recharge_ham,extractable_ham,total_extraction_ham,unit_name_on_page,figures_not_found,result
+Madhya Pradesh,DHAR,BAGH,02113_dynamic_ground_water_resources_of_madhya_pradesh_2025.pdf,"178,217",32.6,6440.5,6118.48,1994.62,True,-,match
+Madhya Pradesh,AGAR MALWA,BADOD,02113_dynamic_ground_water_resources_of_madhya_pradesh_2025.pdf,"173,212",82.75,10900.97,10355.92,8569.59,True,-,match
+Uttar Pradesh,AMETHI,MUSAFIRKHANA,02125_dynamic_ground_water_resources_of_uttar_pradesh_2025.pdf,"252,282",63.32,7475.67,6728.11,4260.45,True,-,match
+Uttar Pradesh,RAIBARELI,UNCHAHAR,02125_dynamic_ground_water_resources_of_uttar_pradesh_2025.pdf,"274,304",56.67,5610.84,5049.75,2861.65,True,-,match
+Gujarat,SURAT,OLPAD,02105_dynamic_ground_water_resources_of_gujarat_2025.pdf,160,12.55,13826.34,12443.71,1561.37,True,-,match
+Gujarat,PORBANDAR,RANAVAV,02105_dynamic_ground_water_resources_of_gujarat_2025.pdf,157,50.36,7689.62,7305.14,3678.68,True,recharge_ham;total_extraction_ham,match (decimals wrapped in the PDF text)
+Karnataka,Bengaluru (Urban),Bangalore-City,02109_dynamic_ground_water_resources_of_karnataka_2025.pdf,"128,140",216.98,10552.03,9496.82,20606.63,True,-,match
+Karnataka,Vijayapura,Muddebihal,02109_dynamic_ground_water_resources_of_karnataka_2025.pdf,"137,150",30.49,9130.7,8217.63,2505.81,True,-,match
+Maharashtra,Solapur,Akkalkot,02114_dynamic_ground_water_resources_of_maharashtra_2025.pdf,108,55.89,14083.74,13379.55,7477.3,True,recharge_ham;extractable_ham,match (decimals wrapped in the PDF text)
+Maharashtra,Parbhani,Parbhani,02114_dynamic_ground_water_resources_of_maharashtra_2025.pdf,104,48.32,14450.81,13728.26,6633.24,True,recharge_ham,match (decimals wrapped in the PDF text)

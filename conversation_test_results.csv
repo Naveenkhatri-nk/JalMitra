@@ -1,0 +1,9 @@
+id,group,status,detail,ms
+N_spec_dialogue,N conversation,PASSED,status:ok | explain_category:ok | numeric:ok | numeric:ok | compare:ok | domain:clarify | domain:data_unavailable | domain:data_unavailable | domain:data_unavailable,15.1
+N_explain_in_hindi_keeps_context,N conversation,PASSED,"language switched, place kept",3.4
+N_explain_more,N conversation,PASSED,327 -> 1386 characters,1.5
+N_why_explains_category,N conversation,PASSED,Why? -> category explained,1.8
+N_meta_without_history,N conversation,PASSED,nothing to repeat -> said so,0.1
+N_new_conversation_clears,N conversation,PASSED,cleared state has no place,2.5
+N_session_isolation,N conversation,PASSED,two sessions share nothing,1.9
+N_show_source_after_knowledge,N conversation,PASSED,sources of the knowledge answer,1.1

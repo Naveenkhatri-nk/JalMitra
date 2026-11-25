@@ -1,0 +1,72 @@
+id,lang,ctx,topic,label,text,rule_hits,L1,min_best_sim,min_overlap,support_fail,L12,self_check,L123,ms
+1,en,phagi_en,category,good,"PHAGI block is Over-exploited, with a stage of extraction of 117%.",,False,0.783,1.0,False,False,SUPPORTED,False,13102.2
+2,en,phagi_en,depletion,good,"More groundwater is taken out each year than is replaced, so the stage is above 100%.",,False,0.812,1.0,False,False,SUPPORTED,False,4370.9
+3,en,phagi_en,recharge_vs_extraction,good,Total extraction of 6265 ham is higher than the annual recharge of 5949 ham.,,False,0.796,0.83,False,False,SUPPORTED,False,4723.1
+4,en,phagi_en,figures,good,The annual recharge of Phagi is 5949 ham (0.05949 bcm).,,False,0.823,1.0,False,False,SUPPORTED,False,4585.9
+5,en,phagi_en,contradiction,bad,"Annual recharge of 5949 ham is more than the extraction of 6265 ham, so the block is safe.",contradicts_figures,True,0.792,0.8,False,True,,True,2451.5
+6,en,phagi_en,unsupported_cause,bad,Phagi is Over-exploited because of rapid industrial growth and factories.,unsupported_causal_claim; unsupported_cause,True,0.68,0.29,False,True,,True,2321.2
+7,en,phagi_en,depletion,bad,"Because extraction is more than recharge, the water level in Phagi keeps rising.",depletion_direction,True,0.627,0.43,False,True,,True,2473.5
+8,en,phagi_en,category,bad,Over-exploited means the stage of extraction is between 70% and 90%.,category_threshold,True,0.725,0.75,False,True,,True,2324.7
+9,en,phagi_en,stage_formula,bad,The stage of extraction is calculated as annual recharge divided by total extraction.,stage_formula,True,0.666,0.71,False,True,,True,2465.5
+10,en,phagi_en,unsupported_claim,bad,"Phagi receives heavy rainfall every year, so farmers need not worry.",,False,0.523,0.29,True,True,,True,2286.7
+11,en,general,recharge,good,Groundwater recharge is water that rain and other sources add to the aquifer each year.,,False,0.815,0.8,False,False,SUPPORTED,False,5222.7
+12,en,general,pre_post_monsoon,good,The water table is usually deeper before the monsoon and becomes shallower during the monsoon.,,False,0.939,0.89,False,False,SUPPORTED,False,4840.8
+13,en,general,depth_direction,good,"During the monsoon, recharge from rainfall raises the groundwater level.",,False,0.759,0.67,False,False,SUPPORTED,False,4962.0
+14,en,general,recharge,good,Rainfall is the main source of groundwater recharge.,,False,0.873,0.75,False,False,SUPPORTED,False,4866.6
+15,en,general,category,good,Semi-critical means the stage of extraction is more than 70% and up to 90%.,,False,0.885,1.0,False,False,SUPPORTED,False,4914.8
+16,en,general,category,good,Safe means the stage of extraction is up to 70%.,,False,0.858,1.0,False,False,SUPPORTED,False,4819.0
+17,en,general,depletion,good,"When extraction is more than recharge, groundwater levels fall over time.",,False,0.736,0.8,False,False,SUPPORTED,False,5028.5
+18,en,general,category,good,Critical means the stage of extraction is more than 90% and up to 100%.,,False,0.881,1.0,False,False,SUPPORTED,False,4892.7
+19,en,general,depth_direction,bad,During the monsoon the water table becomes deeper.,monsoon_direction,True,0.832,1.0,False,True,,True,2615.5
+20,en,general,seasonal,bad,In the rainy season the groundwater level falls because more water is used.,monsoon_direction; unsupported_causal_claim,True,0.806,0.17,False,True,,True,2633.3
+21,en,general,depth_direction,bad,Depth to water increases during the monsoon months.,monsoon_direction,True,0.738,0.6,False,True,,True,2660.0
+22,en,general,recharge_vs_extraction,bad,Recharge lowers the water level in the aquifer.,recharge_direction,True,0.737,0.5,False,True,,True,2648.7
+23,en,general,depletion,bad,If extraction exceeds recharge the groundwater situation improves.,depletion_direction,True,0.74,0.4,False,True,,True,2574.6
+24,en,general,category,bad,Safe means the stage of extraction is more than 100%.,category_threshold,True,0.778,1.0,False,True,,True,2527.7
+25,en,general,unsupported_cause,bad,Groundwater is falling mainly because of climate change and global warming.,unsupported_causal_claim; unsupported_cause,True,0.759,0.14,False,True,,True,2515.8
+26,en,general,stage_formula,bad,"The stage of extraction is recharge divided by extraction, in percent.",stage_formula,True,0.728,1.0,False,True,,True,2628.8
+27,en,general,unsupported_claim,bad,Monsoon rains do not matter for groundwater in India.,rain_irrelevant,True,0.634,0.5,False,True,,True,2640.3
+28,en,general,depth_direction,bad,Pumping more groundwater raises the water level.,extraction_direction,True,0.762,0.0,False,True,,True,2686.3
+29,en,conserve,depletion,good,Rainwater harvesting and artificial recharge structures can help reduce groundwater depletion.,,False,0.778,0.62,False,False,SUPPORTED,False,5047.0
+30,en,conserve,depletion,good,Restricting new wells in over-exploited areas is one recommended measure.,,False,0.825,0.5,False,False,SUPPORTED,False,4829.6
+31,en,conserve,unsupported_claim,bad,Building more borewells is the best way to reduce groundwater depletion.,wrong_remedy,True,0.622,0.0,False,True,,True,2735.6
+32,en,conserve,seasonal,bad,Depletion can be reduced by pumping more water during the monsoon.,wrong_remedy,True,0.64,0.0,False,True,,True,2774.7
+33,hi,phagi_hi,category,good,"फागी ब्लॉक अतिदोहित श्रेणी में है, यहाँ दोहन का स्तर 117% है।",,False,0.674,0.71,False,False,SUPPORTED,False,4935.7
+34,hi,phagi_hi,depletion,good,यहाँ जितना पानी हर साल भरता है उससे ज़्यादा पानी निकाला जा रहा है।,,False,0.684,0.62,False,False,SUPPORTED,False,4528.9
+35,hi,phagi_hi,contradiction,bad,"फागी में पुनर्भरण 5949 हैम निकासी 6265 हैम से अधिक है, इसलिए स्थिति ठीक है।",contradicts_figures,True,0.707,0.33,False,True,,True,2289.3
+36,hi,phagi_hi,unsupported_cause,bad,फागी अतिदोहित है क्योंकि वहाँ बहुत सारे कारखाने हैं।,unsupported_cause,True,0.527,0.29,True,True,,True,2270.9
+37,hi,phagi_hi,depth_direction,bad,दोहन ज़्यादा होने से भूजल स्तर बढ़ता है।,extraction_direction,True,0.664,0.67,False,True,,True,2327.2
+38,hi,phagi_hi,category,bad,अतिदोहित का मतलब है कि दोहन का स्तर 70% से 90% के बीच है।,category_threshold,True,0.638,0.83,False,True,,True,2323.7
+39,hi,general,depth_direction,good,मानसून के दौरान बारिश से पुनर्भरण होता है और भूजल स्तर ऊपर आता है।,,False,0.693,0.0,False,False,SUPPORTED,False,5483.6
+40,hi,general,pre_post_monsoon,good,मानसून से पहले भूजल तल आमतौर पर गहरा होता है।,,False,0.747,0.0,False,False,SUPPORTED,False,4962.0
+41,hi,general,pre_post_monsoon,bad,बरसात के मौसम में भूजल तल गहरा होता है और बरसात के बाद इसका स्तर घटता है।,monsoon_direction,True,0.741,0.0,False,True,,True,2825.0
+42,hi,general,depth_direction,bad,बारिश के मौसम में जल स्तर नीचे चला जाता है।,monsoon_direction,True,0.748,0.0,False,True,,True,2582.3
+43,hi,general,category,good,सुरक्षित श्रेणी का मतलब है दोहन का स्तर 70% तक।,,False,0.678,0.0,False,False,SUPPORTED,False,5131.2
+44,hi,general,category,bad,सुरक्षित का मतलब है दोहन 100% से अधिक।,category_threshold,True,0.608,0.0,False,True,,True,2701.2
+45,hi,general,recharge,good,भूजल पुनर्भरण वह पानी है जो बारिश और अन्य स्रोतों से हर साल ज़मीन में जाता है।,,False,0.696,0.0,False,False,SUPPORTED,False,4883.2
+46,hi,general,recharge_vs_extraction,bad,पुनर्भरण से भूजल स्तर नीचे गिरता है।,recharge_direction,True,0.619,0.0,False,True,,True,2714.3
+47,hi,general,unsupported_cause,bad,भूजल घटने का मुख्य कारण जलवायु परिवर्तन है।,unsupported_cause,True,0.599,0.0,True,True,,True,2712.1
+48,hi,general,depletion,good,जब निकासी पुनर्भरण से अधिक होती है तो भूजल स्तर गिरता है।,,False,0.623,0.0,False,False,SUPPORTED,False,4932.3
+49,hi,conserve,depletion,good,वर्षा जल संचयन और कृत्रिम पुनर्भरण से भूजल की कमी कम की जा सकती है।,,False,0.675,0.0,False,False,SUPPORTED,False,5221.1
+50,hinglish,phagi_hing,category,good,"Phagi block Over-exploited category mein hai, extraction stage 117% hai.",,False,0.738,1.0,False,False,SUPPORTED,False,4929.6
+51,hinglish,phagi_hing,depletion,good,Yahan jitna paani har saal bharta hai usse zyada paani nikala ja raha hai.,,False,0.719,0.5,False,False,SUPPORTED,False,4541.8
+52,hinglish,phagi_hing,contradiction,bad,"Phagi mein recharge extraction se zyada hai, isliye block safe hai.",contradicts_figures,True,0.62,0.67,False,True,,True,2347.6
+53,hinglish,phagi_hing,unsupported_cause,bad,Phagi Over-exploited hai kyunki wahan factory bahut hain.,unsupported_cause,True,0.636,0.4,False,True,,True,2341.5
+54,hinglish,phagi_hing,category,bad,Over-exploited ka matlab stage 70% se 90% ke beech hai.,category_threshold,True,0.687,0.75,False,True,,True,2366.5
+55,hinglish,general,depth_direction,good,Monsoon mein barish se recharge hota hai aur water level upar aata hai.,,False,0.677,0.33,False,False,SUPPORTED,False,5231.5
+56,hinglish,general,depth_direction,bad,Monsoon mein water level neeche chala jata hai.,monsoon_direction,True,0.702,0.2,False,True,,True,2860.0
+57,hinglish,general,seasonal,bad,Barish ke mausam mein paani ka level girta hai.,monsoon_direction,True,0.528,0.0,True,True,,True,2787.3
+58,hinglish,general,pre_post_monsoon,good,Monsoon se pehle water level aam taur par gehra hota hai.,,False,0.658,0.17,False,False,SUPPORTED,False,5213.7
+59,hinglish,general,depth_direction,bad,Extraction zyada hone se water level badhta hai.,extraction_direction,True,0.696,0.2,False,True,,True,2736.9
+60,hinglish,general,category,good,Safe ka matlab hai stage of extraction 70% tak.,,False,0.803,0.6,False,False,SUPPORTED,False,4917.3
+61,hinglish,general,unsupported_cause,bad,Groundwater kam hone ka sabse bada karan jalvayu parivartan hai.,unsupported_causal_claim; unsupported_cause,True,0.653,0.0,False,True,,True,2800.3
+62,hinglish,general,depletion,good,Jab extraction recharge se zyada hota hai to water level girta hai.,,False,0.678,0.33,False,False,SUPPORTED,False,5048.3
+63,en,todar_en,category,good,TODARAISINGH is Safe; its stage of extraction is 64%.,,False,0.76,1.0,False,False,SUPPORTED,False,4867.6
+64,en,todar_en,recharge_vs_extraction,good,Annual recharge of 6079 ham is more than the extraction of 3627 ham.,,False,0.814,1.0,False,False,SUPPORTED,False,4550.8
+65,en,todar_en,contradiction,bad,Extraction of 3627 ham is more than the recharge of 6079 ham.,contradicts_figures,True,0.76,1.0,False,True,,True,2308.4
+66,en,todar_en,category,bad,TODARAISINGH is Safe because its stage is 95%.,category_threshold,True,0.705,0.75,False,True,,True,2242.5
+67,mr,general,depth_direction,bad,पावसाळ्यात भूजल पातळी खोल जाते.,monsoon_direction,True,0.733,0.0,False,True,,True,2473.7
+68,mr,general,depth_direction,good,पावसाळ्यात पुनर्भरणामुळे भूजल पातळी वर येते.,,False,0.715,0.0,False,False,SUPPORTED,False,4672.0
+69,pa,general,depth_direction,bad,ਮਾਨਸੂਨ ਵਿੱਚ ਪਾਣੀ ਦਾ ਪੱਧਰ ਹੇਠਾਂ ਜਾਂਦਾ ਹੈ।,monsoon_direction,True,0.65,0.0,False,True,,True,2475.2
+70,pa,general,depth_direction,good,ਮਾਨਸੂਨ ਵਿੱਚ ਮੀਂਹ ਨਾਲ ਪਾਣੀ ਦਾ ਪੱਧਰ ਉੱਪਰ ਆਉਂਦਾ ਹੈ।,,False,0.7,0.0,False,False,SUPPORTED,False,4744.6
+71,en,general,recharge_vs_extraction,good,"Recharge is the amount of water that naturally enters the ground, like from rainfall or streams, to refill aquifers. Extraction is the amount of water taken out from groundwater for use, such as for irrigation or industry. When extraction exceeds recharge, the groundwater level drops and may go beyond safe limits.",,False,0.72,0.44,False,False,SUPPORTED,False,5109.1

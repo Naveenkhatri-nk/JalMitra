@@ -1,0 +1,506 @@
+language,template_key,current_text,suggested_text,reviewer,date,notes
+hi,app_about,"**JalMitra** भूजल, मिट्टी, पानी की गुणवत्ता, फसल और भूमि के लिए एक स्थानीय, बहुभाषी जानकारी सहायक है। यह इस ऐप में रखे आधिकारिक और प्रकाशित डेटासेट पढ़ता है और उन्हें आसान भाषा में समझाता है। यह इसी कंप्यूटर पर चलता है और किसी ऑनलाइन AI सेवा का उपयोग नहीं करता।
+
+**आप यहाँ क्या कर सकते हैं:**
+- **भूजल:** पूरे भारत की 6,762 आकलन इकाइयों की 2025 की आधिकारिक श्रेणी (Safe, Semi-critical, Critical, Over-exploited, Saline), और राजस्थान के 302 ब्लॉकों के विस्तृत आंकड़े (पुनर्भरण, दोहन, दोहन का स्तर)। आप जगहों की तुलना और ज़िला व राज्य का सारांश भी देख सकते हैं।
+- **मिट्टी स्वास्थ्य:** अपना मृदा स्वास्थ्य कार्ड या लैब रिपोर्ट (PDF, CSV या Excel) अपलोड करें, मान जाँचें, और हर पैरामीटर की प्रकाशित संदर्भ सीमाओं के साथ व्याख्या पाएँ।
+- **पानी की गुणवत्ता:** अपनी पानी जाँच के नतीजों की तुलना BIS IS 10500 पेयजल सीमाओं और IS 11624 सिंचाई दिशानिर्देशों से करें। JalMitra पानी को पीने के लिए सुरक्षित घोषित नहीं करता; यह केवल मान्यता प्राप्त प्रयोगशाला कर सकती है।
+- **फसल और सिंचाई:** फसलों की पानी की ज़रूरत और लवण सहनशीलता जैसी जानकारी (FAO, SKNAU ज़ोन II-A) और सिंचाई के तरीकों पर मार्गदर्शन।
+- **भूमि जानकारी:** भूमि स्थिति रिपोर्ट, जिसमें किसी जगह के लिए उपलब्ध डेटा एक साथ मिलता है।
+- **रिपोर्ट:** छह डाउनलोड करने योग्य रिपोर्ट: भूजल, मिट्टी, भूमि, फसल, सिंचाई और पूरी रिपोर्ट।
+- **भाषाएँ:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ और मराठी।
+
+**ज़रूरी:** जवाब इस ऐप में लोड किए गए डेटासेट पर निर्भर करते हैं। हर जगह का कवरेज एक जैसा नहीं है। जब कोई मान नहीं होता, तो JalMitra अनुमान लगाने के बजाय ""वर्तमान डेटासेट में उपलब्ध नहीं"" बताता है।
+
+पूछकर देखें: *जयपुर ज़िले में भूजल की स्थिति क्या है?* या *Semi-critical का मतलब क्या है?*",,,,new: questions about JalMitra itself
+hinglish,app_about,"**JalMitra** groundwater, mitti, paani ki quality, fasal aur zameen ke liye ek local, multilingual jaankari sahayak hai. Yeh is app mein rakhe official aur published datasets padhta hai aur unhe aasaan bhasha mein samjhata hai. Yeh isi computer par chalta hai aur kisi online AI service ka use nahi karta.
+
+**Aap yahan kya kar sakte hain:**
+- **Groundwater:** poore Bharat ki 6,762 assessment units ki 2025 ki official category (Safe, Semi-critical, Critical, Over-exploited, Saline), aur Rajasthan ke 302 blocks ke detailed figures (recharge, extraction, stage of extraction). Jagahon ki tulna aur district/state summary bhi dekh sakte hain.
+- **Soil Health:** apna Soil Health Card ya lab report (PDF, CSV ya Excel) upload kijiye, values check kijiye, aur har parameter ka matlab published reference ranges ke saath samajhiye.
+- **Water Quality:** apne paani ki jaanch ke results ko BIS IS 10500 peene ke paani ki limits aur IS 11624 sinchai guidelines se milaiye. JalMitra paani ko peene ke liye safe declare nahi karta; yeh sirf accredited lab kar sakti hai.
+- **Crops aur Irrigation:** fasal ki paani ki zaroorat aur salt tolerance jaisi jaankari (FAO, SKNAU Zone II-A) aur sinchai ke tareekon par guidance.
+- **Land Information:** Land Condition Report, jismein kisi jagah ka uplabdh data ek saath milta hai.
+- **Reports:** 6 download hone wali reports: groundwater, soil, land, crop, irrigation aur complete report.
+- **Languages:** English, Hindi, Hinglish, Rajasthani, Punjabi aur Marathi.
+
+**Zaroori:** jawab is app mein load kiye gaye datasets par depend karte hain. Har jagah ka coverage ek jaisa nahi hai. Jab koi value nahi hoti, JalMitra andaza lagane ke bajay ""Not available in the current dataset"" batata hai.
+
+Poochkar dekhiye: *Ajmer Urban ka paani kaisa hai?* ya *Semi-critical ka matlab kya hai?*",,,,new: questions about JalMitra itself
+mr,app_about,"**JalMitra** हा भूजल, माती, पाण्याची गुणवत्ता, पिके आणि जमीन यांसाठी स्थानिक, बहुभाषिक माहिती सहाय्यक आहे. तो या ॲपमध्ये ठेवलेले अधिकृत आणि प्रकाशित डेटासेट वाचतो आणि सोप्या भाषेत समजावतो. तो याच संगणकावर चालतो आणि कोणतीही ऑनलाइन AI सेवा वापरत नाही.
+
+**तुम्ही इथे काय करू शकता:**
+- **भूजल:** संपूर्ण भारतातील 6,762 मूल्यांकन घटकांची 2025 ची अधिकृत श्रेणी (Safe, Semi-critical, Critical, Over-exploited, Saline), आणि राजस्थानमधील 302 ब्लॉकचे तपशीलवार आकडे (पुनर्भरण, उपसा, उपशाची पातळी). ठिकाणांची तुलना आणि जिल्हा व राज्य सारांशही पाहता येतो.
+- **मृदा आरोग्य:** तुमचे मृदा आरोग्य पत्रिका किंवा प्रयोगशाळा अहवाल (PDF, CSV किंवा Excel) अपलोड करा, मूल्ये तपासा, आणि प्रत्येक घटकाचे प्रकाशित संदर्भ मर्यादांनुसार स्पष्टीकरण मिळवा.
+- **पाण्याची गुणवत्ता:** तुमच्या पाणी तपासणीचे निकाल BIS IS 10500 पिण्याच्या पाण्याच्या मर्यादा आणि IS 11624 सिंचन मार्गदर्शक तत्त्वांशी तुलना करा. JalMitra पाणी पिण्यास सुरक्षित असल्याचे जाहीर करत नाही; ते फक्त मान्यताप्राप्त प्रयोगशाळा करू शकते.
+- **पिके आणि सिंचन:** पिकांची पाण्याची गरज आणि क्षार सहनशीलता यांसारखी माहिती (FAO, SKNAU झोन II-A) आणि सिंचन पद्धतींवर मार्गदर्शन.
+- **जमीन माहिती:** जमीन स्थिती अहवाल, ज्यात एखाद्या ठिकाणाचा उपलब्ध डेटा एकत्र मिळतो.
+- **अहवाल:** सहा डाउनलोड करता येणारे अहवाल: भूजल, माती, जमीन, पीक, सिंचन आणि संपूर्ण अहवाल.
+- **भाषा:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ आणि मराठी.
+
+**महत्त्वाचे:** उत्तरे या ॲपमध्ये लोड केलेल्या डेटासेटवर अवलंबून आहेत. प्रत्येक ठिकाणाचे कव्हरेज सारखे नाही. एखादे मूल्य नसल्यास JalMitra अंदाज न लावता ""सध्याच्या डेटासेटमध्ये उपलब्ध नाही"" असे सांगते.
+
+विचारून पहा: *पुणे जिल्ह्यातील भूजल स्थिती काय आहे?*",,,,new: questions about JalMitra itself
+pa,app_about,"**JalMitra** ਧਰਤੀ ਹੇਠਲੇ ਪਾਣੀ, ਮਿੱਟੀ, ਪਾਣੀ ਦੀ ਗੁਣਵੱਤਾ, ਫ਼ਸਲਾਂ ਅਤੇ ਜ਼ਮੀਨ ਲਈ ਇੱਕ ਸਥਾਨਕ, ਬਹੁ-ਭਾਸ਼ੀ ਜਾਣਕਾਰੀ ਸਹਾਇਕ ਹੈ। ਇਹ ਇਸ ਐਪ ਵਿੱਚ ਰੱਖੇ ਸਰਕਾਰੀ ਅਤੇ ਪ੍ਰਕਾਸ਼ਿਤ ਡਾਟਾਸੈੱਟ ਪੜ੍ਹਦਾ ਹੈ ਅਤੇ ਸੌਖੀ ਭਾਸ਼ਾ ਵਿੱਚ ਸਮਝਾਉਂਦਾ ਹੈ। ਇਹ ਇਸੇ ਕੰਪਿਊਟਰ 'ਤੇ ਚੱਲਦਾ ਹੈ ਅਤੇ ਕਿਸੇ ਔਨਲਾਈਨ AI ਸੇਵਾ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰਦਾ।
+
+**ਤੁਸੀਂ ਇੱਥੇ ਕੀ ਕਰ ਸਕਦੇ ਹੋ:**
+- **ਧਰਤੀ ਹੇਠਲਾ ਪਾਣੀ:** ਪੂਰੇ ਭਾਰਤ ਦੀਆਂ 6,762 ਮੁਲਾਂਕਣ ਇਕਾਈਆਂ ਦੀ 2025 ਦੀ ਸਰਕਾਰੀ ਸ਼੍ਰੇਣੀ (Safe, Semi-critical, Critical, Over-exploited, Saline), ਅਤੇ ਰਾਜਸਥਾਨ ਦੇ 302 ਬਲਾਕਾਂ ਦੇ ਵਿਸਤ੍ਰਿਤ ਅੰਕੜੇ (ਰੀਚਾਰਜ, ਕੱਢਿਆ ਪਾਣੀ, ਕੱਢਣ ਦਾ ਪੱਧਰ)। ਤੁਸੀਂ ਥਾਵਾਂ ਦੀ ਤੁਲਨਾ ਅਤੇ ਜ਼ਿਲ੍ਹਾ ਤੇ ਰਾਜ ਦਾ ਸਾਰ ਵੀ ਵੇਖ ਸਕਦੇ ਹੋ।
+- **ਮਿੱਟੀ ਦੀ ਸਿਹਤ:** ਆਪਣਾ ਸੋਇਲ ਹੈਲਥ ਕਾਰਡ ਜਾਂ ਲੈਬ ਰਿਪੋਰਟ (PDF, CSV ਜਾਂ Excel) ਅੱਪਲੋਡ ਕਰੋ, ਮੁੱਲ ਜਾਂਚੋ, ਅਤੇ ਹਰ ਪੈਰਾਮੀਟਰ ਦੀ ਪ੍ਰਕਾਸ਼ਿਤ ਹਵਾਲਾ ਸੀਮਾਵਾਂ ਨਾਲ ਵਿਆਖਿਆ ਪਾਓ।
+- **ਪਾਣੀ ਦੀ ਗੁਣਵੱਤਾ:** ਆਪਣੀ ਪਾਣੀ ਜਾਂਚ ਦੇ ਨਤੀਜਿਆਂ ਦੀ ਤੁਲਨਾ BIS IS 10500 ਪੀਣ ਵਾਲੇ ਪਾਣੀ ਦੀਆਂ ਸੀਮਾਵਾਂ ਅਤੇ IS 11624 ਸਿੰਚਾਈ ਹਦਾਇਤਾਂ ਨਾਲ ਕਰੋ। JalMitra ਪਾਣੀ ਨੂੰ ਪੀਣ ਲਈ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਐਲਾਨਦਾ; ਇਹ ਸਿਰਫ਼ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਲੈਬ ਕਰ ਸਕਦੀ ਹੈ।
+- **ਫ਼ਸਲਾਂ ਅਤੇ ਸਿੰਚਾਈ:** ਫ਼ਸਲਾਂ ਦੀ ਪਾਣੀ ਦੀ ਲੋੜ ਅਤੇ ਲੂਣ ਸਹਿਣਸ਼ੀਲਤਾ ਵਰਗੀ ਜਾਣਕਾਰੀ (FAO, SKNAU ਜ਼ੋਨ II-A) ਅਤੇ ਸਿੰਚਾਈ ਦੇ ਤਰੀਕਿਆਂ ਬਾਰੇ ਸੇਧ।
+- **ਜ਼ਮੀਨ ਦੀ ਜਾਣਕਾਰੀ:** ਜ਼ਮੀਨ ਦੀ ਹਾਲਤ ਰਿਪੋਰਟ, ਜਿਸ ਵਿੱਚ ਕਿਸੇ ਥਾਂ ਦਾ ਉਪਲਬਧ ਡਾਟਾ ਇਕੱਠਾ ਮਿਲਦਾ ਹੈ।
+- **ਰਿਪੋਰਟਾਂ:** ਛੇ ਡਾਊਨਲੋਡ ਹੋਣ ਵਾਲੀਆਂ ਰਿਪੋਰਟਾਂ: ਪਾਣੀ, ਮਿੱਟੀ, ਜ਼ਮੀਨ, ਫ਼ਸਲ, ਸਿੰਚਾਈ ਅਤੇ ਪੂਰੀ ਰਿਪੋਰਟ।
+- **ਭਾਸ਼ਾਵਾਂ:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ ਅਤੇ मराठी।
+
+**ਜ਼ਰੂਰੀ:** ਜਵਾਬ ਇਸ ਐਪ ਵਿੱਚ ਲੋਡ ਕੀਤੇ ਡਾਟਾਸੈੱਟਾਂ 'ਤੇ ਨਿਰਭਰ ਕਰਦੇ ਹਨ। ਹਰ ਥਾਂ ਦੀ ਕਵਰੇਜ ਇੱਕੋ ਜਿਹੀ ਨਹੀਂ ਹੈ। ਜਦੋਂ ਕੋਈ ਮੁੱਲ ਨਹੀਂ ਹੁੰਦਾ, JalMitra ਅੰਦਾਜ਼ਾ ਲਗਾਉਣ ਦੀ ਬਜਾਏ ""ਮੌਜੂਦਾ ਡਾਟਾਸੈੱਟ ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ"" ਦੱਸਦਾ ਹੈ।
+
+ਪੁੱਛ ਕੇ ਵੇਖੋ: *ਲੁਧਿਆਣਾ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਪਾਣੀ ਦੀ ਹਾਲਤ ਕੀ ਹੈ?*",,,,new: questions about JalMitra itself
+raj,app_about,"**JalMitra** भूजल, माटी, पाणी री गुणवत्ता, फसल अर जमीन सारू एक लोकल, घणी भासावां वाळो जाणकारी सहायक है। ओ इण ऐप में राख्योड़ा सरकारी अर छप्योड़ा डेटासेट बांचै अर सीधी भासा में समझावै। ओ इणी कंप्यूटर माथै चालै अर किणी ऑनलाइन AI सेवा रो उपयोग कोनी करै।
+
+**थे अठै कांई कर सको:**
+- **भूजल:** पूरै भारत री 6,762 आकलन इकाइयां री 2025 री सरकारी श्रेणी (Safe, Semi-critical, Critical, Over-exploited, Saline), अर राजस्थान रा 302 ब्लॉकां रा पूरा आंकड़ा (पुनर्भरण, दोहन, दोहन रो स्तर)। थे जगां री तुलना अर जिलै व राज्य रो सार भी देख सको।
+- **माटी री सेहत:** आपरो मृदा स्वास्थ्य कार्ड या लैब रिपोर्ट (PDF, CSV या Excel) अपलोड करो, मान जांचो, अर हर पैरामीटर री छपी संदर्भ सीमावां सागै समझ पावो।
+- **पाणी री गुणवत्ता:** आपरी पाणी जांच रा नतीजा BIS IS 10500 पीवण रा पाणी री सीमावां अर IS 11624 सिंचाई दिशानिर्देशां सूं मिलावो। JalMitra पाणी नै पीवण सारू सुरक्षित कोनी बतावै; ओ फगत मान्यता वाळी लैब कर सकै।
+- **फसल अर सिंचाई:** फसलां री पाणी री जरूरत अर खारेपण सहण री जाणकारी (FAO, SKNAU जोन II-A) अर सिंचाई रा तरीकां माथै मारग दरसण।
+- **जमीन री जाणकारी:** जमीन री हालत री रिपोर्ट, जिण में किणी जगां रो मिलतो डेटा एक सागै मिलै।
+- **रिपोर्ट:** छह डाउनलोड होवण वाळी रिपोर्टां: भूजल, माटी, जमीन, फसल, सिंचाई अर पूरी रिपोर्ट।
+- **भासावां:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ अर मराठी।
+
+**जरूरी:** जवाब इण ऐप में लोड करियोड़ा डेटासेट माथै टिक्योड़ा है। हर जगां रो कवरेज एक जैड़ो कोनी। जद कोई मान कोनी हुवै, तो JalMitra अंदाजो लगावण री ठौड़ ""हाल रा डेटासेट में उपलब्ध कोनी"" बतावै।
+
+पूछ नै देखो: *म्हारो अजमेर जिलो रो पाणी कियां है?*",,,,new: questions about JalMitra itself
+hi,app_can_do,"JalMitra किसानों, विद्यार्थियों और अधिकारियों के लिए ये काम कर सकता है:
+- **भूजल:** पूरे भारत की 6,762 आकलन इकाइयों की 2025 की आधिकारिक श्रेणी (Safe, Semi-critical, Critical, Over-exploited, Saline), और राजस्थान के 302 ब्लॉकों के विस्तृत आंकड़े (पुनर्भरण, दोहन, दोहन का स्तर)। आप जगहों की तुलना और ज़िला व राज्य का सारांश भी देख सकते हैं।
+- **मिट्टी स्वास्थ्य:** अपना मृदा स्वास्थ्य कार्ड या लैब रिपोर्ट (PDF, CSV या Excel) अपलोड करें, मान जाँचें, और हर पैरामीटर की प्रकाशित संदर्भ सीमाओं के साथ व्याख्या पाएँ।
+- **पानी की गुणवत्ता:** अपनी पानी जाँच के नतीजों की तुलना BIS IS 10500 पेयजल सीमाओं और IS 11624 सिंचाई दिशानिर्देशों से करें। JalMitra पानी को पीने के लिए सुरक्षित घोषित नहीं करता; यह केवल मान्यता प्राप्त प्रयोगशाला कर सकती है।
+- **फसल और सिंचाई:** फसलों की पानी की ज़रूरत और लवण सहनशीलता जैसी जानकारी (FAO, SKNAU ज़ोन II-A) और सिंचाई के तरीकों पर मार्गदर्शन।
+- **भूमि जानकारी:** भूमि स्थिति रिपोर्ट, जिसमें किसी जगह के लिए उपलब्ध डेटा एक साथ मिलता है।
+- **रिपोर्ट:** छह डाउनलोड करने योग्य रिपोर्ट: भूजल, मिट्टी, भूमि, फसल, सिंचाई और पूरी रिपोर्ट।
+- **भाषाएँ:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ और मराठी।
+
+**ज़रूरी:** जवाब इस ऐप में लोड किए गए डेटासेट पर निर्भर करते हैं। हर जगह का कवरेज एक जैसा नहीं है। जब कोई मान नहीं होता, तो JalMitra अनुमान लगाने के बजाय ""वर्तमान डेटासेट में उपलब्ध नहीं"" बताता है।
+
+शुरू करने के लिए **JalMitra से पूछें** खोलें और सवाल लिखें, जैसे *जयपुर ज़िले में भूजल की स्थिति क्या है?*",,,,new: questions about JalMitra itself
+hinglish,app_can_do,"JalMitra kisanon, students aur officials ke liye yeh kaam kar sakta hai:
+- **Groundwater:** poore Bharat ki 6,762 assessment units ki 2025 ki official category (Safe, Semi-critical, Critical, Over-exploited, Saline), aur Rajasthan ke 302 blocks ke detailed figures (recharge, extraction, stage of extraction). Jagahon ki tulna aur district/state summary bhi dekh sakte hain.
+- **Soil Health:** apna Soil Health Card ya lab report (PDF, CSV ya Excel) upload kijiye, values check kijiye, aur har parameter ka matlab published reference ranges ke saath samajhiye.
+- **Water Quality:** apne paani ki jaanch ke results ko BIS IS 10500 peene ke paani ki limits aur IS 11624 sinchai guidelines se milaiye. JalMitra paani ko peene ke liye safe declare nahi karta; yeh sirf accredited lab kar sakti hai.
+- **Crops aur Irrigation:** fasal ki paani ki zaroorat aur salt tolerance jaisi jaankari (FAO, SKNAU Zone II-A) aur sinchai ke tareekon par guidance.
+- **Land Information:** Land Condition Report, jismein kisi jagah ka uplabdh data ek saath milta hai.
+- **Reports:** 6 download hone wali reports: groundwater, soil, land, crop, irrigation aur complete report.
+- **Languages:** English, Hindi, Hinglish, Rajasthani, Punjabi aur Marathi.
+
+**Zaroori:** jawab is app mein load kiye gaye datasets par depend karte hain. Har jagah ka coverage ek jaisa nahi hai. Jab koi value nahi hoti, JalMitra andaza lagane ke bajay ""Not available in the current dataset"" batata hai.
+
+Shuru karne ke liye **Ask JalMitra** kholiye aur sawal likhiye, jaise *Ajmer Urban ka paani kaisa hai?*",,,,new: questions about JalMitra itself
+mr,app_can_do,"JalMitra शेतकरी, विद्यार्थी आणि अधिकाऱ्यांसाठी हे करू शकतो:
+- **भूजल:** संपूर्ण भारतातील 6,762 मूल्यांकन घटकांची 2025 ची अधिकृत श्रेणी (Safe, Semi-critical, Critical, Over-exploited, Saline), आणि राजस्थानमधील 302 ब्लॉकचे तपशीलवार आकडे (पुनर्भरण, उपसा, उपशाची पातळी). ठिकाणांची तुलना आणि जिल्हा व राज्य सारांशही पाहता येतो.
+- **मृदा आरोग्य:** तुमचे मृदा आरोग्य पत्रिका किंवा प्रयोगशाळा अहवाल (PDF, CSV किंवा Excel) अपलोड करा, मूल्ये तपासा, आणि प्रत्येक घटकाचे प्रकाशित संदर्भ मर्यादांनुसार स्पष्टीकरण मिळवा.
+- **पाण्याची गुणवत्ता:** तुमच्या पाणी तपासणीचे निकाल BIS IS 10500 पिण्याच्या पाण्याच्या मर्यादा आणि IS 11624 सिंचन मार्गदर्शक तत्त्वांशी तुलना करा. JalMitra पाणी पिण्यास सुरक्षित असल्याचे जाहीर करत नाही; ते फक्त मान्यताप्राप्त प्रयोगशाळा करू शकते.
+- **पिके आणि सिंचन:** पिकांची पाण्याची गरज आणि क्षार सहनशीलता यांसारखी माहिती (FAO, SKNAU झोन II-A) आणि सिंचन पद्धतींवर मार्गदर्शन.
+- **जमीन माहिती:** जमीन स्थिती अहवाल, ज्यात एखाद्या ठिकाणाचा उपलब्ध डेटा एकत्र मिळतो.
+- **अहवाल:** सहा डाउनलोड करता येणारे अहवाल: भूजल, माती, जमीन, पीक, सिंचन आणि संपूर्ण अहवाल.
+- **भाषा:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ आणि मराठी.
+
+**महत्त्वाचे:** उत्तरे या ॲपमध्ये लोड केलेल्या डेटासेटवर अवलंबून आहेत. प्रत्येक ठिकाणाचे कव्हरेज सारखे नाही. एखादे मूल्य नसल्यास JalMitra अंदाज न लावता ""सध्याच्या डेटासेटमध्ये उपलब्ध नाही"" असे सांगते.
+
+सुरुवात करण्यासाठी **Ask JalMitra** (JalMitra ला विचारा) उघडा आणि प्रश्न लिहा.",,,,new: questions about JalMitra itself
+pa,app_can_do,"JalMitra ਕਿਸਾਨਾਂ, ਵਿਦਿਆਰਥੀਆਂ ਅਤੇ ਅਧਿਕਾਰੀਆਂ ਲਈ ਇਹ ਕੰਮ ਕਰ ਸਕਦਾ ਹੈ:
+- **ਧਰਤੀ ਹੇਠਲਾ ਪਾਣੀ:** ਪੂਰੇ ਭਾਰਤ ਦੀਆਂ 6,762 ਮੁਲਾਂਕਣ ਇਕਾਈਆਂ ਦੀ 2025 ਦੀ ਸਰਕਾਰੀ ਸ਼੍ਰੇਣੀ (Safe, Semi-critical, Critical, Over-exploited, Saline), ਅਤੇ ਰਾਜਸਥਾਨ ਦੇ 302 ਬਲਾਕਾਂ ਦੇ ਵਿਸਤ੍ਰਿਤ ਅੰਕੜੇ (ਰੀਚਾਰਜ, ਕੱਢਿਆ ਪਾਣੀ, ਕੱਢਣ ਦਾ ਪੱਧਰ)। ਤੁਸੀਂ ਥਾਵਾਂ ਦੀ ਤੁਲਨਾ ਅਤੇ ਜ਼ਿਲ੍ਹਾ ਤੇ ਰਾਜ ਦਾ ਸਾਰ ਵੀ ਵੇਖ ਸਕਦੇ ਹੋ।
+- **ਮਿੱਟੀ ਦੀ ਸਿਹਤ:** ਆਪਣਾ ਸੋਇਲ ਹੈਲਥ ਕਾਰਡ ਜਾਂ ਲੈਬ ਰਿਪੋਰਟ (PDF, CSV ਜਾਂ Excel) ਅੱਪਲੋਡ ਕਰੋ, ਮੁੱਲ ਜਾਂਚੋ, ਅਤੇ ਹਰ ਪੈਰਾਮੀਟਰ ਦੀ ਪ੍ਰਕਾਸ਼ਿਤ ਹਵਾਲਾ ਸੀਮਾਵਾਂ ਨਾਲ ਵਿਆਖਿਆ ਪਾਓ।
+- **ਪਾਣੀ ਦੀ ਗੁਣਵੱਤਾ:** ਆਪਣੀ ਪਾਣੀ ਜਾਂਚ ਦੇ ਨਤੀਜਿਆਂ ਦੀ ਤੁਲਨਾ BIS IS 10500 ਪੀਣ ਵਾਲੇ ਪਾਣੀ ਦੀਆਂ ਸੀਮਾਵਾਂ ਅਤੇ IS 11624 ਸਿੰਚਾਈ ਹਦਾਇਤਾਂ ਨਾਲ ਕਰੋ। JalMitra ਪਾਣੀ ਨੂੰ ਪੀਣ ਲਈ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਐਲਾਨਦਾ; ਇਹ ਸਿਰਫ਼ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਲੈਬ ਕਰ ਸਕਦੀ ਹੈ।
+- **ਫ਼ਸਲਾਂ ਅਤੇ ਸਿੰਚਾਈ:** ਫ਼ਸਲਾਂ ਦੀ ਪਾਣੀ ਦੀ ਲੋੜ ਅਤੇ ਲੂਣ ਸਹਿਣਸ਼ੀਲਤਾ ਵਰਗੀ ਜਾਣਕਾਰੀ (FAO, SKNAU ਜ਼ੋਨ II-A) ਅਤੇ ਸਿੰਚਾਈ ਦੇ ਤਰੀਕਿਆਂ ਬਾਰੇ ਸੇਧ।
+- **ਜ਼ਮੀਨ ਦੀ ਜਾਣਕਾਰੀ:** ਜ਼ਮੀਨ ਦੀ ਹਾਲਤ ਰਿਪੋਰਟ, ਜਿਸ ਵਿੱਚ ਕਿਸੇ ਥਾਂ ਦਾ ਉਪਲਬਧ ਡਾਟਾ ਇਕੱਠਾ ਮਿਲਦਾ ਹੈ।
+- **ਰਿਪੋਰਟਾਂ:** ਛੇ ਡਾਊਨਲੋਡ ਹੋਣ ਵਾਲੀਆਂ ਰਿਪੋਰਟਾਂ: ਪਾਣੀ, ਮਿੱਟੀ, ਜ਼ਮੀਨ, ਫ਼ਸਲ, ਸਿੰਚਾਈ ਅਤੇ ਪੂਰੀ ਰਿਪੋਰਟ।
+- **ਭਾਸ਼ਾਵਾਂ:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ ਅਤੇ मराठी।
+
+**ਜ਼ਰੂਰੀ:** ਜਵਾਬ ਇਸ ਐਪ ਵਿੱਚ ਲੋਡ ਕੀਤੇ ਡਾਟਾਸੈੱਟਾਂ 'ਤੇ ਨਿਰਭਰ ਕਰਦੇ ਹਨ। ਹਰ ਥਾਂ ਦੀ ਕਵਰੇਜ ਇੱਕੋ ਜਿਹੀ ਨਹੀਂ ਹੈ। ਜਦੋਂ ਕੋਈ ਮੁੱਲ ਨਹੀਂ ਹੁੰਦਾ, JalMitra ਅੰਦਾਜ਼ਾ ਲਗਾਉਣ ਦੀ ਬਜਾਏ ""ਮੌਜੂਦਾ ਡਾਟਾਸੈੱਟ ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ"" ਦੱਸਦਾ ਹੈ।
+
+ਸ਼ੁਰੂ ਕਰਨ ਲਈ **Ask JalMitra** (JalMitra ਨੂੰ ਪੁੱਛੋ) ਖੋਲ੍ਹੋ ਅਤੇ ਸਵਾਲ ਲਿਖੋ।",,,,new: questions about JalMitra itself
+raj,app_can_do,"JalMitra करसाणां, विद्यार्थियां अर अधिकारियां सारू ए काम कर सकै:
+- **भूजल:** पूरै भारत री 6,762 आकलन इकाइयां री 2025 री सरकारी श्रेणी (Safe, Semi-critical, Critical, Over-exploited, Saline), अर राजस्थान रा 302 ब्लॉकां रा पूरा आंकड़ा (पुनर्भरण, दोहन, दोहन रो स्तर)। थे जगां री तुलना अर जिलै व राज्य रो सार भी देख सको।
+- **माटी री सेहत:** आपरो मृदा स्वास्थ्य कार्ड या लैब रिपोर्ट (PDF, CSV या Excel) अपलोड करो, मान जांचो, अर हर पैरामीटर री छपी संदर्भ सीमावां सागै समझ पावो।
+- **पाणी री गुणवत्ता:** आपरी पाणी जांच रा नतीजा BIS IS 10500 पीवण रा पाणी री सीमावां अर IS 11624 सिंचाई दिशानिर्देशां सूं मिलावो। JalMitra पाणी नै पीवण सारू सुरक्षित कोनी बतावै; ओ फगत मान्यता वाळी लैब कर सकै।
+- **फसल अर सिंचाई:** फसलां री पाणी री जरूरत अर खारेपण सहण री जाणकारी (FAO, SKNAU जोन II-A) अर सिंचाई रा तरीकां माथै मारग दरसण।
+- **जमीन री जाणकारी:** जमीन री हालत री रिपोर्ट, जिण में किणी जगां रो मिलतो डेटा एक सागै मिलै।
+- **रिपोर्ट:** छह डाउनलोड होवण वाळी रिपोर्टां: भूजल, माटी, जमीन, फसल, सिंचाई अर पूरी रिपोर्ट।
+- **भासावां:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ अर मराठी।
+
+**जरूरी:** जवाब इण ऐप में लोड करियोड़ा डेटासेट माथै टिक्योड़ा है। हर जगां रो कवरेज एक जैड़ो कोनी। जद कोई मान कोनी हुवै, तो JalMitra अंदाजो लगावण री ठौड़ ""हाल रा डेटासेट में उपलब्ध कोनी"" बतावै।
+
+सरू करण सारू **Ask JalMitra** (JalMitra सूं पूछो) खोलो अर सवाल लिखो।",,,,new: questions about JalMitra itself
+hi,app_how_to,"**JalMitra का उपयोग कैसे करें:**
+1. साइडबार से अपनी भाषा चुनें (या स्वचालित रहने दें)।
+2. **JalMitra से पूछें** (Ask JalMitra) खोलें और सवाल लिखें या बोलें, जैसे *जयपुर ज़िले में भूजल की स्थिति क्या है?* या *Semi-critical का मतलब क्या है?*
+3. साइडबार के पेजों से विषय के अनुसार जानकारी देखें: भूजल, भूजल गुणवत्ता, मिट्टी स्वास्थ्य, भूमि, फसल, सिंचाई, तुलना।
+4. अपनी मिट्टी जाँचने के लिए **मेरी मिट्टी रिपोर्ट** (My Soil Report) खोलें और मृदा स्वास्थ्य कार्ड (PDF, CSV या Excel) अपलोड करें। व्याख्या से पहले मान जाँच लें।
+5. रिपोर्ट डाउनलोड करने के लिए **मेरी रिपोर्टें** (My Reports) खोलें।
+6. हर आंकड़े का स्रोत और कवरेज देखने के लिए **डेटा स्रोत** (Data Sources) खोलें।
+
+**ज़रूरी:** जवाब इस ऐप में लोड किए गए डेटासेट पर निर्भर करते हैं। हर जगह का कवरेज एक जैसा नहीं है। जब कोई मान नहीं होता, तो JalMitra अनुमान लगाने के बजाय ""वर्तमान डेटासेट में उपलब्ध नहीं"" बताता है।",,,,new: questions about JalMitra itself
+hinglish,app_how_to,"**JalMitra kaise use karein:**
+1. Sidebar se apni bhasha chuniye (ya automatic rehne dijiye).
+2. **Ask JalMitra** kholiye aur sawal likhiye ya boliye, jaise *Ajmer Urban ka paani kaisa hai?* ya *Semi-critical ka matlab kya hai?*
+3. Sidebar ke pages se topic ke hisaab se dekhiye: Groundwater, Groundwater Quality, Soil Health, Land, Crop Advisor, Irrigation Advisor, Compare Areas.
+4. Apni mitti check karne ke liye **My Soil Report** kholiye aur Soil Health Card (PDF, CSV ya Excel) upload kijiye. Explanation se pehle values check kar lijiye.
+5. Report download karne ke liye **My Reports** kholiye.
+6. Har figure ka source aur coverage dekhne ke liye **Data Sources** kholiye.
+
+**Zaroori:** jawab is app mein load kiye gaye datasets par depend karte hain. Har jagah ka coverage ek jaisa nahi hai. Jab koi value nahi hoti, JalMitra andaza lagane ke bajay ""Not available in the current dataset"" batata hai.",,,,new: questions about JalMitra itself
+mr,app_how_to,"**JalMitra कसे वापरावे:**
+1. साइडबारमधून तुमची भाषा निवडा (किंवा स्वयंचलित राहू द्या).
+2. **Ask JalMitra** (JalMitra ला विचारा) उघडा आणि प्रश्न लिहा किंवा बोला.
+3. साइडबारमधील पानांवर विषयानुसार माहिती पहा: भूजल, भूजल गुणवत्ता, मृदा आरोग्य, जमीन, पीक, सिंचन, तुलना.
+4. तुमची माती तपासण्यासाठी **My Soil Report** (माझा माती अहवाल) उघडा आणि मृदा आरोग्य पत्रिका (PDF, CSV किंवा Excel) अपलोड करा. स्पष्टीकरणापूर्वी मूल्ये तपासा.
+5. अहवाल डाउनलोड करण्यासाठी **My Reports** (माझे अहवाल) उघडा.
+6. प्रत्येक आकड्याचा स्रोत आणि कव्हरेज पाहण्यासाठी **Data Sources** (डेटा स्रोत) उघडा.
+
+**महत्त्वाचे:** उत्तरे या ॲपमध्ये लोड केलेल्या डेटासेटवर अवलंबून आहेत. प्रत्येक ठिकाणाचे कव्हरेज सारखे नाही. एखादे मूल्य नसल्यास JalMitra अंदाज न लावता ""सध्याच्या डेटासेटमध्ये उपलब्ध नाही"" असे सांगते.",,,,new: questions about JalMitra itself
+pa,app_how_to,"**JalMitra ਕਿਵੇਂ ਵਰਤੀਏ:**
+1. ਸਾਈਡਬਾਰ ਤੋਂ ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ (ਜਾਂ ਆਟੋਮੈਟਿਕ ਰਹਿਣ ਦਿਓ)।
+2. **Ask JalMitra** (JalMitra ਨੂੰ ਪੁੱਛੋ) ਖੋਲ੍ਹੋ ਅਤੇ ਸਵਾਲ ਲਿਖੋ ਜਾਂ ਬੋਲੋ।
+3. ਸਾਈਡਬਾਰ ਦੇ ਪੰਨਿਆਂ ਤੋਂ ਵਿਸ਼ੇ ਮੁਤਾਬਕ ਵੇਖੋ: ਪਾਣੀ, ਪਾਣੀ ਦੀ ਗੁਣਵੱਤਾ, ਮਿੱਟੀ, ਜ਼ਮੀਨ, ਫ਼ਸਲ, ਸਿੰਚਾਈ, ਤੁਲਨਾ।
+4. ਆਪਣੀ ਮਿੱਟੀ ਜਾਂਚਣ ਲਈ **My Soil Report** (ਮੇਰੀ ਮਿੱਟੀ ਰਿਪੋਰਟ) ਖੋਲ੍ਹੋ ਅਤੇ ਸੋਇਲ ਹੈਲਥ ਕਾਰਡ (PDF, CSV ਜਾਂ Excel) ਅੱਪਲੋਡ ਕਰੋ। ਵਿਆਖਿਆ ਤੋਂ ਪਹਿਲਾਂ ਮੁੱਲ ਜਾਂਚ ਲਓ।
+5. ਰਿਪੋਰਟ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ **My Reports** (ਮੇਰੀਆਂ ਰਿਪੋਰਟਾਂ) ਖੋਲ੍ਹੋ।
+6. ਹਰ ਅੰਕੜੇ ਦਾ ਸਰੋਤ ਅਤੇ ਕਵਰੇਜ ਵੇਖਣ ਲਈ **Data Sources** (ਡਾਟਾ ਸਰੋਤ) ਖੋਲ੍ਹੋ।
+
+**ਜ਼ਰੂਰੀ:** ਜਵਾਬ ਇਸ ਐਪ ਵਿੱਚ ਲੋਡ ਕੀਤੇ ਡਾਟਾਸੈੱਟਾਂ 'ਤੇ ਨਿਰਭਰ ਕਰਦੇ ਹਨ। ਹਰ ਥਾਂ ਦੀ ਕਵਰੇਜ ਇੱਕੋ ਜਿਹੀ ਨਹੀਂ ਹੈ। ਜਦੋਂ ਕੋਈ ਮੁੱਲ ਨਹੀਂ ਹੁੰਦਾ, JalMitra ਅੰਦਾਜ਼ਾ ਲਗਾਉਣ ਦੀ ਬਜਾਏ ""ਮੌਜੂਦਾ ਡਾਟਾਸੈੱਟ ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ"" ਦੱਸਦਾ ਹੈ।",,,,new: questions about JalMitra itself
+raj,app_how_to,"**JalMitra कियां काम में लेवां:**
+1. साइडबार सूं आपरी भासा चुणो (या अपणै आप रैवण दो)।
+2. **Ask JalMitra** (JalMitra सूं पूछो) खोलो अर सवाल लिखो या बोलो।
+3. साइडबार रा पानां सूं विसय रै हिसाब सूं देखो: भूजल, पाणी री गुणवत्ता, माटी, जमीन, फसल, सिंचाई, तुलना।
+4. आपरी माटी जांचण सारू **My Soil Report** (म्हारी माटी रिपोर्ट) खोलो अर मृदा स्वास्थ्य कार्ड (PDF, CSV या Excel) अपलोड करो। समझावण सूं पैलां मान जांच लो।
+5. रिपोर्ट डाउनलोड करण सारू **My Reports** (म्हारी रिपोर्टां) खोलो।
+6. हर आंकड़ै रो स्रोत अर कवरेज देखण सारू **Data Sources** (डेटा स्रोत) खोलो।
+
+**जरूरी:** जवाब इण ऐप में लोड करियोड़ा डेटासेट माथै टिक्योड़ा है। हर जगां रो कवरेज एक जैड़ो कोनी। जद कोई मान कोनी हुवै, तो JalMitra अंदाजो लगावण री ठौड़ ""हाल रा डेटासेट में उपलब्ध कोनी"" बतावै।",,,,new: questions about JalMitra itself
+hi,app_help,"मैं भूजल, मिट्टी, पानी की गुणवत्ता, फसल, सिंचाई और भूमि की जानकारी में मदद कर सकता हूँ। शुरुआत के लिए कुछ सवाल:
+- *जयपुर ज़िले में भूजल की स्थिति क्या है?*
+- *राजस्थान के 5 सबसे अतिदोहित ब्लॉक*
+- *Semi-critical का मतलब क्या है?*
+- *फ्लोराइड की पेयजल सीमा क्या है?*
+- *कौन सी सिंचाई विधि पानी बचाती है?*
+
+आप यह भी पूछ सकते हैं: *JalMitra क्या है?*, *कौन सी सुविधाएँ हैं?* या *इस वेबसाइट का उपयोग कैसे करें?*",,,,new: questions about JalMitra itself
+hinglish,app_help,"Main groundwater, mitti, paani ki quality, fasal, sinchai aur zameen ki jaankari mein madad kar sakta hoon. Shuru karne ke liye kuch sawal:
+- *Ajmer Urban ka paani kaisa hai?*
+- *Rajasthan ke top 5 over-exploited block*
+- *Semi-critical ka matlab kya hai?*
+- *Fluoride ki peene ke paani ki limit kya hai?*
+- *Kaun si sinchai vidhi paani bachati hai?*
+
+Aap yeh bhi pooch sakte hain: *JalMitra kya hai?*, *Kaun se features hain?* ya *Is website ko kaise use karein?*",,,,new: questions about JalMitra itself
+mr,app_help,"मी भूजल, माती, पाण्याची गुणवत्ता, पिके, सिंचन आणि जमिनीच्या माहितीसाठी मदत करू शकतो. सुरुवातीसाठी काही प्रश्न:
+- *पुणे जिल्ह्यातील भूजल स्थिती काय आहे?*
+- *Semi-critical म्हणजे काय?*
+- *फ्लोराईडची पिण्याच्या पाण्याची मर्यादा काय आहे?*
+
+तुम्ही हेही विचारू शकता: *JalMitra काय आहे?* किंवा *ही वेबसाइट कशी वापरावी?*",,,,new: questions about JalMitra itself
+pa,app_help,"ਮੈਂ ਧਰਤੀ ਹੇਠਲੇ ਪਾਣੀ, ਮਿੱਟੀ, ਪਾਣੀ ਦੀ ਗੁਣਵੱਤਾ, ਫ਼ਸਲਾਂ, ਸਿੰਚਾਈ ਅਤੇ ਜ਼ਮੀਨ ਦੀ ਜਾਣਕਾਰੀ ਵਿੱਚ ਮਦਦ ਕਰ ਸਕਦਾ ਹਾਂ। ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕੁਝ ਸਵਾਲ:
+- *ਲੁਧਿਆਣਾ ਜ਼ਿਲ੍ਹੇ ਵਿੱਚ ਪਾਣੀ ਦੀ ਹਾਲਤ ਕੀ ਹੈ?*
+- *Semi-critical ਦਾ ਕੀ ਮਤਲਬ ਹੈ?*
+- *ਫਲੋਰਾਈਡ ਦੀ ਪੀਣ ਵਾਲੇ ਪਾਣੀ ਦੀ ਸੀਮਾ ਕੀ ਹੈ?*
+
+ਤੁਸੀਂ ਇਹ ਵੀ ਪੁੱਛ ਸਕਦੇ ਹੋ: *JalMitra ਕੀ ਹੈ?* ਜਾਂ *ਇਹ ਵੈੱਬਸਾਈਟ ਕਿਵੇਂ ਵਰਤੀਏ?*",,,,new: questions about JalMitra itself
+raj,app_help,"म्हैं भूजल, माटी, पाणी री गुणवत्ता, फसल, सिंचाई अर जमीन री जाणकारी में मदद कर सकूं। सरू करण सारू थोड़ा सवाल:
+- *म्हारो अजमेर जिलो रो पाणी कियां है?*
+- *Semi-critical रो मतलब कांई है?*
+- *फ्लोराइड री पीवण रा पाणी री सीमा कांई है?*
+
+थे ओ भी पूछ सको: *JalMitra कांई है?* या *इण वेबसाइट नै कियां काम में लेवां?*",,,,new: questions about JalMitra itself
+hi,app_features,"**JalMitra में उपलब्ध सुविधाएँ:**
+- **भूजल:** पूरे भारत की 6,762 आकलन इकाइयों की 2025 की आधिकारिक श्रेणी (Safe, Semi-critical, Critical, Over-exploited, Saline), और राजस्थान के 302 ब्लॉकों के विस्तृत आंकड़े (पुनर्भरण, दोहन, दोहन का स्तर)। आप जगहों की तुलना और ज़िला व राज्य का सारांश भी देख सकते हैं।
+- **मिट्टी स्वास्थ्य:** अपना मृदा स्वास्थ्य कार्ड या लैब रिपोर्ट (PDF, CSV या Excel) अपलोड करें, मान जाँचें, और हर पैरामीटर की प्रकाशित संदर्भ सीमाओं के साथ व्याख्या पाएँ।
+- **पानी की गुणवत्ता:** अपनी पानी जाँच के नतीजों की तुलना BIS IS 10500 पेयजल सीमाओं और IS 11624 सिंचाई दिशानिर्देशों से करें। JalMitra पानी को पीने के लिए सुरक्षित घोषित नहीं करता; यह केवल मान्यता प्राप्त प्रयोगशाला कर सकती है।
+- **फसल और सिंचाई:** फसलों की पानी की ज़रूरत और लवण सहनशीलता जैसी जानकारी (FAO, SKNAU ज़ोन II-A) और सिंचाई के तरीकों पर मार्गदर्शन।
+- **भूमि जानकारी:** भूमि स्थिति रिपोर्ट, जिसमें किसी जगह के लिए उपलब्ध डेटा एक साथ मिलता है।
+- **रिपोर्ट:** छह डाउनलोड करने योग्य रिपोर्ट: भूजल, मिट्टी, भूमि, फसल, सिंचाई और पूरी रिपोर्ट।
+- **भाषाएँ:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ और मराठी।
+
+**पेज:** होम, JalMitra से पूछें, भूजल जानकारी, भूजल गुणवत्ता, मिट्टी स्वास्थ्य, मिट्टी का प्रकार और प्रोफ़ाइल, भूमि जानकारी, भूमि क्षरण, फसल सलाहकार, सिंचाई सलाहकार, भौगोलिक एक्सप्लोरर, क्षेत्रों की तुलना, मेरी मिट्टी रिपोर्ट, मेरी रिपोर्टें, सीखने का केंद्र, डेटा स्रोत, JalMitra के बारे में।
+
+**ज़रूरी:** जवाब इस ऐप में लोड किए गए डेटासेट पर निर्भर करते हैं। हर जगह का कवरेज एक जैसा नहीं है। जब कोई मान नहीं होता, तो JalMitra अनुमान लगाने के बजाय ""वर्तमान डेटासेट में उपलब्ध नहीं"" बताता है।",,,,new: questions about JalMitra itself
+hinglish,app_features,"**JalMitra ke features:**
+- **Groundwater:** poore Bharat ki 6,762 assessment units ki 2025 ki official category (Safe, Semi-critical, Critical, Over-exploited, Saline), aur Rajasthan ke 302 blocks ke detailed figures (recharge, extraction, stage of extraction). Jagahon ki tulna aur district/state summary bhi dekh sakte hain.
+- **Soil Health:** apna Soil Health Card ya lab report (PDF, CSV ya Excel) upload kijiye, values check kijiye, aur har parameter ka matlab published reference ranges ke saath samajhiye.
+- **Water Quality:** apne paani ki jaanch ke results ko BIS IS 10500 peene ke paani ki limits aur IS 11624 sinchai guidelines se milaiye. JalMitra paani ko peene ke liye safe declare nahi karta; yeh sirf accredited lab kar sakti hai.
+- **Crops aur Irrigation:** fasal ki paani ki zaroorat aur salt tolerance jaisi jaankari (FAO, SKNAU Zone II-A) aur sinchai ke tareekon par guidance.
+- **Land Information:** Land Condition Report, jismein kisi jagah ka uplabdh data ek saath milta hai.
+- **Reports:** 6 download hone wali reports: groundwater, soil, land, crop, irrigation aur complete report.
+- **Languages:** English, Hindi, Hinglish, Rajasthani, Punjabi aur Marathi.
+
+**Pages:** Home, Ask JalMitra, Groundwater Intelligence, Groundwater Quality, Soil Health, Soil Type and Profile, Land Intelligence, Land Degradation, Crop Advisor, Irrigation Advisor, Geographic Explorer, Compare Areas, My Soil Report, My Reports, Learning Centre, Data Sources, About JalMitra.
+
+**Zaroori:** jawab is app mein load kiye gaye datasets par depend karte hain. Har jagah ka coverage ek jaisa nahi hai. Jab koi value nahi hoti, JalMitra andaza lagane ke bajay ""Not available in the current dataset"" batata hai.",,,,new: questions about JalMitra itself
+mr,app_features,"**JalMitra मधील सुविधा:**
+- **भूजल:** संपूर्ण भारतातील 6,762 मूल्यांकन घटकांची 2025 ची अधिकृत श्रेणी (Safe, Semi-critical, Critical, Over-exploited, Saline), आणि राजस्थानमधील 302 ब्लॉकचे तपशीलवार आकडे (पुनर्भरण, उपसा, उपशाची पातळी). ठिकाणांची तुलना आणि जिल्हा व राज्य सारांशही पाहता येतो.
+- **मृदा आरोग्य:** तुमचे मृदा आरोग्य पत्रिका किंवा प्रयोगशाळा अहवाल (PDF, CSV किंवा Excel) अपलोड करा, मूल्ये तपासा, आणि प्रत्येक घटकाचे प्रकाशित संदर्भ मर्यादांनुसार स्पष्टीकरण मिळवा.
+- **पाण्याची गुणवत्ता:** तुमच्या पाणी तपासणीचे निकाल BIS IS 10500 पिण्याच्या पाण्याच्या मर्यादा आणि IS 11624 सिंचन मार्गदर्शक तत्त्वांशी तुलना करा. JalMitra पाणी पिण्यास सुरक्षित असल्याचे जाहीर करत नाही; ते फक्त मान्यताप्राप्त प्रयोगशाळा करू शकते.
+- **पिके आणि सिंचन:** पिकांची पाण्याची गरज आणि क्षार सहनशीलता यांसारखी माहिती (FAO, SKNAU झोन II-A) आणि सिंचन पद्धतींवर मार्गदर्शन.
+- **जमीन माहिती:** जमीन स्थिती अहवाल, ज्यात एखाद्या ठिकाणाचा उपलब्ध डेटा एकत्र मिळतो.
+- **अहवाल:** सहा डाउनलोड करता येणारे अहवाल: भूजल, माती, जमीन, पीक, सिंचन आणि संपूर्ण अहवाल.
+- **भाषा:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ आणि मराठी.
+
+**महत्त्वाचे:** उत्तरे या ॲपमध्ये लोड केलेल्या डेटासेटवर अवलंबून आहेत. प्रत्येक ठिकाणाचे कव्हरेज सारखे नाही. एखादे मूल्य नसल्यास JalMitra अंदाज न लावता ""सध्याच्या डेटासेटमध्ये उपलब्ध नाही"" असे सांगते.",,,,new: questions about JalMitra itself
+pa,app_features,"**JalMitra ਵਿੱਚ ਉਪਲਬਧ ਸਹੂਲਤਾਂ:**
+- **ਧਰਤੀ ਹੇਠਲਾ ਪਾਣੀ:** ਪੂਰੇ ਭਾਰਤ ਦੀਆਂ 6,762 ਮੁਲਾਂਕਣ ਇਕਾਈਆਂ ਦੀ 2025 ਦੀ ਸਰਕਾਰੀ ਸ਼੍ਰੇਣੀ (Safe, Semi-critical, Critical, Over-exploited, Saline), ਅਤੇ ਰਾਜਸਥਾਨ ਦੇ 302 ਬਲਾਕਾਂ ਦੇ ਵਿਸਤ੍ਰਿਤ ਅੰਕੜੇ (ਰੀਚਾਰਜ, ਕੱਢਿਆ ਪਾਣੀ, ਕੱਢਣ ਦਾ ਪੱਧਰ)। ਤੁਸੀਂ ਥਾਵਾਂ ਦੀ ਤੁਲਨਾ ਅਤੇ ਜ਼ਿਲ੍ਹਾ ਤੇ ਰਾਜ ਦਾ ਸਾਰ ਵੀ ਵੇਖ ਸਕਦੇ ਹੋ।
+- **ਮਿੱਟੀ ਦੀ ਸਿਹਤ:** ਆਪਣਾ ਸੋਇਲ ਹੈਲਥ ਕਾਰਡ ਜਾਂ ਲੈਬ ਰਿਪੋਰਟ (PDF, CSV ਜਾਂ Excel) ਅੱਪਲੋਡ ਕਰੋ, ਮੁੱਲ ਜਾਂਚੋ, ਅਤੇ ਹਰ ਪੈਰਾਮੀਟਰ ਦੀ ਪ੍ਰਕਾਸ਼ਿਤ ਹਵਾਲਾ ਸੀਮਾਵਾਂ ਨਾਲ ਵਿਆਖਿਆ ਪਾਓ।
+- **ਪਾਣੀ ਦੀ ਗੁਣਵੱਤਾ:** ਆਪਣੀ ਪਾਣੀ ਜਾਂਚ ਦੇ ਨਤੀਜਿਆਂ ਦੀ ਤੁਲਨਾ BIS IS 10500 ਪੀਣ ਵਾਲੇ ਪਾਣੀ ਦੀਆਂ ਸੀਮਾਵਾਂ ਅਤੇ IS 11624 ਸਿੰਚਾਈ ਹਦਾਇਤਾਂ ਨਾਲ ਕਰੋ। JalMitra ਪਾਣੀ ਨੂੰ ਪੀਣ ਲਈ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਐਲਾਨਦਾ; ਇਹ ਸਿਰਫ਼ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਲੈਬ ਕਰ ਸਕਦੀ ਹੈ।
+- **ਫ਼ਸਲਾਂ ਅਤੇ ਸਿੰਚਾਈ:** ਫ਼ਸਲਾਂ ਦੀ ਪਾਣੀ ਦੀ ਲੋੜ ਅਤੇ ਲੂਣ ਸਹਿਣਸ਼ੀਲਤਾ ਵਰਗੀ ਜਾਣਕਾਰੀ (FAO, SKNAU ਜ਼ੋਨ II-A) ਅਤੇ ਸਿੰਚਾਈ ਦੇ ਤਰੀਕਿਆਂ ਬਾਰੇ ਸੇਧ।
+- **ਜ਼ਮੀਨ ਦੀ ਜਾਣਕਾਰੀ:** ਜ਼ਮੀਨ ਦੀ ਹਾਲਤ ਰਿਪੋਰਟ, ਜਿਸ ਵਿੱਚ ਕਿਸੇ ਥਾਂ ਦਾ ਉਪਲਬਧ ਡਾਟਾ ਇਕੱਠਾ ਮਿਲਦਾ ਹੈ।
+- **ਰਿਪੋਰਟਾਂ:** ਛੇ ਡਾਊਨਲੋਡ ਹੋਣ ਵਾਲੀਆਂ ਰਿਪੋਰਟਾਂ: ਪਾਣੀ, ਮਿੱਟੀ, ਜ਼ਮੀਨ, ਫ਼ਸਲ, ਸਿੰਚਾਈ ਅਤੇ ਪੂਰੀ ਰਿਪੋਰਟ।
+- **ਭਾਸ਼ਾਵਾਂ:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ ਅਤੇ मराठी।
+
+**ਜ਼ਰੂਰੀ:** ਜਵਾਬ ਇਸ ਐਪ ਵਿੱਚ ਲੋਡ ਕੀਤੇ ਡਾਟਾਸੈੱਟਾਂ 'ਤੇ ਨਿਰਭਰ ਕਰਦੇ ਹਨ। ਹਰ ਥਾਂ ਦੀ ਕਵਰੇਜ ਇੱਕੋ ਜਿਹੀ ਨਹੀਂ ਹੈ। ਜਦੋਂ ਕੋਈ ਮੁੱਲ ਨਹੀਂ ਹੁੰਦਾ, JalMitra ਅੰਦਾਜ਼ਾ ਲਗਾਉਣ ਦੀ ਬਜਾਏ ""ਮੌਜੂਦਾ ਡਾਟਾਸੈੱਟ ਵਿੱਚ ਉਪਲਬਧ ਨਹੀਂ"" ਦੱਸਦਾ ਹੈ।",,,,new: questions about JalMitra itself
+raj,app_features,"**JalMitra में मिलण वाळी सुविधावां:**
+- **भूजल:** पूरै भारत री 6,762 आकलन इकाइयां री 2025 री सरकारी श्रेणी (Safe, Semi-critical, Critical, Over-exploited, Saline), अर राजस्थान रा 302 ब्लॉकां रा पूरा आंकड़ा (पुनर्भरण, दोहन, दोहन रो स्तर)। थे जगां री तुलना अर जिलै व राज्य रो सार भी देख सको।
+- **माटी री सेहत:** आपरो मृदा स्वास्थ्य कार्ड या लैब रिपोर्ट (PDF, CSV या Excel) अपलोड करो, मान जांचो, अर हर पैरामीटर री छपी संदर्भ सीमावां सागै समझ पावो।
+- **पाणी री गुणवत्ता:** आपरी पाणी जांच रा नतीजा BIS IS 10500 पीवण रा पाणी री सीमावां अर IS 11624 सिंचाई दिशानिर्देशां सूं मिलावो। JalMitra पाणी नै पीवण सारू सुरक्षित कोनी बतावै; ओ फगत मान्यता वाळी लैब कर सकै।
+- **फसल अर सिंचाई:** फसलां री पाणी री जरूरत अर खारेपण सहण री जाणकारी (FAO, SKNAU जोन II-A) अर सिंचाई रा तरीकां माथै मारग दरसण।
+- **जमीन री जाणकारी:** जमीन री हालत री रिपोर्ट, जिण में किणी जगां रो मिलतो डेटा एक सागै मिलै।
+- **रिपोर्ट:** छह डाउनलोड होवण वाळी रिपोर्टां: भूजल, माटी, जमीन, फसल, सिंचाई अर पूरी रिपोर्ट।
+- **भासावां:** English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ अर मराठी।
+
+**जरूरी:** जवाब इण ऐप में लोड करियोड़ा डेटासेट माथै टिक्योड़ा है। हर जगां रो कवरेज एक जैड़ो कोनी। जद कोई मान कोनी हुवै, तो JalMitra अंदाजो लगावण री ठौड़ ""हाल रा डेटासेट में उपलब्ध कोनी"" बतावै।",,,,new: questions about JalMitra itself
+hi,conversation.st_thanks[0],"आपका स्वागत है! पानी, मिट्टी, फसल या ज़मीन के बारे में और कुछ पूछिए।",,,,new: everyday conversation
+hi,conversation.st_thanks[1],मदद करके खुशी हुई। क्या आप कुछ और देखना चाहेंगे?,,,,new: everyday conversation
+hi,conversation.st_thanks[2],"खुशी हुई! जब चाहें, अगला सवाल पूछिए।",,,,new: everyday conversation
+hinglish,conversation.st_thanks[0],"Aapka swagat hai! Paani, mitti, fasal ya zameen ke baare mein aur kuch poochiye.",,,,new: everyday conversation
+hinglish,conversation.st_thanks[1],Madad karke khushi hui. Kuch aur dekhna chahenge?,,,,new: everyday conversation
+hinglish,conversation.st_thanks[2],"Khushi hui! Jab chahein, agla sawal poochiye.",,,,new: everyday conversation
+mr,conversation.st_thanks[0],"तुमचे स्वागत आहे! पाणी, माती, पिके किंवा जमिनीबद्दल आणखी काही विचारा.",,,,new: everyday conversation
+mr,conversation.st_thanks[1],मदत करून आनंद झाला. आणखी काही पाहायचे आहे का?,,,,new: everyday conversation
+pa,conversation.st_thanks[0],"ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ! ਪਾਣੀ, ਮਿੱਟੀ, ਫ਼ਸਲ ਜਾਂ ਜ਼ਮੀਨ ਬਾਰੇ ਹੋਰ ਕੁਝ ਪੁੱਛੋ।",,,,new: everyday conversation
+pa,conversation.st_thanks[1],ਮਦਦ ਕਰਕੇ ਖੁਸ਼ੀ ਹੋਈ। ਕੀ ਤੁਸੀਂ ਹੋਰ ਕੁਝ ਵੇਖਣਾ ਚਾਹੋਗੇ?,,,,new: everyday conversation
+raj,conversation.st_thanks[0],"पधारो सा! पाणी, माटी, फसल या जमीन रै बारै में और कीं पूछो।",,,,new: everyday conversation
+raj,conversation.st_thanks[1],मदद कर नै घणी खुसी होई। और कीं देखणो है कांई?,,,,new: everyday conversation
+hi,conversation.st_praise[0],धन्यवाद! अब आप क्या देखना चाहेंगे?,,,,new: everyday conversation
+hi,conversation.st_praise[1],खुशी है कि यह काम आया। कभी भी अगला सवाल पूछिए।,,,,new: everyday conversation
+hi,conversation.st_praise[2],"धन्यवाद! मैं मिट्टी की रिपोर्ट, पानी की जाँच और फसलों की पानी की ज़रूरत भी समझा सकता हूँ।",,,,new: everyday conversation
+hinglish,conversation.st_praise[0],Dhanyavaad! Ab aap kya dekhna chahenge?,,,,new: everyday conversation
+hinglish,conversation.st_praise[1],Khushi hai ki yeh kaam aaya. Kabhi bhi agla sawal poochiye.,,,,new: everyday conversation
+hinglish,conversation.st_praise[2],"Shukriya! Main soil report, paani ki jaanch aur fasal ki paani ki zaroorat bhi samjha sakta hoon.",,,,new: everyday conversation
+mr,conversation.st_praise[0],धन्यवाद! पुढे काय पाहायचे आहे?,,,,new: everyday conversation
+mr,conversation.st_praise[1],उपयोगी पडले याचा आनंद आहे. कधीही पुढचा प्रश्न विचारा.,,,,new: everyday conversation
+pa,conversation.st_praise[0],ਧੰਨਵਾਦ! ਹੁਣ ਤੁਸੀਂ ਕੀ ਵੇਖਣਾ ਚਾਹੋਗੇ?,,,,new: everyday conversation
+pa,conversation.st_praise[1],ਖੁਸ਼ੀ ਹੈ ਕਿ ਇਹ ਕੰਮ ਆਇਆ। ਕਦੇ ਵੀ ਅਗਲਾ ਸਵਾਲ ਪੁੱਛੋ।,,,,new: everyday conversation
+raj,conversation.st_praise[0],घणो आभार सा! अबै कांई देखणो है?,,,,new: everyday conversation
+raj,conversation.st_praise[1],खुसी है कै ओ काम आयो। कदेई भी अगलो सवाल पूछो।,,,,new: everyday conversation
+hi,conversation.st_ack[0],ठीक है। आप क्या जानना चाहेंगे?,,,,new: everyday conversation
+hi,conversation.st_ack[1],"अच्छा। भूजल, मिट्टी, पानी की गुणवत्ता, फसल या ज़मीन के बारे में पूछिए।",,,,new: everyday conversation
+hi,conversation.st_ack[2],ज़रूर। अगला सवाल पूछिए।,,,,new: everyday conversation
+hinglish,conversation.st_ack[0],Theek hai. Aap kya jaanna chahenge?,,,,new: everyday conversation
+hinglish,conversation.st_ack[1],"Achha. Groundwater, mitti, paani ki quality, fasal ya zameen ke baare mein poochiye.",,,,new: everyday conversation
+hinglish,conversation.st_ack[2],Zaroor. Agla sawal poochiye.,,,,new: everyday conversation
+mr,conversation.st_ack[0],ठीक आहे. तुम्हाला काय जाणून घ्यायचे आहे?,,,,new: everyday conversation
+mr,conversation.st_ack[1],"बरं. भूजल, माती, पाणी, पिके किंवा जमिनीबद्दल विचारा.",,,,new: everyday conversation
+pa,conversation.st_ack[0],ਠੀਕ ਹੈ। ਤੁਸੀਂ ਕੀ ਜਾਣਨਾ ਚਾਹੋਗੇ?,,,,new: everyday conversation
+pa,conversation.st_ack[1],"ਅੱਛਾ। ਪਾਣੀ, ਮਿੱਟੀ, ਫ਼ਸਲ ਜਾਂ ਜ਼ਮੀਨ ਬਾਰੇ ਪੁੱਛੋ।",,,,new: everyday conversation
+raj,conversation.st_ack[0],ठीक है सा। थे कांई जाणणो चावो?,,,,new: everyday conversation
+raj,conversation.st_ack[1],"आछो। भूजल, माटी, फसल या जमीन रै बारै में पूछो।",,,,new: everyday conversation
+hi,conversation.st_bye[0],"अलविदा! पानी, मिट्टी या फसल के बारे में सवाल हो तो फिर आइए।",,,,new: everyday conversation
+hi,conversation.st_bye[1],अपना ध्यान रखिए! ज़रूरत हो तो JalMitra यहीं है।,,,,new: everyday conversation
+hi,conversation.st_bye[2],नमस्ते! आपका मौसम अच्छा रहे।,,,,new: everyday conversation
+hinglish,conversation.st_bye[0],"Alvida! Paani, mitti ya fasal ke baare mein sawal ho to phir aaiye.",,,,new: everyday conversation
+hinglish,conversation.st_bye[1],Apna dhyan rakhiye! Zaroorat ho to JalMitra yahin hai.,,,,new: everyday conversation
+hinglish,conversation.st_bye[2],Bye! Aapki fasal achhi ho.,,,,new: everyday conversation
+mr,conversation.st_bye[0],"निरोप! पाणी, माती किंवा पिकांबद्दल प्रश्न असल्यास पुन्हा या.",,,,new: everyday conversation
+mr,conversation.st_bye[1],काळजी घ्या! गरज असेल तेव्हा JalMitra इथेच आहे.,,,,new: everyday conversation
+pa,conversation.st_bye[0],"ਅਲਵਿਦਾ! ਪਾਣੀ, ਮਿੱਟੀ ਜਾਂ ਫ਼ਸਲ ਬਾਰੇ ਸਵਾਲ ਹੋਵੇ ਤਾਂ ਫਿਰ ਆਓ।",,,,new: everyday conversation
+pa,conversation.st_bye[1],ਆਪਣਾ ਧਿਆਨ ਰੱਖੋ! ਲੋੜ ਹੋਵੇ ਤਾਂ JalMitra ਇੱਥੇ ਹੀ ਹੈ।,,,,new: everyday conversation
+raj,conversation.st_bye[0],"राम राम सा! पाणी, माटी या फसल रो सवाल हुवै तो फेर पधारजो।",,,,new: everyday conversation
+raj,conversation.st_bye[1],ध्यान राखजो सा! जरूरत हुवै तो JalMitra अठै ही है।,,,,new: everyday conversation
+hi,conversation.st_greet_time[0],"आपको भी नमस्कार! भूजल, मिट्टी, पानी की गुणवत्ता, फसल या ज़मीन के बारे में पूछिए।",,,,new: everyday conversation
+hi,conversation.st_greet_time[1],नमस्ते! आज आप क्या देखना चाहेंगे?,,,,new: everyday conversation
+hinglish,conversation.st_greet_time[0],"Aapko bhi namaskar! Groundwater, mitti, paani ki quality, fasal ya zameen ke baare mein poochiye.",,,,new: everyday conversation
+hinglish,conversation.st_greet_time[1],Namaste! Aaj aap kya dekhna chahenge?,,,,new: everyday conversation
+mr,conversation.st_greet_time[0],"तुम्हालाही नमस्कार! भूजल, माती, पाणी, पिके किंवा जमिनीबद्दल विचारा.",,,,new: everyday conversation
+mr,conversation.st_greet_time[1],नमस्कार! आज काय पाहायचे आहे?,,,,new: everyday conversation
+pa,conversation.st_greet_time[0],"ਤੁਹਾਨੂੰ ਵੀ ਸਤ ਸ੍ਰੀ ਅਕਾਲ! ਪਾਣੀ, ਮਿੱਟੀ, ਫ਼ਸਲ ਜਾਂ ਜ਼ਮੀਨ ਬਾਰੇ ਪੁੱਛੋ।",,,,new: everyday conversation
+pa,conversation.st_greet_time[1],ਸਤ ਸ੍ਰੀ ਅਕਾਲ! ਅੱਜ ਕੀ ਵੇਖਣਾ ਹੈ?,,,,new: everyday conversation
+raj,conversation.st_greet_time[0],"खम्मा घणी सा! भूजल, माटी, फसल या जमीन रै बारै में पूछो।",,,,new: everyday conversation
+raj,conversation.st_greet_time[1],राम राम सा! आज कांई देखणो है?,,,,new: everyday conversation
+hi,conversation.st_how_are_you[0],"मैं एक कंप्यूटर प्रोग्राम हूँ, इसलिए हमेशा तैयार हूँ! आज मैं आपकी क्या मदद करूँ?",,,,new: everyday conversation
+hi,conversation.st_how_are_you[1],"सब ठीक है, धन्यवाद। आप क्या देखना चाहेंगे?",,,,new: everyday conversation
+hinglish,conversation.st_how_are_you[0],"Main ek computer program hoon, isliye hamesha taiyaar hoon! Aaj main aapki kya madad karoon?",,,,new: everyday conversation
+hinglish,conversation.st_how_are_you[1],"Sab theek hai, shukriya. Aap kya dekhna chahenge?",,,,new: everyday conversation
+mr,conversation.st_how_are_you[0],"मी एक संगणक प्रोग्राम आहे, त्यामुळे नेहमी तयार आहे! आज काय मदत करू?",,,,new: everyday conversation
+mr,conversation.st_how_are_you[1],"सगळं ठीक आहे, धन्यवाद. काय पाहायचे आहे?",,,,new: everyday conversation
+pa,conversation.st_how_are_you[0],"ਮੈਂ ਇੱਕ ਕੰਪਿਊਟਰ ਪ੍ਰੋਗਰਾਮ ਹਾਂ, ਇਸ ਲਈ ਹਮੇਸ਼ਾ ਤਿਆਰ ਹਾਂ! ਅੱਜ ਕੀ ਮਦਦ ਕਰਾਂ?",,,,new: everyday conversation
+pa,conversation.st_how_are_you[1],"ਸਭ ਠੀਕ ਹੈ, ਧੰਨਵਾਦ। ਕੀ ਵੇਖਣਾ ਹੈ?",,,,new: everyday conversation
+raj,conversation.st_how_are_you[0],"म्हैं एक कंप्यूटर प्रोग्राम हूं, सो सदा तैयार हूं! आज कांई मदद करूं?",,,,new: everyday conversation
+raj,conversation.st_how_are_you[1],"सब ठीक है सा, आभार। कांई देखणो है?",,,,new: everyday conversation
+hi,conversation.st_identity[0],"मैं JalMitra हूँ, एक कंप्यूटर प्रोग्राम, कोई इंसान नहीं। मैं तय नियमों और इस ऐप में रखे आधिकारिक डेटासेट से, इसी कंप्यूटर पर काम करता हूँ। मैं ChatGPT, Gemini या कोई ऑनलाइन AI इस्तेमाल नहीं करता। JalMitra को स्मार्ट इंडिया हैकथॉन की समस्या SIH25066 (जल शक्ति मंत्रालय) के लिए बनाया गया है। यह कोई आधिकारिक सरकारी वेबसाइट नहीं है; यह प्रकाशित सरकारी डेटा का उपयोग करता है।",,,,new: everyday conversation
+hinglish,conversation.st_identity[0],"Main JalMitra hoon, ek computer program, koi insaan nahi. Main fixed rules aur is app mein rakhe official datasets se, isi computer par kaam karta hoon. Main ChatGPT, Gemini ya koi online AI use nahi karta. JalMitra Smart India Hackathon problem SIH25066 (Jal Shakti Mantralaya) ke liye banaya gaya hai. Yeh koi official sarkari website nahi hai; yeh published sarkari data use karta hai.",,,,new: everyday conversation
+mr,conversation.st_identity[0],"मी JalMitra आहे, एक संगणक प्रोग्राम, माणूस नाही. मी ठरलेल्या नियमांवर आणि या ॲपमधील अधिकृत डेटासेटवर, याच संगणकावर काम करतो. मी ChatGPT, Gemini किंवा कोणतीही ऑनलाइन AI वापरत नाही. JalMitra स्मार्ट इंडिया हॅकॅथॉनच्या SIH25066 (जलशक्ती मंत्रालय) समस्येसाठी बनवले आहे. ही अधिकृत सरकारी वेबसाइट नाही; ती प्रकाशित सरकारी डेटा वापरते.",,,,new: everyday conversation
+pa,conversation.st_identity[0],"ਮੈਂ JalMitra ਹਾਂ, ਇੱਕ ਕੰਪਿਊਟਰ ਪ੍ਰੋਗਰਾਮ, ਕੋਈ ਇਨਸਾਨ ਨਹੀਂ। ਮੈਂ ਤੈਅ ਨਿਯਮਾਂ ਅਤੇ ਇਸ ਐਪ ਦੇ ਸਰਕਾਰੀ ਡਾਟਾਸੈੱਟਾਂ ਨਾਲ, ਇਸੇ ਕੰਪਿਊਟਰ 'ਤੇ ਕੰਮ ਕਰਦਾ ਹਾਂ। ਮੈਂ ChatGPT, Gemini ਜਾਂ ਕੋਈ ਔਨਲਾਈਨ AI ਨਹੀਂ ਵਰਤਦਾ। JalMitra ਸਮਾਰਟ ਇੰਡੀਆ ਹੈਕਾਥਨ ਦੀ ਸਮੱਸਿਆ SIH25066 (ਜਲ ਸ਼ਕਤੀ ਮੰਤਰਾਲਾ) ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ। ਇਹ ਸਰਕਾਰੀ ਵੈੱਬਸਾਈਟ ਨਹੀਂ ਹੈ; ਇਹ ਪ੍ਰਕਾਸ਼ਿਤ ਸਰਕਾਰੀ ਡਾਟਾ ਵਰਤਦਾ ਹੈ।",,,,new: everyday conversation
+raj,conversation.st_identity[0],"म्हैं JalMitra हूं, एक कंप्यूटर प्रोग्राम, कोई मिनख कोनी। म्हैं तय नियमां अर इण ऐप रा सरकारी डेटासेट सूं, इणी कंप्यूटर माथै काम करूं। म्हैं ChatGPT, Gemini या कोई ऑनलाइन AI काम में कोनी लेऊं। JalMitra स्मार्ट इंडिया हैकाथॉन री समस्या SIH25066 (जल शक्ति मंत्रालय) सारू बणायो गयो है। आ सरकारी वेबसाइट कोनी; आ छप्योड़ो सरकारी डेटा काम में लेवै।",,,,new: everyday conversation
+hi,conversation.st_negative[0],"माफ़ कीजिए। कृपया जगह और आप क्या जानना चाहते हैं, बताइए। जैसे: जयपुर ज़िले में भूजल की स्थिति क्या है? जवाब के नीचे 👎 दबाकर भी बता सकते हैं।",,,,new: everyday conversation
+hi,conversation.st_negative[1],"माफ़ कीजिए, जवाब काम नहीं आया। ब्लॉक या ज़िले का नाम लिखिए, या नीचे दिया कोई सवाल चुनिए।",,,,new: everyday conversation
+hinglish,conversation.st_negative[0],"Maaf kijiye. Jagah ka naam aur aap kya jaanna chahte hain, bataiye. Jaise: Ajmer Urban ka paani kaisa hai? Jawab ke neeche 👎 dabakar bhi bata sakte hain.",,,,new: everyday conversation
+hinglish,conversation.st_negative[1],"Maaf kijiye, jawab kaam nahi aaya. Block ya district ka naam likhiye, ya neeche diya koi sawal chuniye.",,,,new: everyday conversation
+mr,conversation.st_negative[0],माफ करा. ठिकाण आणि तुम्हाला काय जाणून घ्यायचे आहे ते सांगा. उत्तराखाली 👎 दाबूनही सांगू शकता.,,,,new: everyday conversation
+mr,conversation.st_negative[1],"माफ करा, उत्तर उपयोगी पडले नाही. ब्लॉक किंवा जिल्ह्याचे नाव लिहा, किंवा खालील प्रश्न निवडा.",,,,new: everyday conversation
+pa,conversation.st_negative[0],"ਮਾਫ਼ ਕਰਨਾ। ਥਾਂ ਦਾ ਨਾਮ ਅਤੇ ਤੁਸੀਂ ਕੀ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਦੱਸੋ। ਜਵਾਬ ਹੇਠਾਂ 👎 ਦਬਾ ਕੇ ਵੀ ਦੱਸ ਸਕਦੇ ਹੋ।",,,,new: everyday conversation
+pa,conversation.st_negative[1],"ਮਾਫ਼ ਕਰਨਾ, ਜਵਾਬ ਕੰਮ ਨਹੀਂ ਆਇਆ। ਬਲਾਕ ਜਾਂ ਜ਼ਿਲ੍ਹੇ ਦਾ ਨਾਮ ਲਿਖੋ, ਜਾਂ ਹੇਠਾਂ ਦਿੱਤਾ ਸਵਾਲ ਚੁਣੋ।",,,,new: everyday conversation
+raj,conversation.st_negative[0],"माफ करजो सा। जगां रो नाम अर थे कांई जाणणो चावो, बतावो। जवाब रै नीचै 👎 दबा नै भी बता सको।",,,,new: everyday conversation
+raj,conversation.st_negative[1],"माफ करजो, जवाब काम कोनी आयो। ब्लॉक या जिलै रो नाम लिखो, या नीचै दियो सवाल चुणो।",,,,new: everyday conversation
+hi,conversation.st_confused[0],"मैं आसान कर देता हूँ। साइडबार में जवाब की शैली Farmer और विवरण Short चुनिए, या नीचे दिया कोई सवाल पूछिए।",,,,new: everyday conversation
+hi,conversation.st_confused[1],"कोई बात नहीं। एक छोटा सवाल पूछिए, जैसे: जयपुर ज़िले में भूजल की स्थिति क्या है?",,,,new: everyday conversation
+hinglish,conversation.st_confused[0],"Main aasaan kar deta hoon. Sidebar mein answer style Farmer aur detail Short chuniye, ya neeche diya koi sawal poochiye.",,,,new: everyday conversation
+hinglish,conversation.st_confused[1],"Koi baat nahi. Ek chhota sawal poochiye, jaise: Ajmer Urban ka paani kaisa hai?",,,,new: everyday conversation
+mr,conversation.st_confused[0],"मी सोपे करतो. साइडबारमध्ये उत्तर शैली Farmer आणि तपशील Short निवडा, किंवा खालील प्रश्न विचारा.",,,,new: everyday conversation
+mr,conversation.st_confused[1],हरकत नाही. एक छोटा प्रश्न विचारा.,,,,new: everyday conversation
+pa,conversation.st_confused[0],"ਮੈਂ ਸੌਖਾ ਕਰ ਦਿੰਦਾ ਹਾਂ। ਸਾਈਡਬਾਰ ਵਿੱਚ ਜਵਾਬ ਸ਼ੈਲੀ Farmer ਅਤੇ ਵੇਰਵਾ Short ਚੁਣੋ, ਜਾਂ ਹੇਠਾਂ ਦਿੱਤਾ ਸਵਾਲ ਪੁੱਛੋ।",,,,new: everyday conversation
+pa,conversation.st_confused[1],ਕੋਈ ਗੱਲ ਨਹੀਂ। ਇੱਕ ਛੋਟਾ ਸਵਾਲ ਪੁੱਛੋ।,,,,new: everyday conversation
+raj,conversation.st_confused[0],"म्हैं सोरो कर देऊं। साइडबार में जवाब री सैली Farmer अर विवरण Short चुणो, या नीचै दियो सवाल पूछो।",,,,new: everyday conversation
+raj,conversation.st_confused[1],कोई बात कोनी। एक छोटो सवाल पूछो।,,,,new: everyday conversation
+hi,conversation.st_laugh[0],"😊 खुशी हुई। पानी, मिट्टी या फसल के बारे में कुछ भी पूछिए।",,,,new: everyday conversation
+hi,conversation.st_laugh[1],😄 अब क्या देखना चाहेंगे?,,,,new: everyday conversation
+hinglish,conversation.st_laugh[0],"😊 Khushi hui. Paani, mitti ya fasal ke baare mein kuch bhi poochiye.",,,,new: everyday conversation
+hinglish,conversation.st_laugh[1],😄 Ab kya dekhna chahenge?,,,,new: everyday conversation
+mr,conversation.st_laugh[0],"😊 आनंद झाला. पाणी, माती किंवा पिकांबद्दल काहीही विचारा.",,,,new: everyday conversation
+mr,conversation.st_laugh[1],😄 पुढे काय पाहायचे?,,,,new: everyday conversation
+pa,conversation.st_laugh[0],"😊 ਖੁਸ਼ੀ ਹੋਈ। ਪਾਣੀ, ਮਿੱਟੀ ਜਾਂ ਫ਼ਸਲ ਬਾਰੇ ਕੁਝ ਵੀ ਪੁੱਛੋ।",,,,new: everyday conversation
+pa,conversation.st_laugh[1],😄 ਹੁਣ ਕੀ ਵੇਖਣਾ ਹੈ?,,,,new: everyday conversation
+raj,conversation.st_laugh[0],"😊 खुसी होई। पाणी, माटी या फसल रै बारै में कीं भी पूछो।",,,,new: everyday conversation
+raj,conversation.st_laugh[1],😄 अबै कांई देखणो है?,,,,new: everyday conversation
+hi,conversation.sc_yes[0],हाँ।,,,,new: everyday conversation
+hi,conversation.sc_yes[1],"हाँ, यह शामिल है।",,,,new: everyday conversation
+hinglish,conversation.sc_yes[0],Haan.,,,,new: everyday conversation
+hinglish,conversation.sc_yes[1],"Haan, yeh shamil hai.",,,,new: everyday conversation
+mr,conversation.sc_yes[0],हो.,,,,new: everyday conversation
+mr,conversation.sc_yes[1],"हो, हे समाविष्ट आहे.",,,,new: everyday conversation
+pa,conversation.sc_yes[0],ਹਾਂ।,,,,new: everyday conversation
+pa,conversation.sc_yes[1],"ਹਾਂ, ਇਹ ਸ਼ਾਮਲ ਹੈ।",,,,new: everyday conversation
+raj,conversation.sc_yes[0],हां सा।,,,,new: everyday conversation
+raj,conversation.sc_yes[1],"हां, ओ सामिल है।",,,,new: everyday conversation
+hi,conversation.sc_no[0],नहीं।,,,,new: everyday conversation
+hi,conversation.sc_no[1],"नहीं, यह शामिल नहीं है।",,,,new: everyday conversation
+hinglish,conversation.sc_no[0],Nahi.,,,,new: everyday conversation
+hinglish,conversation.sc_no[1],"Nahi, yeh shamil nahi hai.",,,,new: everyday conversation
+mr,conversation.sc_no[0],नाही.,,,,new: everyday conversation
+mr,conversation.sc_no[1],"नाही, हे समाविष्ट नाही.",,,,new: everyday conversation
+pa,conversation.sc_no[0],ਨਹੀਂ।,,,,new: everyday conversation
+pa,conversation.sc_no[1],"ਨਹੀਂ, ਇਹ ਸ਼ਾਮਲ ਨਹੀਂ ਹੈ।",,,,new: everyday conversation
+raj,conversation.sc_no[0],कोनी सा।,,,,new: everyday conversation
+raj,conversation.sc_no[1],"ना, ओ सामिल कोनी।",,,,new: everyday conversation
+hi,conversation.sc_partly[0],कुछ हद तक।,,,,new: everyday conversation
+hinglish,conversation.sc_partly[0],Kuch had tak.,,,,new: everyday conversation
+mr,conversation.sc_partly[0],काही प्रमाणात.,,,,new: everyday conversation
+pa,conversation.sc_partly[0],ਕੁਝ ਹੱਦ ਤੱਕ।,,,,new: everyday conversation
+raj,conversation.sc_partly[0],थोड़ो-घणो।,,,,new: everyday conversation
+hi,conversation.sc_unknown[0],मुझे नहीं लगता कि JalMitra में यह शामिल है।,,,,new: everyday conversation
+hi,conversation.sc_unknown[1],यह JalMitra के दायरे में नहीं लगता।,,,,new: everyday conversation
+hinglish,conversation.sc_unknown[0],Mujhe nahi lagta ki JalMitra mein yeh shamil hai.,,,,new: everyday conversation
+hinglish,conversation.sc_unknown[1],Yeh JalMitra ke daayre mein nahi lagta.,,,,new: everyday conversation
+mr,conversation.sc_unknown[0],JalMitra मध्ये हे समाविष्ट असल्याचे वाटत नाही.,,,,new: everyday conversation
+pa,conversation.sc_unknown[0],ਮੈਨੂੰ ਨਹੀਂ ਲੱਗਦਾ ਕਿ JalMitra ਵਿੱਚ ਇਹ ਸ਼ਾਮਲ ਹੈ।,,,,new: everyday conversation
+raj,conversation.sc_unknown[0],म्हनै कोनी लागै कै JalMitra में ओ सामिल है।,,,,new: everyday conversation
+hi,conversation.oos_open[0],यह JalMitra के दायरे से बाहर है।,,,,new: everyday conversation
+hi,conversation.oos_open[1],"माफ़ कीजिए, JalMitra इसमें मदद नहीं कर सकता।",,,,new: everyday conversation
+hinglish,conversation.oos_open[0],Yeh JalMitra ke daayre se bahar hai.,,,,new: everyday conversation
+hinglish,conversation.oos_open[1],"Maaf kijiye, JalMitra ismein madad nahi kar sakta.",,,,new: everyday conversation
+mr,conversation.oos_open[0],हे JalMitra च्या कक्षेबाहेर आहे.,,,,new: everyday conversation
+mr,conversation.oos_open[1],"माफ करा, JalMitra यात मदत करू शकत नाही.",,,,new: everyday conversation
+pa,conversation.oos_open[0],ਇਹ JalMitra ਦੇ ਦਾਇਰੇ ਤੋਂ ਬਾਹਰ ਹੈ।,,,,new: everyday conversation
+pa,conversation.oos_open[1],"ਮਾਫ਼ ਕਰਨਾ, JalMitra ਇਸ ਵਿੱਚ ਮਦਦ ਨਹੀਂ ਕਰ ਸਕਦਾ।",,,,new: everyday conversation
+raj,conversation.oos_open[0],ओ JalMitra रै दायरै सूं बारै है।,,,,new: everyday conversation
+raj,conversation.oos_open[1],"माफ करजो, JalMitra इण में मदद कोनी कर सकै।",,,,new: everyday conversation
+hi,conversation.tp_groundwater[0],"JalMitra पूरे भारत की 6,762 आकलन इकाइयों की 2025 की आधिकारिक भूजल श्रेणी दिखाता है, और राजस्थान के 302 ब्लॉकों के विस्तृत आंकड़े (पुनर्भरण, दोहन, दोहन का स्तर)।",,,,new: everyday conversation
+hinglish,conversation.tp_groundwater[0],"JalMitra poore Bharat ki 6,762 assessment units ki 2025 ki official groundwater category dikhata hai, aur Rajasthan ke 302 blocks ke detailed figures (recharge, extraction, stage of extraction).",,,,new: everyday conversation
+mr,conversation.tp_groundwater[0],"JalMitra संपूर्ण भारतातील 6,762 मूल्यांकन घटकांची 2025 ची अधिकृत भूजल श्रेणी दाखवतो, आणि राजस्थानमधील 302 ब्लॉकचे तपशीलवार आकडे.",,,,new: everyday conversation
+pa,conversation.tp_groundwater[0],"JalMitra ਪੂਰੇ ਭਾਰਤ ਦੀਆਂ 6,762 ਮੁਲਾਂਕਣ ਇਕਾਈਆਂ ਦੀ 2025 ਦੀ ਸਰਕਾਰੀ ਸ਼੍ਰੇਣੀ ਦਿਖਾਉਂਦਾ ਹੈ, ਅਤੇ ਰਾਜਸਥਾਨ ਦੇ 302 ਬਲਾਕਾਂ ਦੇ ਵਿਸਤ੍ਰਿਤ ਅੰਕੜੇ।",,,,new: everyday conversation
+raj,conversation.tp_groundwater[0],"JalMitra पूरै भारत री 6,762 आकलन इकाइयां री 2025 री सरकारी भूजल श्रेणी दिखावै, अर राजस्थान रा 302 ब्लॉकां रा पूरा आंकड़ा।",,,,new: everyday conversation
+hi,conversation.tp_water_quality[0],"आप भूजल गुणवत्ता पेज पर अपनी पानी जाँच के नतीजे डालकर उनकी तुलना BIS IS 10500 पेयजल सीमाओं और IS 11624 सिंचाई दिशानिर्देशों से कर सकते हैं। JalMitra के पास अभी जगहों का मापा हुआ पानी गुणवत्ता डेटा नहीं है, और यह पानी को कभी पीने के लिए सुरक्षित घोषित नहीं करता।",,,,new: everyday conversation
+hinglish,conversation.tp_water_quality[0],"Groundwater Quality page par apni paani jaanch ke results daal kar unki tulna BIS IS 10500 peene ke paani ki limits aur IS 11624 sinchai guidelines se kar sakte hain. JalMitra ke paas abhi jagahon ka measured water quality data nahi hai, aur yeh paani ko kabhi peene ke liye safe declare nahi karta.",,,,new: everyday conversation
+mr,conversation.tp_water_quality[0],"Groundwater Quality पानावर तुमच्या पाणी तपासणीचे निकाल टाकून त्यांची तुलना BIS IS 10500 आणि IS 11624 शी करता येते. JalMitra कडे ठिकाणांचा मोजलेला पाणी गुणवत्ता डेटा अजून नाही, आणि तो पाणी पिण्यास सुरक्षित असल्याचे कधीच जाहीर करत नाही.",,,,new: everyday conversation
+pa,conversation.tp_water_quality[0],"Groundwater Quality ਪੰਨੇ 'ਤੇ ਆਪਣੀ ਪਾਣੀ ਜਾਂਚ ਦੇ ਨਤੀਜੇ ਪਾ ਕੇ BIS IS 10500 ਅਤੇ IS 11624 ਨਾਲ ਤੁਲਨਾ ਕਰ ਸਕਦੇ ਹੋ। JalMitra ਕੋਲ ਹਾਲੇ ਥਾਵਾਂ ਦਾ ਮਾਪਿਆ ਪਾਣੀ ਗੁਣਵੱਤਾ ਡਾਟਾ ਨਹੀਂ ਹੈ, ਅਤੇ ਇਹ ਪਾਣੀ ਨੂੰ ਕਦੇ ਪੀਣ ਲਈ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਐਲਾਨਦਾ।",,,,new: everyday conversation
+raj,conversation.tp_water_quality[0],"Groundwater Quality पानै माथै आपरी पाणी जांच रा नतीजा भर नै BIS IS 10500 अर IS 11624 सूं मिला सको। JalMitra कनै हाल जगां रो मापियोड़ो पाणी गुणवत्ता डेटा कोनी, अर ओ पाणी नै कदेई पीवण सारू सुरक्षित कोनी बतावै।",,,,new: everyday conversation
+hi,conversation.tp_soil[0],"My Soil Report पर अपना मृदा स्वास्थ्य कार्ड या लैब रिपोर्ट (PDF, CSV या Excel) अपलोड कीजिए, JalMitra हर मान को प्रकाशित संदर्भ सीमाओं के साथ समझाता है। यह मिट्टी जाँच की लैब नहीं है, और इसके पास जगहों का मापा हुआ मिट्टी डेटा नहीं है।",,,,new: everyday conversation
+hinglish,conversation.tp_soil[0],"My Soil Report par apna Soil Health Card ya lab report (PDF, CSV ya Excel) upload kijiye, JalMitra har value ko published reference ranges ke saath samjhata hai. Yeh soil testing lab nahi hai, aur iske paas jagahon ka measured soil data nahi hai.",,,,new: everyday conversation
+mr,conversation.tp_soil[0],My Soil Report वर तुमची मृदा आरोग्य पत्रिका किंवा प्रयोगशाळा अहवाल अपलोड करा; JalMitra प्रत्येक मूल्य प्रकाशित मर्यादांनुसार समजावतो. ही माती तपासणी प्रयोगशाळा नाही.,,,,new: everyday conversation
+pa,conversation.tp_soil[0],My Soil Report 'ਤੇ ਆਪਣਾ ਸੋਇਲ ਹੈਲਥ ਕਾਰਡ ਜਾਂ ਲੈਬ ਰਿਪੋਰਟ ਅੱਪਲੋਡ ਕਰੋ; JalMitra ਹਰ ਮੁੱਲ ਨੂੰ ਪ੍ਰਕਾਸ਼ਿਤ ਸੀਮਾਵਾਂ ਨਾਲ ਸਮਝਾਉਂਦਾ ਹੈ। ਇਹ ਮਿੱਟੀ ਜਾਂਚ ਲੈਬ ਨਹੀਂ ਹੈ।,,,,new: everyday conversation
+raj,conversation.tp_soil[0],My Soil Report माथै आपरो मृदा स्वास्थ्य कार्ड या लैब रिपोर्ट अपलोड करो; JalMitra हर मान नै छपी सीमावां सागै समझावै। ओ माटी जांचण री लैब कोनी।,,,,new: everyday conversation
+hi,conversation.tp_fertilizer[0],"JalMitra आपके मृदा स्वास्थ्य कार्ड के पोषक तत्वों के मान समझाता है, पर खाद की मात्रा नहीं निकालता। कार्ड पर छपी सिफारिश मानिए, या अपने कृषि अधिकारी या कृषि विज्ञान केंद्र से पूछिए।",,,,new: everyday conversation
+hinglish,conversation.tp_fertilizer[0],"JalMitra aapke Soil Health Card ke nutrient values samjhata hai, par khaad ki matra nahi nikalta. Card par chhapi sifarish maaniye, ya apne krishi adhikari ya Krishi Vigyan Kendra se poochiye.",,,,new: everyday conversation
+mr,conversation.tp_fertilizer[0],"JalMitra तुमच्या मृदा आरोग्य पत्रिकेतील पोषक मूल्ये समजावतो, पण खताची मात्रा काढत नाही. पत्रिकेवरील शिफारस पाळा किंवा कृषी अधिकारी / कृषी विज्ञान केंद्राला विचारा.",,,,new: everyday conversation
+pa,conversation.tp_fertilizer[0],"JalMitra ਤੁਹਾਡੇ ਸੋਇਲ ਹੈਲਥ ਕਾਰਡ ਦੇ ਪੋਸ਼ਕ ਮੁੱਲ ਸਮਝਾਉਂਦਾ ਹੈ, ਪਰ ਖਾਦ ਦੀ ਮਾਤਰਾ ਨਹੀਂ ਕੱਢਦਾ। ਕਾਰਡ 'ਤੇ ਲਿਖੀ ਸਿਫ਼ਾਰਸ਼ ਮੰਨੋ ਜਾਂ ਖੇਤੀਬਾੜੀ ਅਫ਼ਸਰ / ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ ਨੂੰ ਪੁੱਛੋ।",,,,new: everyday conversation
+raj,conversation.tp_fertilizer[0],"JalMitra आपरै मृदा स्वास्थ्य कार्ड रा पोसक तत्वां रा मान समझावै, पण खाद री मात्रा कोनी काढै। कार्ड माथै छपी सिफारिस मानो, या कृषि अधिकारी या कृषि विज्ञान केंद्र सूं पूछो।",,,,new: everyday conversation
+hi,conversation.tp_crops[0],JalMitra फसलों की पानी की ज़रूरत और लवण सहनशीलता (FAO) जैसी जानकारी और SKNAU ज़ोन II-A की फसल सूची देता है। यह पैदावार या मुनाफ़े का अनुमान नहीं लगाता।,,,,new: everyday conversation
+hinglish,conversation.tp_crops[0],JalMitra fasal ki paani ki zaroorat aur salt tolerance (FAO) jaisi jaankari aur SKNAU Zone II-A ki fasal list deta hai. Yeh paidavaar ya munafe ka andaza nahi lagata.,,,,new: everyday conversation
+mr,conversation.tp_crops[0],JalMitra पिकांची पाण्याची गरज आणि क्षार सहनशीलता (FAO) आणि SKNAU झोन II-A ची पीक यादी देतो. तो उत्पादन किंवा नफ्याचा अंदाज देत नाही.,,,,new: everyday conversation
+pa,conversation.tp_crops[0],JalMitra ਫ਼ਸਲਾਂ ਦੀ ਪਾਣੀ ਦੀ ਲੋੜ ਅਤੇ ਲੂਣ ਸਹਿਣਸ਼ੀਲਤਾ (FAO) ਅਤੇ SKNAU ਜ਼ੋਨ II-A ਦੀ ਫ਼ਸਲ ਸੂਚੀ ਦਿੰਦਾ ਹੈ। ਇਹ ਝਾੜ ਜਾਂ ਮੁਨਾਫ਼ੇ ਦਾ ਅੰਦਾਜ਼ਾ ਨਹੀਂ ਲਗਾਉਂਦਾ।,,,,new: everyday conversation
+raj,conversation.tp_crops[0],JalMitra फसलां री पाणी री जरूरत अर खारेपण सहण (FAO) री जाणकारी अर SKNAU जोन II-A री फसल सूची देवै। ओ उपज या नफै रो अंदाजो कोनी लगावै।,,,,new: everyday conversation
+hi,conversation.tp_farming[0],"JalMitra किसानों और पानी व ज़मीन की जानकारी चाहने वालों के लिए है: भूजल की स्थिति, मिट्टी रिपोर्ट की व्याख्या, पानी जाँच, फसलों की पानी की ज़रूरत और सिंचाई के तरीके।",,,,new: everyday conversation
+hinglish,conversation.tp_farming[0],"JalMitra kisanon aur paani-zameen ki jaankari chahne walon ke liye hai: groundwater status, soil report ki vyakhya, paani ki jaanch, fasal ki paani ki zaroorat aur sinchai ke tareeke.",,,,new: everyday conversation
+mr,conversation.tp_farming[0],"JalMitra शेतकऱ्यांसाठी आहे: भूजल स्थिती, माती अहवालाचे स्पष्टीकरण, पाणी तपासणी, पिकांची पाण्याची गरज आणि सिंचन पद्धती.",,,,new: everyday conversation
+pa,conversation.tp_farming[0],"JalMitra ਕਿਸਾਨਾਂ ਲਈ ਹੈ: ਧਰਤੀ ਹੇਠਲੇ ਪਾਣੀ ਦੀ ਹਾਲਤ, ਮਿੱਟੀ ਰਿਪੋਰਟ ਦੀ ਵਿਆਖਿਆ, ਪਾਣੀ ਜਾਂਚ, ਫ਼ਸਲਾਂ ਦੀ ਪਾਣੀ ਦੀ ਲੋੜ ਅਤੇ ਸਿੰਚਾਈ ਦੇ ਤਰੀਕੇ।",,,,new: everyday conversation
+raj,conversation.tp_farming[0],"JalMitra करसाणां सारू है: भूजल री हालत, माटी री रिपोर्ट री समझ, पाणी री जांच, फसलां री पाणी री जरूरत अर सिंचाई रा तरीका।",,,,new: everyday conversation
+hi,conversation.tp_irrigation[0],"सिंचाई सलाहकार ड्रिप, स्प्रिंकलर और दूसरे तरीके, खेत तलाई, वर्षा जल संचयन और पुनर्भरण संरचनाएँ समझाता है, और सिंचाई के पानी की लवणता (EC) को IS 11624 से जाँचता है।",,,,new: everyday conversation
+hinglish,conversation.tp_irrigation[0],"Irrigation Advisor drip, sprinkler aur doosre tareeke, khet talai, rainwater harvesting aur recharge structures samjhata hai, aur sinchai ke paani ki salinity (EC) ko IS 11624 se jaanchta hai.",,,,new: everyday conversation
+mr,conversation.tp_irrigation[0],"Irrigation Advisor ठिबक, तुषार आणि इतर पद्धती, शेततळे, पावसाचे पाणी साठवण आणि पुनर्भरण समजावतो, आणि सिंचनाच्या पाण्याची क्षारता (EC) IS 11624 नुसार तपासतो.",,,,new: everyday conversation
+pa,conversation.tp_irrigation[0],"Irrigation Advisor ਤੁਪਕਾ, ਫੁਹਾਰਾ ਅਤੇ ਹੋਰ ਤਰੀਕੇ, ਖੇਤ ਤਲਾਬ, ਮੀਂਹ ਦੇ ਪਾਣੀ ਦੀ ਸੰਭਾਲ ਅਤੇ ਰੀਚਾਰਜ ਸਮਝਾਉਂਦਾ ਹੈ, ਅਤੇ ਸਿੰਚਾਈ ਪਾਣੀ ਦੀ ਖਾਰਾਪਣ (EC) IS 11624 ਨਾਲ ਜਾਂਚਦਾ ਹੈ।",,,,new: everyday conversation
+raj,conversation.tp_irrigation[0],"Irrigation Advisor ड्रिप, फव्वारो अर दूजा तरीका, खेत तलाई, बिरखा रो पाणी भेळो करणो अर पुनर्भरण समझावै, अर सिंचाई रै पाणी रो खारोपण (EC) IS 11624 सूं जांचै।",,,,new: everyday conversation
+hi,conversation.tp_land[0],"भूमि स्थिति रिपोर्ट किसी जगह का उपलब्ध डेटा एक साथ दिखाती है, और भूमि क्षरण पेज कटाव, लवणता, जलभराव और संरक्षण के तरीके समझाता है। आपके अपने खेत का मापा हुआ डेटा उपलब्ध नहीं है।",,,,new: everyday conversation
+hinglish,conversation.tp_land[0],"Land Condition Report kisi jagah ka uplabdh data ek saath dikhati hai, aur Land Degradation page katav, salinity, waterlogging aur sanrakshan ke tareeke samjhata hai. Aapke apne khet ka measured data nahi hai.",,,,new: everyday conversation
+mr,conversation.tp_land[0],"जमीन स्थिती अहवाल एखाद्या ठिकाणाचा उपलब्ध डेटा एकत्र दाखवतो, आणि Land Degradation पान धूप, क्षारता, पाणथळ आणि संवर्धन समजावते.",,,,new: everyday conversation
+pa,conversation.tp_land[0],"ਜ਼ਮੀਨ ਦੀ ਹਾਲਤ ਰਿਪੋਰਟ ਕਿਸੇ ਥਾਂ ਦਾ ਉਪਲਬਧ ਡਾਟਾ ਇਕੱਠਾ ਦਿਖਾਉਂਦੀ ਹੈ, ਅਤੇ Land Degradation ਪੰਨਾ ਖੋਰ, ਖਾਰਾਪਣ ਅਤੇ ਸੰਭਾਲ ਸਮਝਾਉਂਦਾ ਹੈ।",,,,new: everyday conversation
+raj,conversation.tp_land[0],"जमीन री हालत री रिपोर्ट किणी जगां रो मिलतो डेटा एक सागै दिखावै, अर Land Degradation पानो कटाव, खारोपण अर बचाव समझावै।",,,,new: everyday conversation
+hi,conversation.tp_reports[0],"My Reports से छह रिपोर्ट डाउनलोड हो सकती हैं: भूजल, मिट्टी, भूमि, फसल, सिंचाई और पूरी रिपोर्ट।",,,,new: everyday conversation
+hinglish,conversation.tp_reports[0],"My Reports se 6 reports download ho sakti hain: groundwater, soil, land, crop, irrigation aur complete report.",,,,new: everyday conversation
+mr,conversation.tp_reports[0],"My Reports मधून सहा अहवाल डाउनलोड करता येतात: भूजल, माती, जमीन, पीक, सिंचन आणि संपूर्ण अहवाल.",,,,new: everyday conversation
+pa,conversation.tp_reports[0],"My Reports ਤੋਂ ਛੇ ਰਿਪੋਰਟਾਂ ਡਾਊਨਲੋਡ ਹੋ ਸਕਦੀਆਂ ਹਨ: ਪਾਣੀ, ਮਿੱਟੀ, ਜ਼ਮੀਨ, ਫ਼ਸਲ, ਸਿੰਚਾਈ ਅਤੇ ਪੂਰੀ ਰਿਪੋਰਟ।",,,,new: everyday conversation
+raj,conversation.tp_reports[0],"My Reports सूं छह रिपोर्टां डाउनलोड हो सकै: भूजल, माटी, जमीन, फसल, सिंचाई अर पूरी रिपोर्ट।",,,,new: everyday conversation
+hi,conversation.tp_languages[0],"जवाब English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ और मराठी में मिलते हैं। साइडबार में भाषा चुनिए या सीधे अपनी भाषा में लिखिए।",,,,new: everyday conversation
+hinglish,conversation.tp_languages[0],"Jawab English, Hindi, Hinglish, Rajasthani, Punjabi aur Marathi mein milte hain. Sidebar mein bhasha chuniye ya seedhe apni bhasha mein likhiye.",,,,new: everyday conversation
+mr,conversation.tp_languages[0],"उत्तरे English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ आणि मराठी मध्ये मिळतात.",,,,new: everyday conversation
+pa,conversation.tp_languages[0],"ਜਵਾਬ English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ ਅਤੇ मराठी ਵਿੱਚ ਮਿਲਦੇ ਹਨ।",,,,new: everyday conversation
+raj,conversation.tp_languages[0],"जवाब English, हिंदी, Hinglish, राजस्थानी, ਪੰਜਾਬੀ अर मराठी में मिलै।",,,,new: everyday conversation
+hi,conversation.tp_money[0],"JalMitra के पास पैसे, आमदनी, लोन, सब्सिडी या सरकारी योजनाओं की जानकारी नहीं है, और यह पैदावार या मुनाफ़े का अनुमान नहीं लगाता। लोन और योजनाओं के लिए अपने बैंक या स्थानीय कृषि कार्यालय से पूछिए।",,,,new: everyday conversation
+hinglish,conversation.tp_money[0],"JalMitra ke paas paise, aamdani, loan, subsidy ya sarkari yojanaon ki jaankari nahi hai, aur yeh paidavaar ya munafe ka andaza nahi lagata. Loan aur yojanaon ke liye apne bank ya krishi karyalay se poochiye.",,,,new: everyday conversation
+mr,conversation.tp_money[0],"JalMitra कडे पैसा, उत्पन्न, कर्ज, अनुदान किंवा सरकारी योजनांची माहिती नाही, आणि तो उत्पादन किंवा नफ्याचा अंदाज देत नाही. कर्ज व योजनांसाठी तुमच्या बँकेला किंवा कृषी कार्यालयाला विचारा.",,,,new: everyday conversation
+pa,conversation.tp_money[0],"JalMitra ਕੋਲ ਪੈਸੇ, ਕਮਾਈ, ਕਰਜ਼ੇ, ਸਬਸਿਡੀ ਜਾਂ ਸਰਕਾਰੀ ਯੋਜਨਾਵਾਂ ਦੀ ਜਾਣਕਾਰੀ ਨਹੀਂ ਹੈ, ਅਤੇ ਇਹ ਝਾੜ ਜਾਂ ਮੁਨਾਫ਼ੇ ਦਾ ਅੰਦਾਜ਼ਾ ਨਹੀਂ ਲਗਾਉਂਦਾ। ਕਰਜ਼ੇ ਅਤੇ ਯੋਜਨਾਵਾਂ ਲਈ ਆਪਣੇ ਬੈਂਕ ਜਾਂ ਖੇਤੀਬਾੜੀ ਦਫ਼ਤਰ ਨੂੰ ਪੁੱਛੋ।",,,,new: everyday conversation
+raj,conversation.tp_money[0],"JalMitra कनै पइसा, कमाई, करजो, सब्सिडी या सरकारी योजनावां री जाणकारी कोनी, अर ओ उपज या नफै रो अंदाजो कोनी लगावै। करजै अर योजनावां सारू आपरै बैंक या कृषि दफ्तर सूं पूछो।",,,,new: everyday conversation
+hi,conversation.tp_prices[0],JalMitra के पास बाज़ार या मंडी भाव नहीं हैं। सरकारी मंडी भाव Agmarknet पोर्टल पर प्रकाशित होते हैं।,,,,new: everyday conversation
+hinglish,conversation.tp_prices[0],JalMitra ke paas market ya mandi bhav nahi hain. Sarkari mandi bhav Agmarknet portal par milte hain.,,,,new: everyday conversation
+mr,conversation.tp_prices[0],JalMitra कडे बाजारभाव नाहीत. सरकारी बाजारभाव Agmarknet पोर्टलवर प्रकाशित होतात.,,,,new: everyday conversation
+pa,conversation.tp_prices[0],JalMitra ਕੋਲ ਮੰਡੀ ਦੇ ਭਾਅ ਨਹੀਂ ਹਨ। ਸਰਕਾਰੀ ਮੰਡੀ ਭਾਅ Agmarknet ਪੋਰਟਲ 'ਤੇ ਮਿਲਦੇ ਹਨ।,,,,new: everyday conversation
+raj,conversation.tp_prices[0],JalMitra कनै मंडी रा भाव कोनी। सरकारी मंडी भाव Agmarknet पोर्टल माथै मिलै।,,,,new: everyday conversation
+hi,conversation.tp_weather[0],JalMitra के पास मौसम का डेटा या पूर्वानुमान नहीं है। पूर्वानुमान और खेती की मौसम सलाह के लिए भारत मौसम विज्ञान विभाग (IMD) और उसकी एग्रोमेट सलाह देखिए।,,,,new: everyday conversation
+hinglish,conversation.tp_weather[0],JalMitra ke paas mausam ka data ya forecast nahi hai. Forecast aur kheti ki mausam salah ke liye India Meteorological Department (IMD) aur uski Agromet advisory dekhiye.,,,,new: everyday conversation
+mr,conversation.tp_weather[0],JalMitra कडे हवामानाचा डेटा किंवा अंदाज नाही. अंदाज आणि शेती हवामान सल्ल्यासाठी भारतीय हवामान विभाग (IMD) आणि त्याचे ॲग्रोमेट सल्ले पहा.,,,,new: everyday conversation
+pa,conversation.tp_weather[0],JalMitra ਕੋਲ ਮੌਸਮ ਦਾ ਡਾਟਾ ਜਾਂ ਭਵਿੱਖਬਾਣੀ ਨਹੀਂ ਹੈ। ਇਸ ਲਈ ਭਾਰਤ ਮੌਸਮ ਵਿਭਾਗ (IMD) ਅਤੇ ਉਸ ਦੀਆਂ ਐਗਰੋਮੈਟ ਸਲਾਹਾਂ ਵੇਖੋ।,,,,new: everyday conversation
+raj,conversation.tp_weather[0],JalMitra कनै मौसम रो डेटा या अंदाजो कोनी। इण सारू भारत मौसम विज्ञान विभाग (IMD) अर उणरी एग्रोमेट सलाह देखो।,,,,new: everyday conversation
+hi,conversation.tp_shop[0],"JalMitra कुछ भी बेचता, खरीदता, किराये पर देता या बुक नहीं करता। यह केवल जानकारी देता है।",,,,new: everyday conversation
+hinglish,conversation.tp_shop[0],"JalMitra kuch bhi bechta, khareedta, kiraye par deta ya book nahi karta. Yeh sirf jaankari deta hai.",,,,new: everyday conversation
+mr,conversation.tp_shop[0],"JalMitra काहीही विकत नाही, खरेदी करत नाही किंवा बुक करत नाही. तो फक्त माहिती देतो.",,,,new: everyday conversation
+pa,conversation.tp_shop[0],"JalMitra ਕੁਝ ਵੀ ਵੇਚਦਾ, ਖਰੀਦਦਾ ਜਾਂ ਬੁੱਕ ਨਹੀਂ ਕਰਦਾ। ਇਹ ਸਿਰਫ਼ ਜਾਣਕਾਰੀ ਦਿੰਦਾ ਹੈ।",,,,new: everyday conversation
+raj,conversation.tp_shop[0],"JalMitra कीं भी कोनी बेचै, खरीदै या बुक करै। ओ फगत जाणकारी देवै।",,,,new: everyday conversation
+hi,conversation.tp_pests[0],JalMitra कीट या फसल रोगों की जानकारी नहीं देता। कृपया नज़दीकी कृषि विज्ञान केंद्र या कृषि अधिकारी से संपर्क कीजिए।,,,,new: everyday conversation
+hinglish,conversation.tp_pests[0],JalMitra keet ya fasal rogon ki jaankari nahi deta. Kripya nazdeeki Krishi Vigyan Kendra ya krishi adhikari se sampark kijiye.,,,,new: everyday conversation
+mr,conversation.tp_pests[0],JalMitra कीड किंवा पीक रोगांची माहिती देत नाही. जवळच्या कृषी विज्ञान केंद्राशी किंवा कृषी अधिकाऱ्याशी संपर्क करा.,,,,new: everyday conversation
+pa,conversation.tp_pests[0],JalMitra ਕੀੜਿਆਂ ਜਾਂ ਫ਼ਸਲ ਬਿਮਾਰੀਆਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਨਹੀਂ ਦਿੰਦਾ। ਨੇੜਲੇ ਕ੍ਰਿਸ਼ੀ ਵਿਗਿਆਨ ਕੇਂਦਰ ਜਾਂ ਖੇਤੀਬਾੜੀ ਅਫ਼ਸਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।,,,,new: everyday conversation
+raj,conversation.tp_pests[0],JalMitra कीड़ा या फसल रा रोगां री जाणकारी कोनी देवै। नैड़ै कृषि विज्ञान केंद्र या कृषि अधिकारी सूं मिलो।,,,,new: everyday conversation
+hi,conversation.tp_livestock[0],"JalMitra पशु, डेयरी या मुर्गी पालन की जानकारी नहीं देता।",,,,new: everyday conversation
+hinglish,conversation.tp_livestock[0],"JalMitra pashu, dairy ya murgi paalan ki jaankari nahi deta.",,,,new: everyday conversation
+mr,conversation.tp_livestock[0],"JalMitra पशू, दुग्ध व्यवसाय किंवा कुक्कुटपालनाची माहिती देत नाही.",,,,new: everyday conversation
+pa,conversation.tp_livestock[0],"JalMitra ਪਸ਼ੂਆਂ, ਡੇਅਰੀ ਜਾਂ ਮੁਰਗੀ ਪਾਲਣ ਬਾਰੇ ਜਾਣਕਾਰੀ ਨਹੀਂ ਦਿੰਦਾ।",,,,new: everyday conversation
+raj,conversation.tp_livestock[0],"JalMitra पसुवां, डेयरी या मुरगी पालण री जाणकारी कोनी देवै।",,,,new: everyday conversation
+hi,conversation.fb_cue[0],मैं ठीक से नहीं समझ पाया। क्या आप इनमें से कुछ पूछना चाहते हैं?,,,,new: everyday conversation
+hi,conversation.fb_cue[1],मैं पूरा नहीं समझ पाया। ये सबसे मिलते-जुलते सवाल हैं:,,,,new: everyday conversation
+hi,conversation.fb_cue[2],कृपया दूसरे शब्दों में पूछिए। ये सवाल आपके सवाल के करीब हैं:,,,,new: everyday conversation
+hinglish,conversation.fb_cue[0],Main theek se nahi samajh paaya. Kya aap inmein se kuch poochna chahte hain?,,,,new: everyday conversation
+hinglish,conversation.fb_cue[1],Main poora nahi samajh paaya. Yeh sabse milte-julte sawal hain:,,,,new: everyday conversation
+hinglish,conversation.fb_cue[2],Kripya doosre shabdon mein poochiye. Yeh sawal aapke sawal ke kareeb hain:,,,,new: everyday conversation
+mr,conversation.fb_cue[0],मला नीट समजले नाही. तुम्हाला यापैकी काही विचारायचे आहे का?,,,,new: everyday conversation
+mr,conversation.fb_cue[1],मला पूर्ण समजले नाही. हे सर्वात जवळचे प्रश्न आहेत:,,,,new: everyday conversation
+pa,conversation.fb_cue[0],ਮੈਂ ਠੀਕ ਤਰ੍ਹਾਂ ਨਹੀਂ ਸਮਝ ਸਕਿਆ। ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੁਝ ਪੁੱਛਣਾ ਚਾਹੁੰਦੇ ਹੋ?,,,,new: everyday conversation
+pa,conversation.fb_cue[1],ਮੈਂ ਪੂਰਾ ਨਹੀਂ ਸਮਝ ਸਕਿਆ। ਇਹ ਸਭ ਤੋਂ ਨੇੜਲੇ ਸਵਾਲ ਹਨ:,,,,new: everyday conversation
+raj,conversation.fb_cue[0],म्हैं ठीक सूं कोनी समझ्यो। कांई थे इणां में सूं कीं पूछणो चावो?,,,,new: everyday conversation
+raj,conversation.fb_cue[1],म्हैं पूरो कोनी समझ्यो। ए सगळां सूं मिलता सवाल है:,,,,new: everyday conversation
+hi,conversation.fb_none[1],मैं इसे किसी जानकारी से नहीं जोड़ पाया। इनमें से कोई सवाल पूछकर देखिए:,,,,new: everyday conversation
+hinglish,conversation.fb_none[1],Main ise kisi jaankari se nahi jod paaya. Inmein se koi sawal poochkar dekhiye:,,,,new: everyday conversation
+mr,conversation.fb_none[1],मला हे कोणत्याही माहितीशी जोडता आले नाही. यापैकी एखादा प्रश्न विचारून पहा:,,,,new: everyday conversation
+pa,conversation.fb_none[1],ਮੈਂ ਇਸ ਨੂੰ ਕਿਸੇ ਜਾਣਕਾਰੀ ਨਾਲ ਨਹੀਂ ਜੋੜ ਸਕਿਆ। ਇਹਨਾਂ ਵਿੱਚੋਂ ਕੋਈ ਸਵਾਲ ਪੁੱਛ ਕੇ ਵੇਖੋ:,,,,new: everyday conversation
+raj,conversation.fb_none[1],म्हैं इणनै किणी जाणकारी सूं कोनी जोड़ सक्यो। इणां में सूं कोई सवाल पूछ नै देखो:,,,,new: everyday conversation

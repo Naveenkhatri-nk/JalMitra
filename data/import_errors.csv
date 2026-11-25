@@ -1,0 +1,12 @@
+source_id,record_ref,page,issue,action
+RJ2025,BARMER / CHOHTAN,127,category printed Semi-critical but stage suggests Safe,"kept as published, flagged"
+RJ2025,BARMER / GIRA,128,"extraction/extractable = 309.6%, stage printed 312%","kept as published, flagged"
+RJ2025,BHARATPUR / NAGAR,128,category printed Over-exploited but stage suggests Critical,"kept as published, flagged"
+RJ2025,BIKANER / KHAJUWALA,129,stage_of_extraction_pct is missing in the report,"kept as published, flagged"
+RJ2025,BUNDI / KESHORAIPATAN,129,category printed Semi-critical but stage suggests Safe,"kept as published, flagged"
+RJ2025,CHURU / TARANAGAR,130,stage_of_extraction_pct is missing in the report,"kept as published, flagged"
+RJ2025,HANUMANGARH / RAWATSAR,131,stage_of_extraction_pct is missing in the report,"kept as published, flagged"
+RJ2025,JAISALMER / JAISALMER_URBAN,132,"extraction/extractable = 300.0%, stage printed 298%","kept as published, flagged"
+RJ2025,PRATAPGARH / PEEPALKHOONT,134,category printed Semi-critical but stage suggests Safe,"kept as published, flagged"
+RJ2025,UDAIPUR / KHERWARA,136,category printed Over-exploited but stage suggests Critical,"kept as published, flagged"
+AI2025 vs NC2025,S.No 830 GOLAGHAT / GOLAGHAT WEST,12,category differs between sources (see category_conflicts.csv C001),both observations recorded; neither chosen as correct

@@ -1,0 +1,177 @@
+id,group,status,detail,ms
+A01_What is this website about?,A required,PASSED,ABOUT_JALMITRA / en / 1700 chars / data calls 0,0.27
+A02_JalMitra is for what?,A required,PASSED,ABOUT_JALMITRA / en / 1700 chars / data calls 0,0.15
+A03_What can I do here?,A required,PASSED,WHAT_CAN_YOU_DO / en / 1473 chars / data calls 0,0.14
+A04_Tell me about JalMitra.,A required,PASSED,ABOUT_JALMITRA / en / 1700 chars / data calls 0,0.19
+A05_How does it help farmers?,A required,PASSED,WHAT_CAN_YOU_DO / en / 1473 chars / data calls 0,0.19
+A06_Help,A required,PASSED,HELP / en / 476 chars / data calls 0,0.06
+A07_JalMitra kya hai?,A required,PASSED,ABOUT_JALMITRA / hinglish / 1817 chars / data calls 0,0.1
+A08_Ye website kis kaam aati hai?,A required,PASSED,WHAT_CAN_YOU_DO / hinglish / 1563 chars / data calls 0,0.14
+A09_Is website se kya kar sakte ha,A required,PASSED,WHAT_CAN_YOU_DO / hinglish / 1563 chars / data calls 0,0.17
+A10_Jalmithra kya hai?,A required,PASSED,ABOUT_JALMITRA / hinglish / 1817 chars / data calls 0,0.12
+A11_What does this website do?,A required,PASSED,WHAT_CAN_YOU_DO / en / 1473 chars / data calls 0,0.15
+B01_What is JalMitra?,B variations,PASSED,ABOUT_JALMITRA / en / 1700 chars / data calls 0,0.12
+B02_What is this website used for?,B variations,PASSED,ABOUT_JALMITRA / en / 1700 chars / data calls 0,0.16
+B03_What can you do?,B variations,PASSED,WHAT_CAN_YOU_DO / en / 1473 chars / data calls 0,0.11
+B04_What services do you provide?,B variations,PASSED,WHAT_CAN_YOU_DO / en / 1473 chars / data calls 0,0.23
+B05_How can I use this website?,B variations,PASSED,HOW_TO_USE / en / 934 chars / data calls 0,0.15
+B06_How does this application help,B variations,PASSED,WHAT_CAN_YOU_DO / en / 1473 chars / data calls 0,0.24
+B07_Explain this project.,B variations,PASSED,ABOUT_JALMITRA / en / 1700 chars / data calls 0,0.19
+B08_What features are available?,B variations,PASSED,FEATURE_LIST / en / 1656 chars / data calls 0,0.32
+B09_Help me get started.,B variations,PASSED,HOW_TO_USE / en / 934 chars / data calls 0,0.17
+B10_What are the features of JalMi,B variations,PASSED,FEATURE_LIST / en / 1656 chars / data calls 0,0.21
+B11_How do I use JalMitra?,B variations,PASSED,HOW_TO_USE / en / 934 chars / data calls 0,0.14
+B12_help please,B variations,PASSED,HELP / en / 476 chars / data calls 0,0.08
+C01_Jalmithra kya hai?,C spellings,PASSED,ABOUT_JALMITRA / hinglish / 1817 chars / data calls 0,0.12
+C02_Jal Mitra kya hai?,C spellings,PASSED,ABOUT_JALMITRA / hinglish / 1817 chars / data calls 0,0.11
+C03_Jalmitra kya hai?,C spellings,PASSED,ABOUT_JALMITRA / hinglish / 1817 chars / data calls 0,0.09
+C04_what is jal mitra,C spellings,PASSED,ABOUT_JALMITRA / en / 1700 chars / data calls 0,0.12
+C05_Tell me about jalmithra,C spellings,PASSED,ABOUT_JALMITRA / en / 1700 chars / data calls 0,0.21
+C06_jal-mitra is for what?,C spellings,PASSED,ABOUT_JALMITRA / en / 1700 chars / data calls 0,0.14
+D01_hinglish_JalMitra kya hai?,D languages,PASSED,ABOUT_JALMITRA / hinglish / 1817 chars / data calls 0,0.1
+D02_hinglish_Ye website kis kaam aati,D languages,PASSED,WHAT_CAN_YOU_DO / hinglish / 1563 chars / data calls 0,0.14
+D03_hinglish_JalMitra ka use kya hai?,D languages,PASSED,WHAT_CAN_YOU_DO / hinglish / 1563 chars / data calls 0,0.11
+D04_hinglish_Is website ko kaise use ,D languages,PASSED,HOW_TO_USE / hinglish / 907 chars / data calls 0,0.19
+D05_hi_JalMitra क्या है?,D languages,PASSED,ABOUT_JALMITRA / hi / 1638 chars / data calls 0,0.15
+D06_hi_यह वेबसाइट किस काम आती ह,D languages,PASSED,WHAT_CAN_YOU_DO / hi / 1433 chars / data calls 0,0.16
+D07_hi_इस वेबसाइट का उपयोग कैसे,D languages,PASSED,HOW_TO_USE / hi / 870 chars / data calls 0,0.16
+D08_hi_जलमित्र क्या है?,D languages,PASSED,ABOUT_JALMITRA / hi / 1638 chars / data calls 0,0.11
+D09_pa_ਇਹ ਵੈੱਬਸਾਈਟ ਕਿਸ ਕੰਮ ਆਉਂਦ,D languages,PASSED,WHAT_CAN_YOU_DO / pa / 1404 chars / data calls 0,0.13
+D10_pa_ਜਲਮਿੱਤਰ ਕੀ ਹੈ?,D languages,PASSED,ABOUT_JALMITRA / pa / 1631 chars / data calls 0,0.09
+D11_mr_JalMitra काय आहे?,D languages,PASSED,ABOUT_JALMITRA / mr / 1607 chars / data calls 0,0.11
+D12_mr_ही वेबसाइट कशासाठी आहे?,D languages,PASSED,WHAT_CAN_YOU_DO / mr / 1413 chars / data calls 0,0.12
+D13_raj_JalMitra कांई है?,D languages,PASSED,ABOUT_JALMITRA / raj / 1521 chars / data calls 0,0.1
+D20_all_templates_six_languages,D languages,PASSED,5 templates x 6 languages,0.05
+D21_chosen_language_respected,D languages,PASSED,en hi hinglish mr pa raj,0.52
+E01_coverage_stated_honestly,E content,PASSED,"302 blocks / 6,762 units / coverage note / no safe-to-drink claim",0.0
+E02_numbers_match_database,E content,PASSED,"total 6762, numeric 302",3.09
+E03_no_paid_or_external_ai_loaded,E content,PASSED,no LLM client modules loaded,0.07
+F01_greeting_still_help,F unchanged,PASSED,greetings -> help,0.2
+F02_groundwater_status,F unchanged,PASSED,"AJMER URBAN (Block, AJMER district, Rajasthan) is classified as Over-exploited. ",1.04
+F03_groundwater_more,F unchanged,PASSED,top_n / explain_category / status / status / domain / numeric,6.12
+F04_followup_after_app_question,F unchanged,PASSED,data memory kept across an app question,7.57
+F05_explain_in_hindi_after_app_question,F unchanged,PASSED,"re-rendered in Hindi, no data access",0.3
+F06_vague_followups_not_taken,F unchanged,PASSED,not taken by app intents,0.1
+F07_injection_still_blocked,F unchanged,PASSED,blocked,0.46
+G1_01_APP_things which you can provide,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.33
+G1_02_APP_things you can provide,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.23
+G1_03_APP_what do you offer,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.15
+G1_04_APP_your services,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.14
+G1_05_APP_features?,G1 casual,PASSED,FEATURE_LIST,0.12
+G1_06_APP_options,G1 casual,PASSED,FEATURE_LIST,0.12
+G1_07_APP_what all can you do for me,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.16
+G1_08_APP_what stuff do you have,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.14
+G1_09_APP_show me what you've got,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.18
+G1_10_APP_list your capabilities,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.14
+G1_11_APP_what are your services,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.17
+G1_12_APP_which options are there,G1 casual,PASSED,FEATURE_LIST,0.22
+G1_13_APP_what kind of help can i get ,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.17
+G1_14_APP_what can i get from you,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.14
+G1_15_APP_what info do you have,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.13
+G1_16_APP_what information can you giv,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.16
+G1_17_APP_what are you capable of,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.17
+G1_18_APP_what are the things you can ,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.22
+G1_19_APP_tell me your functions,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.16
+G1_20_APP_what's available,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.14
+G1_21_APP_what else can you do,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.12
+G1_22_APP_services,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.11
+G1_23_APP_capabilities?,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.11
+G1_24_APP_what is this,G1 casual,PASSED,ABOUT_JALMITRA,0.1
+G1_25_APP_who are you,G1 casual,PASSED,ABOUT_JALMITRA,0.09
+G1_26_APP_what are you,G1 casual,PASSED,ABOUT_JALMITRA,0.09
+G1_27_APP_how do you work,G1 casual,PASSED,HOW_TO_USE,0.1
+G1_28_APP_how should i start,G1 casual,PASSED,HOW_TO_USE,0.2
+G1_29_APP_guide me,G1 casual,PASSED,HOW_TO_USE,0.12
+G1_30_APP_menu,G1 casual,PASSED,FEATURE_LIST,0.06
+G1_31_APP_aap kya kya kar sakte ho,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.14
+G1_32_APP_tum kya de sakte ho,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.13
+G1_33_APP_aapki services kya hai,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.16
+G1_34_APP_kya kya suvidha hai,G1 casual,PASSED,FEATURE_LIST,0.13
+G1_35_APP_isme kya kya hai,G1 casual,PASSED,ABOUT_JALMITRA,0.09
+G1_36_APP_aap kya provide karte ho,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.18
+G1_37_APP_kya features hai,G1 casual,PASSED,FEATURE_LIST,0.23
+G1_38_APP_आप क्या-क्या कर सकते हैं?,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.21
+G1_39_APP_आप क्या सुविधाएं देते हैं,G1 casual,PASSED,FEATURE_LIST,0.49
+G1_40_APP_इसमें क्या क्या है,G1 casual,PASSED,ABOUT_JALMITRA,0.14
+G1_41_APP_ਤੁਸੀਂ ਕੀ ਕਰ ਸਕਦੇ ਹੋ?,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.11
+G1_42_APP_तुम्ही काय करू शकता?,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.11
+G1_43_APP_थे कांई कर सको?,G1 casual,PASSED,WHAT_CAN_YOU_DO,0.1
+G1_44_NO_Is Ajmer Urban safe?,G1 casual,PASSED,status,0.98
+G1_45_NO_things you can provide for J,G1 casual,PASSED,status,2.39
+G1_46_NO_what do you have on Jodhpur,G1 casual,PASSED,data_availability,1.67
+G1_47_NO_options for irrigation in sa,G1 casual,PASSED,domain,1.47
+G1_48_NO_what services does CGWB prov,G1 casual,PASSED,unclear,0.94
+G1_49_NO_what can you tell me about f,G1 casual,PASSED,domain,0.77
+G1_50_NO_what crops can I grow in Sik,G1 casual,PASSED,domain,2.19
+G1_51_NO_give me the top 5 blocks,G1 casual,PASSED,top_n,2.75
+G1_52_NO_what is semi-critical,G1 casual,PASSED,explain_category,0.78
+G1_53_NO_what is stage of extraction,G1 casual,PASSED,numeric,0.67
+G1_54_NO_show me Bikaner,G1 casual,PASSED,status,2.33
+G1_55_NO_jaipur ka paani kaisa hai,G1 casual,PASSED,status,0.73
+G1_56_NO_what can I do about salty wa,G1 casual,PASSED,explain_category,1.01
+G1_57_NO_how do I read my soil card,G1 casual,PASSED,domain,0.91
+G1_58_NO_what is the limit for nitrat,G1 casual,PASSED,domain,0.75
+G1_59_NO_compare Ajmer and Pali,G1 casual,PASSED,compare,0.69
+G1_60_NO_Explain in Hindi,G1 casual,PASSED,meta,0.09
+G1_61_NO_What does it mean?,G1 casual,PASSED,explain_category,0.91
+G1_62_NO_Explain more,G1 casual,PASSED,meta,0.06
+G1_63_NO_what is drip irrigation,G1 casual,PASSED,domain,0.75
+G1_64_NO_which crops need less water,G1 casual,PASSED,domain,0.83
+G1_65_NO_what about Barmer?,G1 casual,PASSED,status,0.68
+G1_66_NO_hello,G1 casual,PASSED,help,0.05
+G1_67_NO_thank you,G1 casual,PASSED,smalltalk,0.11
+G2_01_APP_what are all the things you ,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.24
+G2_02_APP_whats on offer,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.16
+G2_03_APP_what help do you give,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.14
+G2_04_APP_can you show me your feature,G2 casual,PASSED,FEATURE_LIST,0.27
+G2_05_APP_tell me what you can do,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.15
+G2_06_APP_what u can do,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.11
+G2_07_APP_ur features,G2 casual,PASSED,FEATURE_LIST,0.14
+G2_08_APP_what services are available,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.22
+G2_09_APP_which services do u have,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.23
+G2_10_APP_any features?,G2 casual,PASSED,FEATURE_LIST,0.13
+G2_11_APP_what options do i have here,G2 casual,PASSED,FEATURE_LIST,0.19
+G2_12_APP_what can this do,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.11
+G2_13_APP_how can you help me,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.11
+G2_14_APP_in what ways can you help,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.15
+G2_15_APP_how can i get started,G2 casual,PASSED,HOW_TO_USE,0.19
+G2_16_APP_how do i begin,G2 casual,PASSED,HOW_TO_USE,0.16
+G2_17_APP_aap kya karte ho,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.13
+G2_18_APP_aap kaun ho,G2 casual,PASSED,ABOUT_JALMITRA,0.1
+G2_19_APP_tum kaun ho,G2 casual,PASSED,ABOUT_JALMITRA,0.09
+G2_20_APP_isme kya kya features hai,G2 casual,PASSED,FEATURE_LIST,0.14
+G2_21_APP_kya kya options hai,G2 casual,PASSED,FEATURE_LIST,0.13
+G2_22_APP_mujhe kya kya mil sakta hai,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.18
+G2_23_APP_आप कौन हैं,G2 casual,PASSED,ABOUT_JALMITRA,0.11
+G2_24_APP_आपकी सेवाएं क्या हैं,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.13
+G2_25_APP_मुझे क्या क्या मिल सकता है,G2 casual,PASSED,WHAT_CAN_YOU_DO,0.15
+G2_26_APP_ਤੁਸੀਂ ਕੌਣ ਹੋ,G2 casual,PASSED,ABOUT_JALMITRA,0.08
+G2_27_APP_ਕਿਹੜੀਆਂ ਸਹੂਲਤਾਂ ਹਨ,G2 casual,PASSED,FEATURE_LIST,0.1
+G2_28_APP_तुम्ही कोण आहात,G2 casual,PASSED,ABOUT_JALMITRA,0.11
+G2_29_APP_कोणत्या सुविधा आहेत,G2 casual,PASSED,FEATURE_LIST,0.1
+G2_30_APP_थे कुण हो,G2 casual,PASSED,ABOUT_JALMITRA,0.1
+G2_31_NO_what are the services of Jal,G2 casual,PASSED,status,1.04
+G2_32_NO_features of drip irrigation,G2 casual,PASSED,domain,0.84
+G2_33_NO_options for saving water in ,G2 casual,PASSED,status,1.08
+G2_34_NO_what can you tell me about S,G2 casual,PASSED,status,3.36
+G2_35_NO_can you help me with my whea,G2 casual,PASSED,domain,2.1
+G2_36_NO_what do you know about salin,G2 casual,PASSED,domain,2.05
+G2_37_NO_how does recharge work,G2 casual,PASSED,numeric,1.21
+G2_38_NO_how do i use the soil report,G2 casual,PASSED,domain,1.37
+G2_39_NO_show me the map,G2 casual,PASSED,unclear,0.61
+G2_40_NO_what is EC,G2 casual,PASSED,domain,0.67
+G2_41_NO_how much water does bajra ne,G2 casual,PASSED,domain,0.84
+G2_42_NO_which block in Jaipur is saf,G2 casual,PASSED,status,0.97
+G2_43_NO_is my water safe to drink,G2 casual,PASSED,domain,0.74
+G2_44_NO_who made the CGWB report,G2 casual,PASSED,unclear,0.75
+G2_45_NO_how to start drip irrigation,G2 casual,PASSED,domain,0.89
+G2_46_NO_what is the best crop for Na,G2 casual,PASSED,domain,0.76
+G2_47_NO_aap Jodhpur ka data dikhao,G2 casual,PASSED,status,2.3
+G2_48_NO_मेरे खेत के लिए क्या करूँ,G2 casual,PASSED,status,1.69
+G2_49_NO_thanks,G2 casual,PASSED,smalltalk,0.06
+G2_50_NO_ok,G2 casual,PASSED,smalltalk,0.04
+G3_screenshot_question,G3 casual,PASSED,"Here is what JalMitra can do for farmers, students and officials:
+- **Groundwate",0.32
+G4_place_names_in_vocabulary,G3 casual,PASSED,not taken,0.09
+Z01_groundwater_db_unchanged,Z integrity,PASSED,sha256 9eeaee1533b478c1,0
+Z02_no_network,Z integrity,PASSED,0 attempts,0

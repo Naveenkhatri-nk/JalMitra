@@ -1,0 +1,8 @@
+﻿# JalMitra 4.0 (Phase 3) - OPTIONAL packages for the AI explanation + document search features.
+# The app runs exactly as JalMitra 3.0 without them (JALMITRA_LLM_PROVIDER unset / none).
+# Install into the project venv:   .venv\Scripts\python.exe -m pip install -r requirements-llm.txt
+# llm_provider.py, llm_compose.py and answer_verifier.py need only the Python standard library.
+chromadb==1.5.9        # vector store for rag.py / build_rag_index.py (pulls onnxruntime, tokenizers, grpcio, ...)
+# Not pip packages (installed with Ollama, see LLM_ARCHITECTURE.md):
+#   ollama pull qwen3:4b-instruct-2507-q4_K_M     chat model (2.5 GB)
+#   ollama pull bge-m3                            multilingual embedding model (1.2 GB)

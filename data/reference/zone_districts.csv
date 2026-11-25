@@ -1,0 +1,5 @@
+zone_id,state,district,coverage,source_id
+RJ_IIA,Rajasthan,SIKAR,whole district (as listed),SKNAU_FATEHPUR
+RJ_IIA,Rajasthan,JHUNJHUNU,whole district (as listed),SKNAU_FATEHPUR
+RJ_IIA,Rajasthan,NAGAUR,whole district (as listed),SKNAU_FATEHPUR
+RJ_IIA,Rajasthan,CHURU,eastern part only (partial),SKNAU_FATEHPUR

@@ -1,0 +1,10 @@
+# JalMitra 3.0 - offline, database-first assistant (no AI model, no API key)
+streamlit>=1.67.0
+pandas>=3.1.1
+pdfplumber>=0.11      # reading Soil Health Card PDFs (text layer only, no OCR)
+openpyxl>=3.1         # reading Excel soil reports and datasets
+reportlab>=4.0        # PDF reports (English)
+pydeck>=0.9           # boundary maps in the Geographic Explorer (only if GeoJSON files are supplied)
+
+# Only for the old Gemini version kept in backup/ (not used by JalMitra 3.0):
+#   pip install google-genai python-dotenv

@@ -1,0 +1,22 @@
+check_id,scope,check,result,details
+AI-01,AI2025,rows extracted,INFO,6762 rows from 97 pages
+AI-02,AI2025,serial numbers continuous 1..N,PASS,"first [1], last [6762]"
+AI-03,AI2025,category values recognised,PASS,safe=4926; semi_critical=759; salinity=126; critical=201; over_exploited=730; Safe=19; Salinity=1
+AI-04,AI2025,category spelling,INFO,"capitalised variants kept in category_raw: {'Safe': 19, 'Salinity': 1}"
+RJ-01,RJ2025,rows extracted,INFO,"302 rows, PDF pages 126-136"
+RJ-02,RJ2025,row and category counts vs report's own Annexure III(A) (page 110),PASS,"extracted {'Over-exploited': 213, 'Critical': 23, 'Safe': 36, 'Semi-critical': 27, 'Saline': 3}; report 302 = {'Safe': 36, 'Semi-critical': 27, 'Critical': 23, 'Over-exploited': 213, 'Saline': 3}"
+NC-01,NC2025,state rows (Annexure I),INFO,36 rows
+NC-02,NC2025,district rows (Annexure II),INFO,709 rows across 36 states/UTs
+NC-03,NC2025,district recharge rows add up to printed state total (ham),PASS,all states match
+NC-04,NC2025,Total(Ham)/Total(Bcm) labels look swapped as printed,WARN,PUNJAB (p193)
+NC-05,NC2025,district names printed over several lines (joined; please check),INFO,CHHATISGARH 17 'Khairagarh-Chhuikhadan_Gandai' (p177); CHHATISGARH 22 'Manendragarh-Chirmiri_Bharatpur' (p177); CHHATISGARH 23 'Mohla-Manpur_Ambagarhchowki' (p177)
+X-01,AI2025 vs NC2025,assessment units per state vs NC page 213,PASS,all 36 states/UTs match
+X-02,AI2025 vs NC2025,national category totals vs NC page 213 Grand Total,WARN,"AI {'Safe': 4945, 'Semi-critical': 759, 'Saline': 127, 'Critical': 201, 'Over-exploited': 730}; NC {'total': 6762, 'Safe': 4946, 'Semi-critical': 758, 'Critical': 201, 'Over-exploited': 730, 'Saline': 127}; differences (AI, NC): {'Safe': (4945, 4946), 'Semi-critical': (759, 758)}"
+X-02b,AI2025 vs NC2025,category counts per state vs NC page 213,WARN,Assam Safe: AI 243 vs NC 244; Assam Semi-critical: AI 2 vs NC 1
+D-01,AI2025,duplicate state/district/unit inside the All India list,PASS,0 duplicate groups
+X-03,AI2025 vs RJ2025,Rajasthan units matched by district + unit name,PASS,"AI Rajasthan rows 302, RJ rows 302, matched 302, RJ unmatched 0"
+X-04,AI2025 vs RJ2025,category agrees for matched Rajasthan units,PASS,0 differences
+X-05,RJ2025 vs NC2025,Rajasthan block values add up to NC district values (rounding allowed),PASS,all 33 districts within rounding
+C-01,groundwater.csv,coverage,INFO,"6762 assessment units, 36 states/UTs, 709 districts"
+C-02,groundwater.csv,units with recharge/extraction values,INFO,302 of 6762 (Rajasthan only); 6460 have category only
+C-03,groundwater.csv,unit types,INFO,"{'Block': 4244, 'Mandal': 1299, 'UT': 1, 'District': 3, 'Tehsil': 34, 'Taluk': 1181}"

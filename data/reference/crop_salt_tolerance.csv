@@ -1,0 +1,14 @@
+fao_salt_label,ece_threshold_dS_m,slope_pct_per_dS_m,rating,source_id,table_ref,note
+Barley (grain),8.0,5.0,T,FAO_SALT_TOLERANCE,Table A1.1,
+Wheat,6.0,7.1,MT,FAO_SALT_TOLERANCE,Table A1.1,
+Cotton,7.7,5.2,T,FAO_SALT_TOLERANCE,Table A1.1,
+Sorghum,6.8,16,MT,FAO_SALT_TOLERANCE,Table A1.1,
+Rapeseed (Brassica campestris),9.7,14,T,FAO_SALT_TOLERANCE,Table A1.1,Not used for mustard (Brassica juncea) - different species
+Rapeseed (Brassica napus),11.0,13,T,FAO_SALT_TOLERANCE,Table A1.1,Not used for mustard (Brassica juncea) - different species
+Chickpea,,,MS,FAO_SALT_TOLERANCE,Table A1.1,No threshold or slope given; rating only
+Maize (ear),1.7,12,MS,FAO_SALT_TOLERANCE,Table A1.1,
+Groundnut,3.2,29,MS,FAO_SALT_TOLERANCE,Table A1.1,
+Guar,8.8,17,T,FAO_SALT_TOLERANCE,Table A1.1,
+Alfalfa,2.0,7.3,MS,FAO_SALT_TOLERANCE,Table A1.1,
+Cowpea (seed),4.9,12,MT,FAO_SALT_TOLERANCE,Table A1.1,
+Date palm,4.0,3.6,T,FAO_SALT_TOLERANCE,Table A1.2,

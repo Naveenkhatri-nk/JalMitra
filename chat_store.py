@@ -8,6 +8,11 @@ never uploaded):
   * settings.json    the user's settings: theme (day / night / system), interface and answer language, default
                      location, answer style and length, voice
 
+Accounts (27 Nov 2026): when login is on (ui_auth.enabled()), a logged-in user's conversations and settings are kept
+in the accounts database instead (auth.py: tables jm_user_chats, jm_user_settings), so each user sees only their own
+chats and they survive restarts of the web host. With login on and nobody logged in, nothing is read or written.
+The JSON files below are used only when login is off (single-user use on your own computer).
+
 Folder: JALMITRA_HISTORY_DIR if set; when the app runs inside Streamlit's AppTest (the test suites) and no folder
 is set, each test session gets its own temporary folder, so tests never touch the real history or settings.
 """
@@ -60,6 +65,25 @@ def base_dir():
         d = DEFAULT_DIR
     d.mkdir(parents=True, exist_ok=True)
     return d
+
+
+# ------------------------------------------------------------------ where to store: account database or local files
+def _backend():
+    """('db', user_id) for a logged-in user, ('none', None) when login is on but nobody is logged in,
+    ('file', None) when login is off."""
+    try:
+        import ui_auth
+        if not ui_auth.enabled():
+            return "file", None
+        uid = ui_auth.user_id()
+        return ("db", uid) if uid else ("none", None)
+    except Exception:                                     # noqa: BLE001 - outside a Streamlit run
+        return "file", None
+
+
+def _db():
+    import auth
+    return auth
 
 
 # ------------------------------------------------------------------ JSON helpers
@@ -126,6 +150,17 @@ def save_conversation(conv):
     data = {"version": 1, "id": conv["id"], "title": conv.get("title") or "",
             "created": conv.get("created_ts") or time.time(), "updated": conv.get("updated") or time.time(),
             "messages": msgs, "state": _state_dict(conv.get("state"))}
+    kind, uid = _backend()
+    if kind == "db":
+        _chat_path(conv["id"])                            # same id check as for files
+        try:
+            _db().save_chat(uid, conv["id"], data["title"], data["updated"],
+                            json.loads(json.dumps(data, default=_plain)))
+        except Exception as e:                            # noqa: BLE001 - a database hiccup never breaks the chat
+            raise OSError(f"chat not saved: {type(e).__name__}") from e
+        return conv["id"]
+    if kind == "none":
+        return None
     path = _chat_path(conv["id"])
     _write(path, data)
     return path
@@ -133,6 +168,16 @@ def save_conversation(conv):
 
 def load_conversations():
     """All stored conversations, most recently used first (unreadable files are skipped)."""
+    kind, uid = _backend()
+    if kind == "db":
+        try:
+            stored = _db().load_chats(uid)
+        except Exception as e:                            # noqa: BLE001
+            raise OSError(f"chats not loaded: {type(e).__name__}") from e
+        return [d for d in stored
+                if isinstance(d, dict) and _ID.match(d.get("id") or "") and isinstance(d.get("messages"), list)]
+    if kind == "none":
+        return []
     out = []
     for p in base_dir().glob("chat_*.json"):
         try:
@@ -145,6 +190,11 @@ def load_conversations():
 
 
 def delete_conversation(cid):
+    kind, uid = _backend()
+    if kind == "db":
+        return _db().delete_chat(uid, cid)
+    if kind == "none":
+        return False
     try:
         _chat_path(cid).unlink()
         return True
@@ -153,6 +203,16 @@ def delete_conversation(cid):
 
 
 def rename_conversation(cid, title):
+    kind, uid = _backend()
+    if kind == "db":
+        d = _db().get_chat(uid, cid)
+        if not d:
+            return False
+        d["title"] = (title or "").strip()[:80]
+        _db().save_chat(uid, cid, d["title"], d.get("updated") or time.time(), d)
+        return True
+    if kind == "none":
+        return False
     p = _chat_path(cid)
     if not p.exists():
         return False
@@ -164,6 +224,11 @@ def rename_conversation(cid, title):
 
 def clear_conversations():
     """Delete every stored conversation (settings are kept). Returns how many were deleted."""
+    kind, uid = _backend()
+    if kind == "db":
+        return _db().clear_chats(uid)
+    if kind == "none":
+        return 0
     n = 0
     for p in base_dir().glob("chat_*.json"):
         try:
@@ -188,10 +253,16 @@ def group_label(ts, now=None):
 # ------------------------------------------------------------------ settings
 def load_settings():
     """Stored settings (only known keys; a missing or broken file gives {})."""
-    try:
-        d = json.loads((base_dir() / SETTINGS_FILE).read_text(encoding="utf-8"))
-    except (OSError, ValueError):
+    kind, uid = _backend()
+    if kind == "db":
+        d = _db().load_user_settings(uid)
+    elif kind == "none":
         return {}
+    else:
+        try:
+            d = json.loads((base_dir() / SETTINGS_FILE).read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            return {}
     if not isinstance(d, dict):
         return {}
     d = {k: v for k, v in d.items() if k in SETTING_KEYS}
@@ -202,7 +273,11 @@ def load_settings():
 
 def save_settings(values):
     """Merge `values` (known keys only) into the settings file."""
+    kind, uid = _backend()
     d = load_settings()
     d.update({k: v for k, v in values.items() if k in SETTING_KEYS})
-    _write(base_dir() / SETTINGS_FILE, d)
+    if kind == "db":
+        _db().save_user_settings(uid, d)
+    elif kind == "file":
+        _write(base_dir() / SETTINGS_FILE, d)
     return d

@@ -4,6 +4,7 @@
 .env
 .env.*
 *.key
+.streamlit/secrets.toml
 
 # Python and editor clutter
 __pycache__/
@@ -16,6 +17,7 @@ venv/
 
 # Personal / private data created while using the app
 user_data/
+data/users/
 feedback/
 data/chat_history/
 

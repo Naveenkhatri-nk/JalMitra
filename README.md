@@ -17,6 +17,12 @@ displayed straight from the database, never from the AI. No cloud service or API
 **How to run (Windows):** double-click `START_JALMITRA.bat` (needs Python, `pip install -r requirements.txt`
 and `requirements-llm.txt`, and Ollama with `qwen3:4b-instruct-2507-q4_K_M` and `bge-m3`).
 
+**Accounts and the public website (27 Nov 2026):** visitors create an account or log in first. Passwords are
+hashed with Argon2id, wrong passwords lock the account for a while, logins and sign-ups are rate-limited, each
+user's chats are private, and admins get an Admin page. To put JalMitra on the internet (Streamlit Community Cloud
+with a free Neon database and an optional Groq cloud AI key), follow [`DEPLOY.md`](DEPLOY.md). Code: `auth.py`,
+`ui_auth.py`; tests: `python test_auth.py`.
+
 **Data coverage:** Category information: 6,762 assessment units. Block-level figures: 5,184 units
 (Rajasthan from `data/groundwater.db`, other states from the 2025 state reports). Assessment year: 2025.
 

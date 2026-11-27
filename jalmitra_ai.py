@@ -643,10 +643,31 @@ def unsupported_time_claims(text):
 _STATUS = {"t": 0, "value": None}
 
 
+def cloud_ai():
+    """True when JALMITRA_LLM_PROVIDER=openai_compatible (a hosted model, for the public website, 27 Nov 2026).
+    Otherwise the local Ollama model is used, as before."""
+    return os.environ.get("JALMITRA_LLM_PROVIDER", "").strip().lower() == "openai_compatible"
+
+
+def default_provider():
+    if cloud_ai():
+        return lp.get_provider()
+    return lp.LLMProvider("ollama", model=MODEL(), ollama_url=OLLAMA(),
+                          timeout=float(os.environ.get("JALMITRA_LLM_TIMEOUT", "60")))
+
+
 def ai_status(force=False, timeout=3.0):
     """{'ok', 'server', 'model', 'model_present', 'loaded', 'processor', 'models', 'error'} (cached 15 s)."""
     if not force and _STATUS["value"] and time.time() - _STATUS["t"] < 15:
         return _STATUS["value"]
+    if cloud_ai():
+        p = lp.get_provider()
+        ok = bool(p.base_url and p._api_key)
+        st = {"ok": ok, "server": ok, "model": p.model, "model_present": ok, "loaded": ok, "processor": "cloud",
+              "models": [p.model], "url": p.base_url, "error": None if ok else
+              "JALMITRA_LLM_BASE_URL or JALMITRA_LLM_API_KEY is not set"}
+        _STATUS.update(t=time.time(), value=st)
+        return st
     st = {"ok": False, "server": False, "model": MODEL(), "model_present": False, "loaded": False,
           "processor": None, "models": [], "error": None, "url": OLLAMA()}
     try:
@@ -1180,8 +1201,7 @@ def respond(question, state, lang_choice="auto", style="farmer", detail="standar
         out["timings"] = {"total_ms": round((time.perf_counter() - t0) * 1000, 1)}
         return out
     if provider is None:
-        provider = lp.LLMProvider("ollama", model=MODEL(), ollama_url=OLLAMA(),
-                                  timeout=float(os.environ.get("JALMITRA_LLM_TIMEOUT", "60")))
+        provider = default_provider()
     if retriever is None:
         try:
             import rag

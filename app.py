@@ -15,9 +15,16 @@ UI redesign (24 Nov 2026), ChatGPT / Claude-style:
     style and length, voice, local AI status (model, GPU), clear history; saved to data/chat_history/settings.json
   * theme (ui_theme.py): Day / Night / System palettes as CSS variables, plus .streamlit/config.toml
   * Streamlit's menu, deploy button and footer are hidden
+Accounts (27 Nov 2026): visitors must log in or create an account first (ui_auth.py, auth.py): Argon2id password
+hashes, lockout and rate limits, password reset by email code, server-side sessions, per-user private chat history,
+an Admin page for admins and a Privacy page. JALMITRA_AUTH=off turns login off for single-user use on this computer.
+Unexpected errors show a short friendly message with a reference code; the details go to the server log only.
 All earlier pages are kept (ui_pages.py, ui_pages_v3.py); the soil / crop / land / irrigation / water-quality pages
 stay hidden (visibility=HIDDEN) and the "Coming soon" page lists them.
 """
+
+import logging
+import uuid
 
 import streamlit as st
 
@@ -30,6 +37,7 @@ import ui_pages as pages
 import ui_pages_v3 as pages3
 import ui_settings as settings      # UI redesign: settings dialog + local settings file
 import ui_theme as theme            # UI redesign: Day / Night / System
+import ui_auth                      # accounts: login, sign-up, reset, admin, privacy (27 Nov 2026)
 from ui_text import u
 
 st.set_page_config(page_title="JalMitra", page_icon=str(uc.ASSETS / "favicon.png"), layout="wide",
@@ -53,6 +61,9 @@ uc.set_ui_lang(lg)
 palette = theme.apply(st.session_state.theme, uc.theme_type())
 st.html(settings.DIALOG_CSS)
 dark = palette == "dark"
+
+# ------------------------------------------------------------------ login (stops here with the login screen)
+account = ui_auth.require_login()
 st.logo(str(uc.ASSETS / ("logo_dark.svg" if dark else "logo.svg")), size="large",
         icon_image=str(uc.ASSETS / "logo_icon.svg"))
 
@@ -102,7 +113,10 @@ P = {
     "sources": st.Page(pages3.page_sources, title=u("nav_sources", lg), icon=":material/verified:",
                        url_path="sources"),
     "about": st.Page(pages.page_about, title=u("nav_about", lg), icon=":material/info:", url_path="about"),
+    "privacy": st.Page(ui_auth.page_privacy, title="Privacy", icon=":material/shield_lock:", url_path="privacy"),
 }
+if ui_auth.is_admin():              # the admin page exists only for admins (other users get "page not found")
+    P["admin"] = st.Page(ui_auth.page_admin, title="Admin", icon=":material/admin_panel_settings:", url_path="admin")
 pages.PAGES.update(P)
 nav = st.navigation({
     u("sec_main", lg): [P["chat"], P["home"], P["ask"]],
@@ -110,7 +124,8 @@ nav = st.navigation({
     u("sec_land", lg): [P["soil"], P["soilprofile"], P["land"], P["landdeg"], P["crop"]],
     u("sec_explore", lg): [P["geo"], P["compare"]],
     u("sec_tools", lg): [P["soilreport"], P["reports"]],
-    u("sec_help", lg): [P["learn"], P["sources"], P["about"], P["soon"]],
+    u("sec_help", lg): [P["learn"], P["sources"], P["about"], P["soon"], P["privacy"]] + ([P["admin"]] if "admin" in P
+                                                                                       else []),
 }, position="hidden")
 on_chat = nav.url_path == P["chat"].url_path
 
@@ -130,6 +145,10 @@ with st.sidebar:
                 st.page_link(P[key])
         st.page_link(P["about"], icon=":material/info:")
         st.page_link(P["soon"], icon=":material/upcoming:")
+        st.page_link(P["privacy"], icon=":material/shield_lock:")
+        if "admin" in P:
+            st.page_link(P["admin"], icon=":material/admin_panel_settings:")
+        ui_auth.sidebar_account()
         c1, c2 = st.columns([0.78, 0.22], vertical_alignment="center")
         c1.button(chat4.t("settings"), key="jm_settings_btn", icon=":material/settings:", on_click=open_settings,
                   width="stretch")
@@ -142,6 +161,8 @@ with st.sidebar:
 
 if st.session_state.pop("_jm_open_settings", False):
     settings.open_dialog(on_clear=chat4.clear_all)
+else:
+    ui_auth.maybe_open_account()
 if st.session_state.get("_jm_toast"):
     st.toast(st.session_state.pop("_jm_toast"), icon=":material/check_circle:")
 
@@ -157,4 +178,10 @@ if db_error:
                "makes up numbers. Build the database with `python build_dataset.py` and `python build_database.py`.")
     st.stop()
 
-nav.run()
+try:
+    nav.run()
+except Exception:                   # friendly error page; the details go only to the server log (never to visitors)
+    ref = uuid.uuid4().hex[:8]
+    logging.getLogger("jalmitra.app").exception("page error ref=%s page=%s", ref, nav.url_path)
+    st.error(f"Sorry, something went wrong on this page. Please try again, or start a new chat. "
+             f"If it keeps happening, tell the JalMitra team this code: **{ref}**")

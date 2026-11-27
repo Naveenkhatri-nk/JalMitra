@@ -3,16 +3,21 @@
 
 [server]
 headless = true
-# Phase 6: JalMitra is a local app. Listen on this computer only (never on the network or the internet).
-address = "localhost"
-port = 8501
+# 27 Nov 2026: the address (localhost) and port 8501 are now given by START_JALMITRA.bat, so the same settings also
+# work on Streamlit Community Cloud (the public website), which needs to choose its own address.
+# Security: cross-site request protection on, uploads limited to 20 MB.
+enableXsrfProtection = true
+maxUploadSize = 20
+maxMessageSize = 50
 
 [browser]
 gatherUsageStats = false
 
 [client]
-# Phase 6: hide Streamlit's developer "Deploy" button (JalMitra is never deployed from here).
+# Phase 6: hide Streamlit's developer "Deploy" button.
 toolbarMode = "minimal"
+# Never show Python error details (file paths, code) to visitors; app.py shows a short message with a reference code
+showErrorDetails = "none"
 
 [theme]
 baseFontSize = 16

@@ -32,7 +32,9 @@ T = {
            "ai": "Local AI", "ai_ok": "Connected", "ai_bad": "Not available", "model": "Model", "gpu": "Processor",
            "server": "Server", "not_loaded": "not loaded yet (loads on the first question)", "recheck": "Check again",
            "privacy": "Chat history", "privacy_note": "Conversations are saved only on this computer "
-           "(data\\chat_history). Nothing is uploaded.", "clear": "Clear all history",
+           "(data\\chat_history). Nothing is uploaded.",
+           "privacy_note_acct": "Your conversations are saved in your own JalMitra account. Only you can see them.",
+           "clear": "Clear all history",
            "clear_confirm": "Yes, delete every saved conversation", "cleared": "Deleted {n} conversations.",
            "recent": "Recent locations", "help_ai": "Start the local AI with START_JALMITRA.bat (or open the Ollama "
            "app), then reload this page."},
@@ -41,6 +43,7 @@ T = {
            "ai_bad": "उपलब्ध नहीं", "model": "मॉडल", "gpu": "प्रोसेसर", "server": "सर्वर",
            "not_loaded": "अभी लोड नहीं (पहले प्रश्न पर लोड होगा)", "recheck": "फिर जांचें", "privacy": "बातचीत इतिहास",
            "privacy_note": "बातचीत केवल इसी कंप्यूटर पर (data\\chat_history) सहेजी जाती है। कुछ भी अपलोड नहीं होता।",
+           "privacy_note_acct": "आपकी बातचीत आपके अपने JalMitra खाते में सहेजी जाती है। केवल आप ही इसे देख सकते हैं।",
            "clear": "पूरा इतिहास मिटाएँ", "clear_confirm": "हाँ, सभी सहेजी गई बातचीत मिटाएँ",
            "cleared": "{n} बातचीत मिटाई गईं।", "recent": "हाल के स्थान",
            "help_ai": "START_JALMITRA.bat से स्थानीय AI शुरू करें (या Ollama ऐप खोलें), फिर यह पेज दोबारा लोड करें।"},
@@ -182,7 +185,8 @@ def settings_body(on_clear=None):
         ja.ai_status(force=True)
 
     st.markdown(f"**🗂️ {s('privacy')}**")
-    st.caption(s("privacy_note"))
+    import ui_auth
+    st.caption(s("privacy_note_acct") if ui_auth.user() else s("privacy_note"))
     confirm = st.checkbox(s("clear_confirm"), key="jm_clear_confirm")
     if st.button(s("clear"), key="jm_clear_all", icon=":material/delete_sweep:", disabled=not confirm):
         n = on_clear() if on_clear else chat_store.clear_conversations()

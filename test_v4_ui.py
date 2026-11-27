@@ -424,8 +424,12 @@ def tests_never_touch_real_history_and_chrome_hidden():
     assert before == after, (before, after)
     for chrome in ["stMainMenu", "stAppDeployButton", "footer"]:
         assert chrome in ui_theme.BASE_CSS, chrome
+    # 27 Nov 2026: on this computer START_JALMITRA.bat keeps the app on localhost (config.toml no longer fixes the
+    # address, so the same config also works on Streamlit Community Cloud); error details are never shown
+    bat = (BASE / "START_JALMITRA.bat").read_text(encoding="utf-8", errors="ignore")
+    assert "--server.address localhost" in bat
     cfg = (BASE / ".streamlit" / "config.toml").read_text(encoding="utf-8")
-    assert 'address = "localhost"' in cfg
+    assert 'showErrorDetails = "none"' in cfg
 
 
 @test("integrity")

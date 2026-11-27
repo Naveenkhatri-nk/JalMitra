@@ -1,4 +1,4 @@
-# JalMitra 3.0 - offline, database-first assistant (no AI model, no API key)
+# JalMitra - groundwater assistant (Streamlit). Streamlit Community Cloud installs this file automatically.
 streamlit>=1.67.0
 pandas>=3.1.1
 pdfplumber>=0.11      # reading Soil Health Card PDFs (text layer only, no OCR)
@@ -8,3 +8,8 @@ pydeck>=0.9           # boundary maps in the Geographic Explorer (only if GeoJSO
 
 # Only for the old Gemini version kept in backup/ (not used by JalMitra 3.0):
 #   pip install google-genai python-dotenv
+
+# Accounts and security (auth.py, 27 Nov 2026)
+argon2-cffi>=23.1     # Argon2id password hashing
+SQLAlchemy>=2.0       # accounts database (SQLite on your computer, PostgreSQL on the internet)
+psycopg2-binary>=2.9  # PostgreSQL driver (Neon / Supabase)

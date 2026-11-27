@@ -679,6 +679,10 @@ TRANSIENT = re.compile(r"HTTP (?:429|500|502|503|504)\b|timeout|connection error
 NEXT_MODEL = re.compile(r"HTTP 404\b|not found|is not supported|unknown model|empty response", re.I)
 
 
+_OWN_DOWN = {"until": 0.0}
+OWN_PAUSE_S = 300                     # after a failure of the own model, use the backup for 5 minutes
+
+
 class FallbackProvider:
     """Cloud AI with retries and backup models (27 Nov 2026). A busy model (HTTP 503 "high demand", 429 rate limit,
     timeouts) is retried once after a short wait, then the next model in the list is tried. A wrong API key or a bad
@@ -701,12 +705,21 @@ class FallbackProvider:
     def chat(self, messages, **kw):
         res = None
         for p in self.providers:
+            own = getattr(p, "own_model", False)
+            if own and time.time() < _OWN_DOWN["until"]:
+                continue                                 # own model failed a moment ago: go straight to the backup
             for attempt in range(self.retries + 1):
                 res = p.chat(messages, **kw)
                 if res.ok:
                     self.last_model = p.model
                     return res
                 err = res.error or ""
+                if own:                                  # own server down, asleep or too slow: use the backup now
+                    _OWN_DOWN["until"] = time.time() + OWN_PAUSE_S
+                    import logging
+                    logging.getLogger("jalmitra.ai").warning("own model failed, using backup for %ss: %s",
+                                                             OWN_PAUSE_S, err)
+                    break
                 if "HTTP 400" in err and re.search(r"reason|think", err, re.I) and p.reasoning_effort:
                     p.reasoning_effort = None            # this model does not take the thinking setting: try without
                     res = p.chat(messages, **kw)
@@ -734,6 +747,27 @@ def ui_label(text):
     return text
 
 
+def own_model_url():
+    """Your own model on a server (e.g. the JalMitra Ollama Space on Hugging Face): JALMITRA_OWN_LLM_URL."""
+    u = _setting("JALMITRA_OWN_LLM_URL")
+    return u.rstrip("/") if u and u.startswith("http") else None
+
+
+def _own_provider():
+    """Your own model first (OpenAI-compatible API of Ollama, base URL + /v1). JALMITRA_OWN_LLM_TOKEN is sent as
+    "Authorization: Bearer ..." (a Hugging Face token for a private Space)."""
+    url = own_model_url()
+    if not url:
+        return None
+    base = url if url.endswith("/v1") else url + "/v1"
+    prov = lp.LLMProvider("openai_compatible", model=_setting("JALMITRA_OWN_LLM_MODEL") or lp.DEFAULT_MODEL,
+                          base_url=base, api_key=_setting("JALMITRA_OWN_LLM_TOKEN"),
+                          timeout=float(_setting("JALMITRA_OWN_LLM_TIMEOUT") or 75))
+    prov.stream = True
+    prov.own_model = True
+    return prov
+
+
 def cloud_ai():
     """True when a hosted model is set up (for the public website, 27 Nov 2026):
       * GEMINI_API_KEY (free key from aistudio.google.com/apikey) -> Google Gemini, or
@@ -742,7 +776,7 @@ def cloud_ai():
     p = (_setting("JALMITRA_LLM_PROVIDER") or "").lower()
     if p == "ollama":
         return False
-    return p == "openai_compatible" or bool(_gemini_key())
+    return p == "openai_compatible" or bool(_gemini_key()) or bool(own_model_url())
 
 
 def default_provider():
@@ -756,11 +790,11 @@ def default_provider():
             prov.reasoning_effort = _setting("JALMITRA_LLM_REASONING_EFFORT")
             prov.stream = (_setting("JALMITRA_LLM_STREAM") or "1").lower() not in ("0", "false", "no", "off")
             return prov
+        provs = [x for x in [_own_provider()] if x]          # your own model first (if set up), Gemini as backup
         main = _setting("GEMINI_MODEL") or GEMINI_DEFAULT_MODEL
         extra = _setting("GEMINI_FALLBACK_MODELS")
         backups = [m.strip() for m in extra.split(",") if m.strip()] if extra else GEMINI_FALLBACKS
-        provs = []
-        for model in [main] + [m for m in backups if m != main]:
+        for model in ([main] + [m for m in backups if m != main]) if _gemini_key() else []:
             prov = lp.LLMProvider("openai_compatible", model=model, base_url=GEMINI_BASE_URL, api_key=_gemini_key(),
                                   timeout=timeout)
             # Gemini thinks before it answers: keep thinking low (fast) and leave room for it in max_tokens
@@ -768,6 +802,8 @@ def default_provider():
             prov.min_max_tokens = int(_setting("JALMITRA_LLM_MIN_MAX_TOKENS") or 2048)
             prov.stream = (_setting("JALMITRA_LLM_STREAM") or "1").lower() not in ("0", "false", "no", "off")
             provs.append(prov)
+        if not provs:
+            return lp.LLMProvider("none")
         return FallbackProvider(provs)
     return lp.LLMProvider("ollama", model=MODEL(), ollama_url=OLLAMA(), timeout=timeout)
 

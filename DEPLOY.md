@@ -46,6 +46,26 @@ official figures but cannot write the AI explanation.
 The free Gemini plan allows a limited number of questions per minute, which is fine for a class demo.
 (Groq or another OpenAI-compatible service also works; see the commented lines in `secrets.toml.example`.)
 
+## Step 2b (optional): Use your own AI model first, with Gemini as backup
+
+The website can call **your own model** (the same Qwen3-4B that runs on your laptop) on a free Hugging Face Space.
+JalMitra then asks your model first. If it is asleep, down or slower than 75 seconds, JalMitra uses Gemini instead
+for the next 5 minutes, so visitors are never stuck.
+
+Be aware: the free Space has no GPU, so your model answers in about **1 to 2 minutes** (Gemini: about 5 to 10
+seconds). A free Space also goes to sleep after 2 days without use and takes a few minutes to wake up.
+
+1. Sign up at <https://huggingface.co/join>.
+2. Open <https://huggingface.co/new-space>. Name: `jalmitra-ai`. SDK: **Docker** → **Blank**.
+   Hardware: **CPU basic (free)**. Visibility: **Private**. Click **Create Space**.
+3. Click **Files** → **Add file** → **Upload files**, and upload the two files from the `hf_space` folder of this
+   project: `Dockerfile` and `README.md`. Click **Commit**. The build takes about 10 minutes (it downloads the
+   2.5 GB model once). Wait until the Space shows **Running**.
+4. Make a token: <https://huggingface.co/settings/tokens> → **Create new token** → type **Read** → copy it.
+5. In Streamlit Secrets add (above `[auth]`), with your Hugging Face user name:
+   `JALMITRA_OWN_LLM_URL = "https://YOUR-USERNAME-jalmitra-ai.hf.space"` and
+   `JALMITRA_OWN_LLM_TOKEN = "hf_..."` (the token).
+
 ## Step 3 (optional): Email for "Forgot password"
 
 Without this, users who forget their password ask you, and you give them a temporary password on the Admin page.

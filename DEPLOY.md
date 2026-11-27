@@ -35,12 +35,16 @@ Streamlit Cloud deletes its files every time the app restarts, so accounts must 
    `postgresql://neondb_owner:xxxx@ep-xxxx.ap-southeast-1.aws.neon.tech/neondb?sslmode=require`
 4. Keep it secret. Do not put it in any file that goes to GitHub.
 
-## Step 2 (optional but recommended): Get a free cloud AI key (Groq)
+## Step 2 (recommended): Get a free cloud AI key (Google Gemini)
 
 On your laptop JalMitra uses Ollama. Streamlit Cloud has no Ollama, so without a cloud AI the website shows the
 official figures but cannot write the AI explanation.
 
-1. Go to <https://console.groq.com/keys>, sign up, click **Create API Key** and copy it.
+1. Go to <https://aistudio.google.com/apikey> and sign in with your Google account.
+2. Click **Create API key** and copy it. In Secrets it goes in the line `GEMINI_API_KEY = "..."`.
+
+The free Gemini plan allows a limited number of questions per minute, which is fine for a class demo.
+(Groq or another OpenAI-compatible service also works; see the commented lines in `secrets.toml.example`.)
 
 ## Step 3 (optional): Email for "Forgot password"
 
@@ -59,8 +63,8 @@ To send reset codes by email with Gmail:
 5. Open **Advanced settings**:
    * Python version: **3.12**
    * Secrets: copy everything from `.streamlit/secrets.toml.example`, then fill in your real values:
-     the Neon connection string, a long random `secret_key`, your email in `admin_emails`, and (if you have them)
-     the Groq key and the Gmail settings.
+     the Neon connection string, a long random `secret_key`, your email in `admin_emails`, the Gemini key,
+     and (if you have them) the Gmail settings.
      To make a random `secret_key`, run on your laptop:
      `python -c "import secrets; print(secrets.token_urlsafe(48))"`
 6. Click **Deploy**. The first start takes a few minutes.
@@ -77,7 +81,7 @@ To send reset codes by email with Gmail:
   visitors have a code; search the log for that code.
 * **Updates:** every `git push` to `main` updates the website automatically.
 * **Close sign-ups:** set `allow_signup = false` in Secrets (existing users can still log in).
-* **If a secret leaks:** change it at the source (Neon: reset the password; Groq: delete the key), then update
+* **If a secret leaks:** change it at the source (Neon: reset the password; Gemini: delete the key in AI Studio), then update
   Secrets on Streamlit Cloud.
 
 ## Running on your own computer

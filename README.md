@@ -20,7 +20,7 @@ and `requirements-llm.txt`, and Ollama with `qwen3:4b-instruct-2507-q4_K_M` and 
 **Accounts and the public website (27 Nov 2026):** visitors create an account or log in first. Passwords are
 hashed with Argon2id, wrong passwords lock the account for a while, logins and sign-ups are rate-limited, each
 user's chats are private, and admins get an Admin page. To put JalMitra on the internet (Streamlit Community Cloud
-with a free Neon database and an optional Groq cloud AI key), follow [`DEPLOY.md`](DEPLOY.md). Code: `auth.py`,
+with a free Neon database and a free Google Gemini key), follow [`DEPLOY.md`](DEPLOY.md). Code: `auth.py`,
 `ui_auth.py`; tests: `python test_auth.py`.
 
 **Data coverage:** Category information: 6,762 assessment units. Block-level figures: 5,184 units

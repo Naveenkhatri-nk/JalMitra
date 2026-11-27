@@ -643,17 +643,56 @@ def unsupported_time_claims(text):
 _STATUS = {"t": 0, "value": None}
 
 
+GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai"
+GEMINI_DEFAULT_MODEL = "gemini-flash-latest"       # Google's alias for its newest Flash model
+
+
+def _setting(name):
+    """An environment variable, or a top-level Streamlit secret of the same name (website settings)."""
+    v = os.environ.get(name)
+    if v and v.strip():
+        return v.strip()
+    try:
+        import streamlit as _st
+        v = _st.secrets.get(name)
+        return str(v).strip() if v else None
+    except Exception:                                  # noqa: BLE001 - no secrets file / outside Streamlit
+        return None
+
+
+def _gemini_key():
+    k = _setting("GEMINI_API_KEY") or _setting("GOOGLE_API_KEY")
+    return None if not k or k.startswith("paste-") else k           # the example placeholder is not a key
+
+
 def cloud_ai():
-    """True when JALMITRA_LLM_PROVIDER=openai_compatible (a hosted model, for the public website, 27 Nov 2026).
-    Otherwise the local Ollama model is used, as before."""
-    return os.environ.get("JALMITRA_LLM_PROVIDER", "").strip().lower() == "openai_compatible"
+    """True when a hosted model is set up (for the public website, 27 Nov 2026):
+      * GEMINI_API_KEY (free key from aistudio.google.com/apikey) -> Google Gemini, or
+      * JALMITRA_LLM_PROVIDER=openai_compatible + JALMITRA_LLM_BASE_URL + JALMITRA_LLM_API_KEY (Groq, OpenRouter ...).
+    JALMITRA_LLM_PROVIDER=ollama always means the local model. Otherwise the local Ollama model is used, as before."""
+    p = (_setting("JALMITRA_LLM_PROVIDER") or "").lower()
+    if p == "ollama":
+        return False
+    return p == "openai_compatible" or bool(_gemini_key())
 
 
 def default_provider():
+    timeout = float(os.environ.get("JALMITRA_LLM_TIMEOUT", "60"))
     if cloud_ai():
-        return lp.get_provider()
-    return lp.LLMProvider("ollama", model=MODEL(), ollama_url=OLLAMA(),
-                          timeout=float(os.environ.get("JALMITRA_LLM_TIMEOUT", "60")))
+        p = (_setting("JALMITRA_LLM_PROVIDER") or "").lower()
+        if p == "openai_compatible" and _setting("JALMITRA_LLM_BASE_URL"):
+            prov = lp.LLMProvider("openai_compatible", model=_setting("JALMITRA_LLM_MODEL") or lp.DEFAULT_MODEL,
+                                  base_url=_setting("JALMITRA_LLM_BASE_URL"),
+                                  api_key=_setting("JALMITRA_LLM_API_KEY"), timeout=timeout)
+            prov.reasoning_effort = _setting("JALMITRA_LLM_REASONING_EFFORT")
+            return prov
+        prov = lp.LLMProvider("openai_compatible", model=_setting("GEMINI_MODEL") or GEMINI_DEFAULT_MODEL,
+                              base_url=GEMINI_BASE_URL, api_key=_gemini_key(), timeout=timeout)
+        # Gemini thinks before it answers: keep thinking low (fast) and leave room for it in max_tokens
+        prov.reasoning_effort = _setting("JALMITRA_LLM_REASONING_EFFORT") or "low"
+        prov.min_max_tokens = int(_setting("JALMITRA_LLM_MIN_MAX_TOKENS") or 2048)
+        return prov
+    return lp.LLMProvider("ollama", model=MODEL(), ollama_url=OLLAMA(), timeout=timeout)
 
 
 def ai_status(force=False, timeout=3.0):
@@ -661,11 +700,11 @@ def ai_status(force=False, timeout=3.0):
     if not force and _STATUS["value"] and time.time() - _STATUS["t"] < 15:
         return _STATUS["value"]
     if cloud_ai():
-        p = lp.get_provider()
+        p = default_provider()
         ok = bool(p.base_url and p._api_key)
         st = {"ok": ok, "server": ok, "model": p.model, "model_present": ok, "loaded": ok, "processor": "cloud",
               "models": [p.model], "url": p.base_url, "error": None if ok else
-              "JALMITRA_LLM_BASE_URL or JALMITRA_LLM_API_KEY is not set"}
+              "the cloud AI key is not set (GEMINI_API_KEY)"}
         _STATUS.update(t=time.time(), value=st)
         return st
     st = {"ok": False, "server": False, "model": MODEL(), "model_present": False, "loaded": False,

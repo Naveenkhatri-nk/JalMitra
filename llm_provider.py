@@ -118,6 +118,13 @@ class LLMProvider:
         self.base_url = (base_url or "").rstrip("/")
         self._api_key = api_key or None
         self.timeout = float(timeout) if timeout else DEFAULT_TIMEOUT
+        # 27 Nov 2026 (cloud AI): optional "reasoning_effort" (Gemini: low / medium / high) and a lowest max_tokens,
+        # because thinking models count their thinking in max_tokens (an 8-token self-check would come back empty)
+        self.reasoning_effort = _env("JALMITRA_LLM_REASONING_EFFORT")
+        try:
+            self.min_max_tokens = int(_env("JALMITRA_LLM_MIN_MAX_TOKENS", "0"))
+        except ValueError:
+            self.min_max_tokens = 0
         self.num_ctx = num_ctx
 
     def __repr__(self):     # never shows the key
@@ -186,8 +193,13 @@ class LLMProvider:
         if not self.base_url:
             res.error = "JALMITRA_LLM_BASE_URL is not set"
             return
-        url = self.base_url + ("/chat/completions" if self.base_url.endswith("/v1") else "/v1/chat/completions")
-        body = {"model": self.model, "messages": messages, "temperature": temperature, "max_tokens": max_tokens}
+        # ".../v1" (OpenAI, Groq) and ".../v1beta/openai" (Google Gemini) already end in the API version
+        versioned = self.base_url.endswith("/v1") or self.base_url.endswith("/openai")
+        url = self.base_url + ("/chat/completions" if versioned else "/v1/chat/completions")
+        body = {"model": self.model, "messages": messages, "temperature": temperature,
+                "max_tokens": max(int(max_tokens or 0), self.min_max_tokens) or max_tokens}
+        if self.reasoning_effort:
+            body["reasoning_effort"] = self.reasoning_effort
         if schema:
             body["response_format"] = {"type": "json_schema",
                                        "json_schema": {"name": "jalmitra_response", "schema": schema}}

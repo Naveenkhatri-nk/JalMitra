@@ -12,6 +12,7 @@ setlocal EnableExtensions
 cd /d "%~dp0"
 title JalMitra - starting
 if "%JALMITRA_LLM_MODEL%"=="" set "JALMITRA_LLM_MODEL=qwen3:4b-instruct-2507-q4_K_M"
+if "%JALMITRA_LLM_PROVIDER%"=="" set "JALMITRA_LLM_PROVIDER=ollama"
 set "EMBED_MODEL=bge-m3"
 set "PORT=8501"
 if not "%JALMITRA_PORT%"=="" set "PORT=%JALMITRA_PORT%"

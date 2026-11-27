@@ -56,7 +56,7 @@ def lang():
 
 
 def s(key):
-    return T[lang()].get(key) or T["en"][key]
+    return ja.ui_label(T[lang()].get(key) or T["en"][key])
 
 
 def init_session():

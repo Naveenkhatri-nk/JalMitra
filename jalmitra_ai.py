@@ -673,6 +673,67 @@ def _gemini_key():
     return None if not k or k.startswith("paste-") else k           # the example placeholder is not a key
 
 
+GEMINI_FALLBACKS = ["gemini-flash-lite-latest", "gemini-2.5-flash", "gemini-2.5-flash-lite"]
+TRANSIENT = re.compile(r"HTTP (?:429|500|502|503|504)\b|timeout|connection error|UNAVAILABLE|RESOURCE_EXHAUSTED|"
+                       r"overloaded|high demand", re.I)
+NEXT_MODEL = re.compile(r"HTTP 404\b|not found|is not supported|unknown model|empty response", re.I)
+
+
+class FallbackProvider:
+    """Cloud AI with retries and backup models (27 Nov 2026). A busy model (HTTP 503 "high demand", 429 rate limit,
+    timeouts) is retried once after a short wait, then the next model in the list is tried. A wrong API key or a bad
+    request stops at once (another model would fail the same way)."""
+
+    def __init__(self, providers, retries=1, backoff=1.5):
+        self.providers = providers
+        self.retries = retries
+        self.backoff = backoff
+        self.last_model = providers[0].model
+
+    def __getattr__(self, name):                     # model, provider, base_url, ... of the first (main) model
+        if name.startswith("__") or name == "providers":
+            raise AttributeError(name)
+        return getattr(self.providers[0], name)
+
+    def __repr__(self):
+        return "FallbackProvider(" + ", ".join(p.model for p in self.providers) + ")"
+
+    def chat(self, messages, **kw):
+        res = None
+        for p in self.providers:
+            for attempt in range(self.retries + 1):
+                res = p.chat(messages, **kw)
+                if res.ok:
+                    self.last_model = p.model
+                    return res
+                err = res.error or ""
+                if "HTTP 400" in err and re.search(r"reason|think", err, re.I) and p.reasoning_effort:
+                    p.reasoning_effort = None            # this model does not take the thinking setting: try without
+                    res = p.chat(messages, **kw)
+                    if res.ok:
+                        self.last_model = p.model
+                        return res
+                    err = res.error or ""
+                if TRANSIENT.search(err):
+                    if attempt < self.retries:
+                        time.sleep(self.backoff * (attempt + 1))
+                        continue
+                    break                            # still busy: next model
+                if NEXT_MODEL.search(err):
+                    break                            # this model is not available: next model
+                return res                           # key / request problem: stop
+        return res
+
+
+def ui_label(text):
+    """On the website (cloud AI) the interface says "AI" instead of "Local AI"."""
+    if not text or not cloud_ai():
+        return text
+    for a, b in (("Local AI", "AI"), ("local AI", "AI"), ("a local AI", "AI"), ("स्थानीय AI", "AI")):
+        text = text.replace(a, b)
+    return text
+
+
 def cloud_ai():
     """True when a hosted model is set up (for the public website, 27 Nov 2026):
       * GEMINI_API_KEY (free key from aistudio.google.com/apikey) -> Google Gemini, or
@@ -695,13 +756,19 @@ def default_provider():
             prov.reasoning_effort = _setting("JALMITRA_LLM_REASONING_EFFORT")
             prov.stream = (_setting("JALMITRA_LLM_STREAM") or "1").lower() not in ("0", "false", "no", "off")
             return prov
-        prov = lp.LLMProvider("openai_compatible", model=_setting("GEMINI_MODEL") or GEMINI_DEFAULT_MODEL,
-                              base_url=GEMINI_BASE_URL, api_key=_gemini_key(), timeout=timeout)
-        # Gemini thinks before it answers: keep thinking low (fast) and leave room for it in max_tokens
-        prov.reasoning_effort = _setting("JALMITRA_LLM_REASONING_EFFORT") or "low"
-        prov.min_max_tokens = int(_setting("JALMITRA_LLM_MIN_MAX_TOKENS") or 2048)
-        prov.stream = (_setting("JALMITRA_LLM_STREAM") or "1").lower() not in ("0", "false", "no", "off")
-        return prov
+        main = _setting("GEMINI_MODEL") or GEMINI_DEFAULT_MODEL
+        extra = _setting("GEMINI_FALLBACK_MODELS")
+        backups = [m.strip() for m in extra.split(",") if m.strip()] if extra else GEMINI_FALLBACKS
+        provs = []
+        for model in [main] + [m for m in backups if m != main]:
+            prov = lp.LLMProvider("openai_compatible", model=model, base_url=GEMINI_BASE_URL, api_key=_gemini_key(),
+                                  timeout=timeout)
+            # Gemini thinks before it answers: keep thinking low (fast) and leave room for it in max_tokens
+            prov.reasoning_effort = _setting("JALMITRA_LLM_REASONING_EFFORT") or "low"
+            prov.min_max_tokens = int(_setting("JALMITRA_LLM_MIN_MAX_TOKENS") or 2048)
+            prov.stream = (_setting("JALMITRA_LLM_STREAM") or "1").lower() not in ("0", "false", "no", "off")
+            provs.append(prov)
+        return FallbackProvider(provs)
     return lp.LLMProvider("ollama", model=MODEL(), ollama_url=OLLAMA(), timeout=timeout)
 
 

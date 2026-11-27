@@ -206,7 +206,7 @@ def ui():
 
 
 def t(key):
-    return T[ui()].get(key) or T["en"][key]
+    return ja.ui_label(T[ui()].get(key) or T["en"][key])
 
 
 def status_line():

@@ -125,6 +125,9 @@ class LLMProvider:
             self.min_max_tokens = int(_env("JALMITRA_LLM_MIN_MAX_TOKENS", "0"))
         except ValueError:
             self.min_max_tokens = 0
+        # Stream the reply (Server-Sent Events). Some hosts, e.g. Streamlit Community Cloud, drop a connection that
+        # is silent for a long time; a streamed reply keeps data flowing, so the answer arrives.
+        self.stream = (_env("JALMITRA_LLM_STREAM", "0") or "0").lower() in ("1", "true", "yes", "on")
         self.num_ctx = num_ctx
 
     def __repr__(self):     # never shows the key
@@ -204,7 +207,11 @@ class LLMProvider:
             body["response_format"] = {"type": "json_schema",
                                        "json_schema": {"name": "jalmitra_response", "schema": schema}}
         headers = {"Authorization": "Bearer " + self._api_key} if self._api_key else {}
-        data = self._post(res, url, body, headers, timeout)
+        if self.stream:
+            body["stream"] = True
+            data = self._post_stream(res, url, body, headers, timeout)
+        else:
+            data = self._post(res, url, body, headers, timeout)
         if data is None:
             return
         if data.get("error"):
@@ -262,6 +269,69 @@ class LLMProvider:
             res.error = "server returned a non-object JSON body"
             return None
         return data
+
+    def _post_stream(self, res, url, body, headers, timeout):
+        """POST with stream=true and read the Server-Sent Events. Returns a dict shaped like a normal
+        (non-streamed) chat completion, or None with res.error set. `timeout` applies to each read."""
+        req = urllib.request.Request(url, data=json.dumps(body).encode("utf-8"), method="POST",
+                                     headers={"Content-Type": "application/json", "Accept": "text/event-stream",
+                                              **headers})
+        parts, finish, usage = [], None, {}
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                ctype = (r.headers.get("Content-Type") or "").lower()
+                if "event-stream" not in ctype:              # server ignored stream=true: a normal JSON body
+                    try:
+                        data = json.loads(r.read().decode("utf-8"))
+                    except (ValueError, UnicodeDecodeError):
+                        res.error = "server returned invalid JSON"
+                        return None
+                    return data if isinstance(data, dict) else None
+                for raw in r:
+                    line = raw.decode("utf-8", "replace").strip()
+                    if not line.startswith("data:"):
+                        continue
+                    payload = line[5:].strip()
+                    if payload == "[DONE]":
+                        break
+                    try:
+                        ev = json.loads(payload)
+                    except ValueError:
+                        continue
+                    if isinstance(ev, list):                  # some servers send [ {...} ]
+                        ev = ev[0] if ev and isinstance(ev[0], dict) else {}
+                    if ev.get("error"):
+                        return {"error": ev["error"]}
+                    for ch in ev.get("choices") or []:
+                        delta = ch.get("delta") or ch.get("message") or {}
+                        if delta.get("content"):
+                            parts.append(delta["content"])
+                        if ch.get("finish_reason"):
+                            finish = ch["finish_reason"]
+                    if isinstance(ev.get("usage"), dict):
+                        usage = ev["usage"]
+        except urllib.error.HTTPError as e:
+            detail = ""
+            try:
+                detail = e.read().decode("utf-8", "replace")[:300]
+            except Exception:
+                pass
+            res.error = f"HTTP {e.code} from server" + (": " + self._safe(detail) if detail else "")
+            return None
+        except urllib.error.URLError as e:
+            reason = e.reason
+            if isinstance(reason, (socket.timeout, TimeoutError)):
+                res.error = f"timeout after {timeout:g}s"
+            else:
+                res.error = "connection error: " + self._safe(str(reason))[:200]
+            return None
+        except (socket.timeout, TimeoutError):
+            res.error = f"timeout after {timeout:g}s"
+            return None
+        except (ConnectionError, OSError) as e:
+            res.error = "connection error: " + type(e).__name__
+            return None
+        return {"choices": [{"message": {"content": "".join(parts)}, "finish_reason": finish}], "usage": usage}
 
     def _finish_json(self, res, schema):
         if not schema:

@@ -43,6 +43,14 @@ OLLAMA = lambda: os.environ.get("JALMITRA_OLLAMA_URL", lp.DEFAULT_OLLAMA_URL).rs
 
 # ------------------------------------------------------------------ fixed messages (raj / pa / mr: native review pending)
 MSG = {
+    "cloud_unavailable": {       # the website (cloud AI); the "unavailable" text below is about Ollama on a laptop
+        "en": "The AI service did not answer just now, so JalMitra cannot write a reply. Any official figures for your "
+              "question are shown below. Please try again in a minute. Problem: {error}",
+        "hinglish": "AI service ne abhi jawab nahi diya, isliye JalMitra jawab nahi likh paaya. Official aankde neeche "
+                    "dikhaye gaye hain. Kripya ek minute baad dobara poochhein. Samasya: {error}",
+        "hi": "AI सेवा ने अभी उत्तर नहीं दिया, इसलिए JalMitra उत्तर नहीं लिख सका। आधिकारिक आंकड़े नीचे दिखाए गए हैं। "
+              "कृपया एक मिनट बाद फिर से पूछें। समस्या: {error}",
+    },
     "unverified": {
         "en": "I could not verify an answer to this question against the official data, so I am not showing one. "
               "Any official figures for your question are shown below. Please try rephrasing, or ask about a specific "
@@ -685,12 +693,14 @@ def default_provider():
                                   base_url=_setting("JALMITRA_LLM_BASE_URL"),
                                   api_key=_setting("JALMITRA_LLM_API_KEY"), timeout=timeout)
             prov.reasoning_effort = _setting("JALMITRA_LLM_REASONING_EFFORT")
+            prov.stream = (_setting("JALMITRA_LLM_STREAM") or "1").lower() not in ("0", "false", "no", "off")
             return prov
         prov = lp.LLMProvider("openai_compatible", model=_setting("GEMINI_MODEL") or GEMINI_DEFAULT_MODEL,
                               base_url=GEMINI_BASE_URL, api_key=_gemini_key(), timeout=timeout)
         # Gemini thinks before it answers: keep thinking low (fast) and leave room for it in max_tokens
         prov.reasoning_effort = _setting("JALMITRA_LLM_REASONING_EFFORT") or "low"
         prov.min_max_tokens = int(_setting("JALMITRA_LLM_MIN_MAX_TOKENS") or 2048)
+        prov.stream = (_setting("JALMITRA_LLM_STREAM") or "1").lower() not in ("0", "false", "no", "off")
         return prov
     return lp.LLMProvider("ollama", model=MODEL(), ollama_url=OLLAMA(), timeout=timeout)
 
@@ -1231,6 +1241,8 @@ def respond(question, state, lang_choice="auto", style="farmer", detail="standar
     out = {"kind": kind, "lang": lang, "rule": rule, "answer": "", "status": "", "citations": [], "attempts": 0,
            "reasons": [], "options": rule.get("options") or [] if kind == "clarify" else [], "timings": {},
            "model": MODEL()}
+    if provider is None:
+        provider = default_provider()
     model_name = getattr(provider, "model", None) or MODEL()
     ckey = _key(question, lang, rule, kind, model_name, style, detail)
     if ckey and ckey in _CACHE:
@@ -1260,9 +1272,13 @@ def respond(question, state, lang_choice="auto", style="farmer", detail="standar
                             max_tokens=500, timeout=float(os.environ.get("JALMITRA_LLM_TIMEOUT", "60")))
         gen_ms += res.latency_ms or 0
         if not res.ok:
+            import logging
+            logging.getLogger("jalmitra.ai").warning("AI call failed (%s, %s): %s", getattr(provider, "provider", "?"),
+                                                     model_name, res.error)
+            msg = MSG["cloud_unavailable"] if getattr(provider, "provider", "") == "openai_compatible" \
+                else MSG["unavailable"]
             out.update(status="ai_unavailable", error=res.error,
-                       answer=MSG["unavailable"].get(lang, MSG["unavailable"]["en"]).format(model=model_name,
-                                                                                           error=res.error))
+                       answer=msg.get(lang, msg["en"]).format(model=model_name, error=res.error))
             break
         ok, reasons, shown, cited, info = check(res.text or "", kind, lang, facts, passages, rule, question, provider)
         out["timings"].setdefault("semantic_ms", 0)

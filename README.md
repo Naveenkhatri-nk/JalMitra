@@ -1,8 +1,8 @@
 # 💧 JalMitra 4.0: multilingual groundwater assistant
 
 Prompt Engineering project, JECRC University, Section DC (2026).
-Team: Naveen Khatri, Rohit Sharma, Aryan Jangir, Himanshu Yadav, Aryan Sharma, Garvit Khandal.
-Who did what: [`MEMBERS.md`](MEMBERS.md) and each member's notes in [`docs/members/`](docs/members/).
+Team (7 members): Naveen Khatri, Rohit Sharma, Aryan Jangir, Himanshu Yadav, Aryan Sharma, Param Jain, Garvit Khandal. Guide: Mr. Ajay.
+Who did what: [`MEMBERS.md`](MEMBERS.md) and each member's PDF in [`docs/members/`](docs/members/).
 
 JalMitra is a chatbot (built for SIH25066, Ministry of Jal Shakti) that answers plain-language
 questions about India's groundwater (CGWB GWRA 2025) in English, Hindi, Hinglish, Marathi,

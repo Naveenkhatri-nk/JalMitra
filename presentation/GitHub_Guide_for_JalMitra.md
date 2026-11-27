@@ -17,13 +17,13 @@ Why this matters for the presentation: the teacher can open the repo and see the
 
 ---
 
-## Part 1. Create a GitHub account (each of the 6 members does this)
+## Part 1. Create a GitHub account (each of the 7 members does this)
 
 1. Open **https://github.com/signup** in Chrome.
 2. Enter your email, a password, and a username. Pick a professional username (for example `naveen-khatri-jecrc`, not `cooldude123`), because it appears on every commit.
 3. Solve the puzzle, then type the code GitHub emails you.
 4. On "What do you want to do?" you can click **Skip personalization**.
-5. Every member sends their **GitHub username** to naveen on the group chat. You will need all 5 usernames in Part 6.
+5. Every member sends their **GitHub username** to naveen on the group chat. naveen will need all 6 teammates' usernames in Part 6.
 
 ---
 
@@ -101,20 +101,20 @@ Save, then make a commit as in Part 8.
 
 ---
 
-## Part 6. Add the 5 teammates as collaborators (naveen only)
+## Part 6. Add the 6 teammates as collaborators (naveen only)
 
 1. On github.com, open your `JalMitra` repo.
 2. Click **Settings** (top right of the repo, with the gear icon) > **Collaborators** (left menu). GitHub may ask for your password.
 3. Click **Add people**, type a teammate's **username**, select them, and click **Add … to this repository**.
-4. Repeat for all 5 teammates.
+4. Repeat for all 6 teammates: Rohit, Aryan Jangir, Himanshu, Aryan Sharma, Param and Garvit.
 5. Each teammate gets an email **and** a notice on github.com (bell icon). They must click **Accept invitation**. The invite expires after 7 days, so tell them to accept today.
 
 ---
 
-## Part 7. Each teammate gets the project on their laptop (members 2 to 6)
+## Part 7. Each teammate gets the project on their laptop (members 2 to 7, optional)
 
 1. Install GitHub Desktop and sign in (Part 2).
-2. In GitHub Desktop: **File > Clone repository…** > tab **GitHub.com** > pick `naveen-username/JalMitra` > choose a folder such as `D:\JalMitra` > **Clone**.
+2. In GitHub Desktop: **File > Clone repository…** > tab **GitHub.com** > pick `Naveenkhatri-nk/JalMitra` > choose a folder such as `D:\JalMitra` > **Clone**.
 3. To run the app on their own laptop (optional), open PowerShell in that folder and run:
    ```
    python -m venv .venv
@@ -152,12 +152,14 @@ Every member should make at least one real commit about their own part, so that 
 
 **What each member commits:** their own file about their part, in `docs/members/`. Part 10 below explains it step by step.
 
----|---|
+| Member | Optional extra commit |
+|---|---|
 | Naveen (Data) | `docs/DATA_PIPELINE.md`: where the GWRA 2025 PDFs came from and how they were cleaned |
 | Rohit (Database & retrieval) | `docs/RETRIEVAL.md`: how place names are resolved and how the RAG index is built |
 | Aryan Jangir (Prompt engineering) | `docs/PROMPTS.md`: the system prompt and the task prompts, each rule with the bug it fixed |
 | Himanshu (Verification & safety) | Add 5 new trick or injection questions to `tests_data/` and record the results |
-| Aryan Sharma (Languages & UI) | `docs/LANGUAGES.md` or a native-speaker correction in `docs/language_review_template.csv` |
+| Aryan Sharma (Languages) | `docs/LANGUAGES.md` or a native-speaker correction in `docs/language_review_template.csv` |
+| Param (Website & demo) | `docs/WEBSITE.md`: a short tour of the website pages and settings |
 | Garvit (Testing & docs) | Update `TEST_STATUS.md` with the latest results, and the README fix from Part 3 |
 
 ---
@@ -171,51 +173,38 @@ On github.com, open the repo and show:
 
 ---
 
-## Part 10. Each member uploads their own file (do this after Parts 1–8)
+## Part 10. Each member uploads their own PDF (no editing needed)
 
-Each member has a ready-made file that explains their part of JalMitra: their code files, how it works, the
-prompts or decisions behind it, and viva answers. Each person reads it, edits it, writes the short "In my own
-words" section, and uploads it **from their own GitHub account**. The commit history then shows every member's
-work. These are documentation files only: **they don't change how JalMitra runs**.
+Each member has a **final, ready-made PDF** that explains their part of JalMitra: their code files, how it works,
+viva questions with answers, and their presentation speech. **Nobody needs to edit anything.** Each person only
+uploads their own PDF **from their own GitHub account**, so the commit history shows all 7 members' work. These are
+documentation files only: **they don't change how JalMitra runs**.
 
-| Member | Their file |
-|---|---|
-| Naveen Khatri | `01_naveen_khatri_data.md` |
-| Rohit Sharma | `02_rohit_sharma_database_retrieval.md` |
-| Aryan Jangir | `03_aryan_jangir_prompt_engineering.md` |
-| Himanshu Yadav | `04_himanshu_yadav_verification_safety.md` |
-| Aryan Sharma | `05_aryan_sharma_languages_website.md` |
-| Garvit Khandal | `06_garvit_khandal_testing_results.md` |
+| # | Member | Their file |
+|---|---|---|
+| 1 | Naveen Khatri | `01_naveen_khatri_data.pdf` |
+| 2 | Rohit Sharma | `02_rohit_sharma_database_retrieval.pdf` |
+| 3 | Aryan Jangir | `03_aryan_jangir_prompt_engineering.pdf` |
+| 4 | Himanshu Yadav | `04_himanshu_yadav_verification_safety.pdf` |
+| 5 | Aryan Sharma | `05_aryan_sharma_languages_conversation.pdf` |
+| 6 | Param Jain | `06_param_jain_website_demo.pdf` |
+| 7 | Garvit Khandal | `07_garvit_khandal_testing_results.pdf` |
 
-The drafts are on naveen's laptop in `E:\JalMitra\docs\member_drafts\`. That folder is in `.gitignore`, so it is
-**not** uploaded: each file reaches GitHub only when its own member uploads it.
+**Step 1 (naveen):** Naveen's PDF is uploaded first, which also creates the `docs/members` folder. Then naveen
+sends each teammate their PDF on WhatsApp.
 
-**Why there will be no merge conflicts:** everyone adds a **different new file**, and nobody edits a shared file.
-Still, go **one person at a time, in member order**, and always click **Fetch origin** first.
+**Step 2 (each teammate, one at a time, in order 2 → 7).** This uses only the GitHub website, no app needed:
+1. Save your PDF from WhatsApp to your laptop (for example in Downloads).
+2. Sign in on **github.com** and open **https://github.com/Naveenkhatri-nk/JalMitra/tree/main/docs/members**.
+3. Click **Add file** (top right) > **Upload files**.
+4. Drag your PDF into the page, or click **choose your files** and pick it.
+5. Under **Commit changes**, write: `Add <your part> notes (<your name>)`, for example
+   `Add prompt engineering notes (Aryan Jangir)`. Keep **Commit directly to the main branch** selected.
+6. Click **Commit changes**.
+7. Tell the next member in the group chat: "Done, your turn".
 
-**Step 1 (naveen):** send each teammate their file on WhatsApp or email.
-
-**Step 2 (each member, in order 1 → 6):**
-1. Open GitHub Desktop, choose the `JalMitra` repository, and click **Fetch origin** (then **Pull origin** if it
-   appears). This brings in the files of the members before you.
-2. Click **Repository > Show in Explorer**. This opens your copy of the project.
-   - Naveen: that is `E:\JalMitra`.
-3. Open the `docs` folder. If there is no `members` folder inside it yet, create it (right-click > New > Folder,
-   name it `members`).
-4. Copy your file into `docs\members\`.
-5. Open it in Notepad or VS Code. Read it all, change anything you would explain differently, and replace the
-   line under **"In my own words"** with 4–6 lines in your own words. Save.
-6. Back in GitHub Desktop, the **Changes** tab shows only your file. Write the summary
-   `Add <your part> notes (<your name>)`, for example `Add prompt engineering notes (Aryan Jangir)`.
-7. Click **Commit to main**, then **Push origin**.
-8. Tell the next member in the group chat: "Done, your turn".
-
-If you'd like a second commit later, improve your own file again (for example after a practice run) and repeat
-steps 5–7. Only edit **your own** file.
-
-**Check that it worked:** on github.com, open `docs/members`: all six files should be there. Click **Insights >
-Contributors**: all six names should appear. (A teammate only appears if the email in their GitHub Desktop
-settings is the one on their GitHub account. GitHub Desktop sets this up when they sign in, in Part 2.)
+**Check that it worked:** on github.com, open `docs/members`: all seven PDFs should be there. Click **Insights >
+Contributors**: all seven names should appear.
 
 ---
 

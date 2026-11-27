@@ -2,7 +2,7 @@
 
 The code files stay where they are, because the app imports them by name from the main folder. Moving them would break JalMitra. This map shows each member which files are "theirs" to explain and to commit to on GitHub.
 
-Team (Section DC): Naveen Khatri, Rohit Sharma, Aryan Jangir, Himanshu Yadav, Aryan Sharma and Garvit Khandal.
+Team (Section DC, 7 members): Naveen Khatri, Rohit Sharma, Aryan Jangir, Himanshu Yadav, Aryan Sharma, Param Jain and Garvit Khandal.
 
 | Member | Part | Main files | Supporting files and results |
 |---|---|---|---|
@@ -10,12 +10,13 @@ Team (Section DC): Naveen Khatri, Rohit Sharma, Aryan Jangir, Himanshu Yadav, Ar
 | 2 · Rohit Sharma (25BCON0627) | Database, place-name search and RAG retrieval | `database.py`, `retrieval.py`, `entity_resolver.py`, `intent_parser.py`, `rag.py`, `build_rag_index.py`, `gwra_blocks_retrieval.py`, `monitoring_retrieval.py` | `data/place_aliases.csv`, `data/monitoring/gwra_blocks_2025.db`, `engine.py` (the pipeline), `test_gwra_blocks.py`, `test_monitoring.py` |
 | 3 · Aryan Jangir (25BCON0767) | Prompt engineering and model selection | `jalmitra_ai.py` (system prompt `SYSTEM`, task prompts `TASK`, `STYLE`, `LENGTH`, `SCRIPT_HINT`, `build_messages`), `llm_compose.py`, `llm_provider.py` | `LLM_ARCHITECTURE.md`, `eval/model_selection.py`, `eval/compare_models.py`, `eval/comparison_2026-11-23.md`, `eval/phase6_screen_*.md` (Qwen vs Gemma), `requirements-llm.txt` |
 | 4 · Himanshu Yadav (25BCON0718) | Verification, guardrails and prompt-injection safety | `answer_verifier.py`, `semantic_gate.py`, `security.py`, the `check()` and retry part of `jalmitra_ai.py` | `eval/security_live.py`, `eval/security_live_2026-11-23.md`, `eval/semantic_factuality.py`, `eval/semantic_v5*.md`, `test_v4_semantic.py`, `test_v4_llm.py` |
-| 5 · Aryan Sharma (25BCON0771) | Six languages and the chat website | `language.py`, `conversation.py`, `conversation_state.py`, `templates_v3.py`, `templates_app.py`, `templates_kn.py`, `app_info.py`, `app.py`, `ui_chat_v4.py`, `ui_theme.py`, `ui_settings.py`, `ui_components.py`, `chat_store.py`, `voice.py` | `voice_component/`, `assets/`, `.streamlit/config.toml`, `docs/screenshots/`, `docs/language_review_template.csv`, `eval/lang_eval.py`, `eval/lang_*.tsv`, `test_conversation.py`, `test_app_info.py`, `test_v4_ui.py` |
-| 6 · Garvit Khandal (25BCON0784) | Testing, results, GitHub, limitations and future scope | `test_local_engine.py`, `test_v3.py`, `test_v3_domains.py`, `test_v5.py`, `test_v6.py`, `test_300q.py`, `fake_ai_for_tests.py`, `eval/phase6_eval.py` | `TEST_STATUS.md`, `KNOWN_LIMITATIONS.md`, `ROADMAP.md`, `CHANGELOG.md`, `README.md`, `eval/PHASE6_REPORT.md`, `eval/phase6_full_*.md`, `tests_data/`, `.gitignore` |
+| 5 · Aryan Sharma (25BCON0771) | Six languages and everyday conversation | `language.py`, `conversation.py`, `templates_v3.py`, `templates_app.py`, `templates_kn.py`, `app_info.py` | `docs/language_review_template.csv`, `eval/lang_eval.py`, `eval/lang_*.tsv`, `test_conversation.py`, `test_app_info.py` |
+| 6 · Param Jain (25BCON0705) | Chat website, saved chats, settings and live demo | `app.py`, `ui_chat_v4.py`, `ui_theme.py`, `ui_settings.py`, `ui_components.py`, `chat_store.py`, `conversation_state.py`, `voice.py` | `voice_component/`, `assets/`, `.streamlit/config.toml`, `docs/screenshots/`, `test_v4_ui.py`, `START_JALMITRA.bat`, `STOP_JALMITRA.bat` |
+| 7 · Garvit Khandal (25BCON0784) | Testing, results, documentation and future scope | `test_local_engine.py`, `test_v3.py`, `test_v3_domains.py`, `test_v5.py`, `test_v6.py`, `test_300q.py`, `fake_ai_for_tests.py`, `eval/phase6_eval.py` | `TEST_STATUS.md`, `KNOWN_LIMITATIONS.md`, `ROADMAP.md`, `CHANGELOG.md`, `README.md`, `eval/PHASE6_REPORT.md`, `eval/phase6_full_*.md`, `tests_data/`, `.gitignore` |
 
-Each member's own notes file is in `docs/members/` (uploaded by that member; see Part 10 of the GitHub guide).
+Each member's own PDF is in `docs/members/` (uploaded by that member from their own GitHub account; see Part 10 of the GitHub guide).
 
-Shared: `START_JALMITRA.bat` and `STOP_JALMITRA.bat` start and stop the app (the demo).
+Shared: `START_JALMITRA.bat` and `STOP_JALMITRA.bat` start and stop the app (Param runs the live demo).
 
 ## Not part of the current app (kept for history)
 
